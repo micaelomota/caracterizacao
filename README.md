@@ -27,7 +27,7 @@ https://docs.google.com/spreadsheets/d/1lviHKlzITRJp5B_SmQQzQU8hsKNLKWnD/edit?us
 4. Dentro de sua pasta local, crie dois arquivos com extensão .md:  um prefixado por "L1-" e outro prefixado por "L2-". Por exemplo, criei na minha pasta 
 ```T1-christinaflachufba``` os arquivos ```L1-christinaflachufba.md``` e ```L2-christinaflachufba.md```. __NÃO APAGUE OUTRAS PASTAS OU ARQUIVOS__.
 
-5. Faça um "git commit" para adicionar localmente os seus arquivos.
+5. Faça um "git add" / "git commit" para adicionar e salvar localmente os seus arquivos. Em caso de dúvida, ver tutorial Git-it.
 
 6. Faça um "pull request" com suas modificações.
 
