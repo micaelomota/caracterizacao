@@ -24,8 +24,13 @@ limitamos em até 5 estudantes por LP (em cada coluna)
 
 1. Aceite o convite para participar da organização _mata56-ic-ufba_.
 
-2. Faça um fork deste repositorio "caracterizacao" para criar uma cópia independente, 
-individual.
+2. Faça um fork deste repositorio "caracterizacao" para criar uma cópia sua, individual 
+e independente do repositório original.
+__NÃO APAGUE OUTRAS PASTAS OU ARQUIVOS__.
+
+5. Faça um "git add" / "git commit" para adicionar e salvar localmente os seus arquivos. Em caso de dúvida, ver tutorial Git-it.
+
+6. Faça um "pull request" com suas modificações.
 
 3. Crie uma pasta/folder em seu repositório "caracterizacao", usando seu nome de usuário prefixado por "T1-". Por exemplo, a minha pasta em meu repositório é: 
 ```T1-christinaflachufba```.
@@ -46,8 +51,16 @@ Por exemplo, o meu arquivo para a primeira linguagem escolhida será:
 5. As informações de caracterização devem ser colocadas em sua pasta pessoal,
 nos arquivos indicados, incrementalmente, ao longo do semestre letivo, 
 à medida em que os exercícios as solicitarem.
-Os arquivos devem ser disponibilizadas no repositório original, via _pull request_ 
+
+Use "git add" / "git commit" para adicionar e salvar localmente os seus arquivos. 
+Em caso de dúvida, ver tutorial Git-it.
+
+6. Os seus arquivos devem ser disponibilizadas no repositório original, via _pull request_ 
 apenas nas _datas de entrega_ (a serem divulgadas). 
 
-__IMPORTANTE:__ A entrega deve ser apenas um arquivo markdown (.md) para cada linguagem escolhida (L1 e L2).
+__IMPORTANTE:
+
+__ A entrega deve ser apenas um arquivo markdown (.md) para cada linguagem escolhida (L1 e L2).
  
+__NÃO APAGUE OU ESCREVA em outras  PASTAS OU ARQUIVOS de colegas__.
+
