@@ -1,4 +1,5 @@
 # Proposta de Template para Caracterização de Linguagens de Programação
+Grupo: Kênia Guimarães e Luiz Cavalcanti
 
 + Características da Linguagem
   + Paradigma
