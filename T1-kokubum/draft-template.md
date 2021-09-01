@@ -1,8 +1,6 @@
 # Proposta de Template para Caracterização de Linguagens de Programação
 Grupo: 
   ERICK SILVA KOKUBUM
-  FELIPE DO NASCIMENTO BARUCH PITANGA
-  GUSTAVO DE ALMEIDA FREITAS SANTOS
 
 + Características da Linguagem
   + Paradigma
