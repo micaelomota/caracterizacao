@@ -37,7 +37,7 @@ Custo
         Ferramentas
 
 
-Capacidades:
+Capacidade:
     
     Fatores:
 
