@@ -77,3 +77,11 @@ e avaliar sua aplicabilidade a projetos específicos._
   + Maturity
   + Community
   + Governance
+
+
+## Perspectivas
+
++ Usuário
++ Projetista
++ Implementador 
+
