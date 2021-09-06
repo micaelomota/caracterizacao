@@ -13,6 +13,7 @@ Fatores:
 - Ortogonalidade
 - Estruturas de controle
 - Estruturas e tipos de dados
+  + Vantagens e desvantagens da tipagem e como elas influenciam na linguagem
 - Aspectos sintáticos
 
 #### Redigibilidade
@@ -20,6 +21,8 @@ Fatores:
 Fatores:
 
 + Simplicidade
+  + Quantidade de caracteres 
+  + Disponibilidade de atalhos em IDE
 + Ortogonalidade
 + Suporte a abstração
 + Poder de expressão
@@ -29,14 +32,16 @@ Fatores:
 Fatores:
 + Sistema de tipos
 + Tratamento de exceções
-+ ...
++ Escalabilidade
 
 #### Custo
 
 Fatores:
 + Treinamento
 + Ferramentas
-+ ...
++ Configuração de ambiente
++ Licensas de uso
++ Acessibilidade do usuário ao programa gerado
 
 ## Template da Gartner para Descrição
 #### Fonte: https://www.gartner.com/en/documents/2071615/programming-languages
@@ -77,11 +82,3 @@ e avaliar sua aplicabilidade a projetos específicos._
   + Maturity
   + Community
   + Governance
-
-
-## Perspectivas
-
-+ Usuário
-+ Projetista
-+ Implementador 
-

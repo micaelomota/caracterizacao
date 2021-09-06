@@ -14,6 +14,8 @@ Fatores:
 - Estruturas de controle
 - Estruturas e tipos de dados
 - Aspectos sintáticos
+- Boa definição
+- Convenção de escrita de código
 
 #### Redigibilidade
 
@@ -37,6 +39,13 @@ Fatores:
 + Treinamento
 + Ferramentas
 + ...
+
+#### Reutilização de Código
++ Reusabilidade
+
+#### Produtividade
++ Principais Frameworks e Bibliotecas
++ Principais Ferramentas utilizadas para produção
 
 ## Template da Gartner para Descrição
 #### Fonte: https://www.gartner.com/en/documents/2071615/programming-languages
@@ -77,11 +86,3 @@ e avaliar sua aplicabilidade a projetos específicos._
   + Maturity
   + Community
   + Governance
-
-
-## Perspectivas
-
-+ Usuário
-+ Projetista
-+ Implementador 
-
