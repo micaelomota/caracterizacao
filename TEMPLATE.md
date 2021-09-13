@@ -1,8 +1,8 @@
 <!--
 Contribuidores:
-+ Kenia e Luis
++ Kenia e Luiz
 + Mauricio Santiago, Gustavo Santos, Matheus Novais, Ivens Joris, Matheus Silva
-+ Alvaro Oliveira
++ Álvaro Souza Oliveira; Carlos Mosselman Cabral Neto; Thiago Vieira Souza Andrade; Caio Nery Matos Santos; Vanessa Machado Araújo
 + Daniel
 Fontes:
 
@@ -13,7 +13,7 @@ Fontes:
 
 # Guia para Caracterização de Linguagens de Programação
 
-Linguagem de Programação: <nome>
++ Linguagem de Programação: <nome>
 
   * [Apresentação e histórico](#apresenta--o-e-hist-rico)
   * [Características da Linguagem](#caracter-sticas-da-linguagem)
