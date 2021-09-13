@@ -3,11 +3,18 @@ Contribuidores:
 + Kenia e Luis
 + Mauricio Santiago, Gustavo Santos, Matheus Novais, Ivens Joris, Matheus Silva
 + Alvaro Oliveira
-
++ Daniel
 Fontes:
 
++ <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+---
+
 --> 
-- [Guia para Caracterização de Linguagens de Programação](#guia-para-caracteriza--o-de-linguagens-de-programa--o)
+
+# Guia para Caracterização de Linguagens de Programação
+
+Linguagem de Programação: <nome>
+
   * [Apresentação e histórico](#apresenta--o-e-hist-rico)
   * [Características da Linguagem](#caracter-sticas-da-linguagem)
   * [Capacidades da Linguagem](#capacidades-da-linguagem)
@@ -16,13 +23,6 @@ Fontes:
   * [Ecossistema](#ecossistema)
   * [Informações Adicionais](#informa--es-adicionais)
   * [Referências](#refer-ncias)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
----
-
-# Guia para Caracterização de Linguagens de Programação
-
-Linguagem de Programação: <nome>
 
 ## Apresentação e histórico
 
