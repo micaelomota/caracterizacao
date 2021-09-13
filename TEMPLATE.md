@@ -1,12 +1,17 @@
 <!--
+Recomendações:
+1. A
+2. B
+
 Contribuidores:
 + Kenia e Luiz
 + Mauricio Santiago, Gustavo Santos, Matheus Novais, Ivens Joris, Matheus Silva
 + Álvaro Souza Oliveira; Carlos Mosselman Cabral Neto; Thiago Vieira Souza Andrade; Caio Nery Matos Santos; Vanessa Machado Araújo
 + Daniel
-Fontes:
 
-+ <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+Fontes:
++ Criação do TOC
+  + [Table of contents generated with markdown-toc](http://ecotrust-canada.github.io/markdown-toc/)
 ---
 
 --> 
@@ -18,7 +23,6 @@ Fontes:
   * [Apresentação e histórico](#apresenta--o-e-hist-rico)
   * [Características da Linguagem](#caracter-sticas-da-linguagem)
   * [Capacidades da Linguagem](#capacidades-da-linguagem)
-  * [Confiabilidade](#confiabilidade)
   * [Produtividade do Desenvolvedor](#produtividade-do-desenvolvedor)
   * [Ecossistema](#ecossistema)
   * [Informações Adicionais](#informa--es-adicionais)
@@ -30,24 +34,25 @@ _Breve texto de apresentação._
 _Comentar sobre perspectivas / papéis._
 _Colocar uma figura / árvore, com pais e filhos_.
 
-
 ## Características da Linguagem
   + Paradigma
   + Propósito
   + Sistema de Tipagem
   + Ambiente de Execução
   + Implementação
+  + Custos 
+ _Custos aqui ... _
 
 ## Capacidades da Linguagem
   + Metaprogramação
   + Gerenciamento de Ciclo de Vida
-  + Segurança
+  + Segurança 
   + Performance
   + Escalabilidade
-  + Concorrência e Threading
-  + Custos Associados
-
-## Confiabilidade
+  + Confiabilidade
+  + Concorrência e Threading 
+  + Custos
+  _Custos aqui ... _
 
 ## Produtividade do Desenvolvedor
   + Frameworks e Contâiners
@@ -55,7 +60,7 @@ _Colocar uma figura / árvore, com pais e filhos_.
   + Sintaxe, Semântica e Operações Predefinidas
     + Legibilidade
     + Redigibilidade
-  + Custos Associados
+  + Custos 
 
 ## Ecossistema
   + Maturidade
