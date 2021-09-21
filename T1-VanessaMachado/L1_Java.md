@@ -12,17 +12,17 @@
 <div style="text-align: justify"> 
     Primeiramente, o arquivo principal '.java' é passado para o compilador. Este será convertido em um código-fonte (bytecode). Ao realizar essa conversão, o compilador segue os seguintes passos:
 
-    **Análise : ** Lê o arquivo principal '.java' e mapeia a sequência de tokens resultante da árvore sintática;
+    __Análise :__ Lê o arquivo principal '.java' e mapeia a sequência de tokens resultante da árvore sintática;
 
-    **Enter: ** insere símbolos, para as definições, na tabela de símbolos;
+    __Enter:__ insere símbolos, para as definições, na tabela de símbolos;
 
-    **Anotações do processo: ** Caso seja solicitado, processa as anotações encontradas nas unidades de compilação em questão;
+    __Anotações do processo:__ Caso seja solicitado, processa as anotações encontradas nas unidades de compilação em questão;
 
-    **Fluxo: ** Analisa o fluxo de dados nas árvores, realizando verificação de atributos e também acessibilidade;
+    __Fluxo:__ Analisa o fluxo de dados nas árvores, realizando verificação de atributos e também acessibilidade;
 
-    **Desugar: ** Reescreve a árvore sintática;
+    __Desugar:__ Reescreve a árvore sintática;
 
-    **Geração: ** São gerados arquivos '.Class'; 
+    __Geração:__ São gerados arquivos '.Class'; 
 
 </div>
 
@@ -30,11 +30,11 @@
 <div style="text-align: justify"> 
     O arquivo '.Class' gerado na etapa anterior é passado para a JVM e, em seguida, transcorre por três estágios antes que o código final de máquina seja finalmente executado. A saber: 
 
-    **Class Loader (Carregador de classe) : ** A classe principal é carregada na memória passando seu arquivo '.class' para a JVM;
+    __lass Loader (Carregador de classe) :__ A classe principal é carregada na memória passando seu arquivo '.class' para a JVM;
 
-    **Bytecode Verifier (Verificador de Bytecode) : ** Depois que o bytecode de uma classe é carregado na etapa anterior, este deverá ser agora inspecionado, afim de verificar se as instruções não executam ações prejudiciais;
+    __Bytecode Verifier (Verificador de Bytecode) :__Depois que o bytecode de uma classe é carregado na etapa anterior, este deverá ser agora inspecionado, afim de verificar se as instruções não executam ações prejudiciais;
 
-    **Just-In-Time Compiler (Compilador Just-In-Time) : ** Este é o estágio final encontrado pelo programa java e seu trabalho é converter o bytecode carregado em código de máquina o qual será inserido na memória e finalmente executado;
+    __Just-In-Time Compiler (Compilador Just-In-Time) :__ Este é o estágio final encontrado pelo programa java e seu trabalho é converter o bytecode carregado em código de máquina o qual será inserido na memória e finalmente executado;
 
 </div>
 
@@ -45,22 +45,22 @@
 <div style="text-align: justify"> 
     As convenções de nomenclatura tornam os programas mais fáceis de serem lidos. Fornecem também, informações sobre a função do identificador por exemplo, se é uma constante, pacote ou classe o que pode ser útil para um bom entendimento do código. Em Java, ficou convencionado o seguinte:
 
-    **Packages: ** O prefixo de um nome de pacote é sempre escrito em letras  minúsculas e deve ser um dos nomes de domínio de nível superior. Caso esse pacote tenha mais de um nome, estes devem ser separados por um "." (ponto);
+    __Packages:__ O prefixo de um nome de pacote é sempre escrito em letras  minúsculas e deve ser um dos nomes de domínio de nível superior. Caso esse pacote tenha mais de um nome, estes devem ser separados por um "." (ponto);
     *Exemplo: paradigmas; parcial.de.paradigmas*
 
-    **Classes: ** O nome de uma classe deve ser sempre iniciado em letra maiúscula, caso aja mais de um, este também se iniciará dessa forma;
+    __Classes:__ O nome de uma classe deve ser sempre iniciado em letra maiúscula, caso aja mais de um, este também se iniciará dessa forma;
     *Exemplo: class Animal; class AnimalMarinho*
 
-    **Interfaces: ** Segue o mesmo padrão da escrita dos nomes de classes;
+    __Interfaces:__ Segue o mesmo padrão da escrita dos nomes de classes;
     *Exemplo: interface Modelo; interface ModeloConvencional*
 
-    **Métodos: ** Os métodos devem ser verbos, em maiúsculas e minúsculas, iniciando com letra minúscula e a primeira letra de cada palavra interna maiúscula;
+    __Métodos:__ Os métodos devem ser verbos, em maiúsculas e minúsculas, iniciando com letra minúscula e a primeira letra de cada palavra interna maiúscula;
     *Exemplo: movimentar(); movimentarCachorro()*
 
-    **Variáveis: ** Segue o mesmo padrão da escrita de um método, sem a obrigatoriedade de ser um verbo; Não devem começar com caracteres de sublinhado _ ou cifrão $, embora ambos sejam permitidos.
+    __Variáveis:__ Segue o mesmo padrão da escrita de um método, sem a obrigatoriedade de ser um verbo; Não devem começar com caracteres de sublinhado _ ou cifrão $, embora ambos sejam permitidos.
     *Exemplo: int a; double d; String alunoGraduacao*
 
-    **Constantes: ** Devem ser escritos todos maiúsculos com palavras separadas por sublinhados ("_"), caso aja mais de uma. 
+    __Constantes:__ Devem ser escritos todos maiúsculos com palavras separadas por sublinhados ("_"), caso aja mais de uma. 
     *Exemplo: MIN; MIN_VALOR; MAX_Valor*
     
 </div>
@@ -69,11 +69,11 @@
 <div style="text-align: justify"> 
     Java apresenta três diferentes tipos de variavés, que são:
 
-    **Variáveis ​​de instância: ** Aquela que é declarada dentro de uma classe, mas fora fora de quaisquer métodos e blocos;
+    __Variáveis ​​de instância:__ Aquela que é declarada dentro de uma classe, mas fora fora de quaisquer métodos e blocos;
 
-    **Variáveis ​​de classe: ** Aquela que é declarada dentro de uma classe, fora de todos os blocos e é declarada como estática;
+    __Variáveis ​​de classe:__ Aquela que é declarada dentro de uma classe, fora de todos os blocos e é declarada como estática;
 
-    **Variáveis ​​Locais: ** Todas aquelas ​​que não são variáveis ​​de instância ou classe;
+    __Variáveis ​​Locais:__ Todas aquelas ​​que não são variáveis ​​de instância ou classe;
 
 </div>
 
@@ -81,9 +81,9 @@
 <div style="text-align: justify"> 
     Em Java existem dois tipos de vinculação: vinculação estática e dinâmica.
 
-    **Vinculação Estática: ** Quando o tipo do objeto é determinado em tempo de compilação (pelo compilador). Se houver qualquer método privado, final ou estático em uma classe, haverá esse tipo de vinculação;
+    __Vinculação Estática:__ Quando o tipo do objeto é determinado em tempo de compilação (pelo compilador). Se houver qualquer método privado, final ou estático em uma classe, haverá esse tipo de vinculação;
 
-    **Vinculação Dinâmica: **  Quando o tipo do objeto é determinado em tempo de execução;
+    __Vinculação Dinâmica:__  Quando o tipo do objeto é determinado em tempo de execução;
 
 </div>
 
@@ -92,16 +92,16 @@
     Analisando cada tipo de váriavel com relação ao Escopo e Tempo De Vida, tem-se:
 
     *Variáveis ​​de instância* 
-    **Escopo : ** Em toda a classe, exceto nos métodos estáticos;
-    **Tempo De Vida : ** Até que o objeto da classe esteja na memória;
+    __Escopo :__ Em toda a classe, exceto nos métodos estáticos;
+    __empo De Vida :__ Até que o objeto da classe esteja na memória;
 
     *Variáveis ​​de classe* 
-    **Escopo : ** Em toda a classe;
-    **Tempo De Vida : ** Até que o programa seja finalizado;
+    __Escopo :__ Em toda a classe;
+    __Tempo De Vida :__ Até que o programa seja finalizado;
 
     *Variáveis ​​Locais* 
-    **Escopo : ** Dentro do bloco  em que está declarado;
-    **Tempo De Vida : ** Até que o controle saia do bloco em que foi declarado;
+    __Escopo :__ Dentro do bloco  em que está declarado;
+    __Tempo De Vida :__ Até que o controle saia do bloco em que foi declarado;
     
     
 </div>
