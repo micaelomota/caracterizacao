@@ -25,7 +25,7 @@ Existe uma convenção padrão que é seguida para nomes de variáveis, funçõe
 
 + Pacote: Deve começar com letra minúscula, e se tiver mais de um nome, deve ser separado por ponto.
 
-Em todos os casos, não deve começar nenhum dos nomes com caracteres especiais ($, &, @, _, etc).
+Em todos os casos, não se deve começar nenhum dos nomes com caracteres especiais ($, &, @, _, etc).
 
 ___
 
@@ -41,9 +41,62 @@ ___
 
 A vinculação em Java ocorre nos dois tipos, estática e dinâmica.
 
-Para o caso da vinculação estática, ela ocorre por meio de métodos static, private e final. Por exemplo, se uma classe e sua superclasse possuirem um método estático com o mesmo nome, a referência a ser utilizada será a declarada pela superclasse.
+Para o caso da vinculação estática, ela ocorre por meio de métodos static, private e final. Por exemplo, se uma classe e sua superclasse possuirem um método com o mesmo nome, a referência a ser utilizada pelas duas será a declarada pela superclasse. Exemplo:
 
-Para o caso da vinculação dinâica, ela ocorre por meio do método Override. Por exemplo, se uma classe e sua superclasse possuirem um método estático com o mesmo nome e a subclasse possuir @Override, cada uma terá sua própria referência.
+```java
+class Canideo { //Superclasse
+  public void uiva() {
+    System.out.println("Canideo uiva");
+  }
+}
+class Cachorro extends Canideo {
+  public static void uiva() {
+    System.out.println("Cachorro uiva");
+  }
+}
+public class VinculacaoEstatica {
+  public static void main( String args[]){
+    Canideo c = new Cachorro();
+    c.uiva();
+
+    Canideo c2 = new Canideo();
+    c2.uiva();
+  }
+}
+
+Saida:
+Canideo uiva
+Canideo uiva
+```
+
+Para o caso da vinculação dinâmica, ela ocorre por meio do método Override. Por exemplo, se uma classe e sua superclasse possuirem um método com o mesmo nome e a subclasse possuir @Override, cada uma terá sua própria referência. Exemplo:
+
+```java
+class Canideo { //Superclasse
+  public void uiva() {
+    System.out.println("Canideo uiva");
+  }
+}
+class Cachorro extends Canideo {
+  @Override
+  public void uiva() {
+    System.out.println("Cachorro uiva");
+  }
+}
+public class VinculacaoDinamica {
+  public static void main( String args[]){
+    Canideo c = new Cachorro();
+    c.uiva();
+
+    Canideo c2 = new Canideo();
+    c2.uiva();
+  }
+}
+
+Saida:
+Cachorro uiva
+Canideo uiva
+```
 
 ## Escopo, tempo de vida e ambientes de referência:
 
@@ -53,15 +106,4 @@ O escopo das variáveis de classe ocorre no espaço definido para a classe. Seu 
 
 O escopo das variáveis locais ocorre no espaço definido para o bloco onde são declaradas. Seu tempo de vida permanece até o fim da execução do bloco.
 
-Java é uma linguagem de escopo estático, portanto suas variáveis, portanto as variáveis são referenciadas dentro do ambiente de referência estático. Por exemplo, um método de uma classe não pode fazer referência a uma variável declarada por um ancestral dessa classe.
-
-
-
-
-
-
-
-
-
-
-
+Java é uma linguagem de escopo estático, portanto suas variáveis são referenciadas dentro do ambiente de referência estático. Por exemplo, um método de uma classe não pode fazer referência a uma variável declarada por um ancestral dela.
