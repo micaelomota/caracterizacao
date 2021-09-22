@@ -106,4 +106,6 @@ O escopo das variáveis de classe ocorre no espaço definido para a classe. Seu 
 
 O escopo das variáveis locais ocorre no espaço definido para o bloco onde são declaradas. Seu tempo de vida permanece até o fim da execução do bloco.
 
-Java é uma linguagem de escopo estático, portanto suas variáveis são referenciadas dentro do ambiente de referência estático. Por exemplo, um método de uma classe não pode fazer referência a uma variável declarada por um ancestral dela.
+Java é uma linguagem de escopo estático, portanto suas variáveis são referenciadas dentro do ambiente de referência estático. Por exemplo, um método de uma classe não pode fazer referência a uma variável declarada por um ancestral dela. 
+
+Apesar de ser uma linguaguem de escopo estático, Java pode utilizar funções e métodos dinâmicos, como o método Override visto no exemplo da vinculação dinâmica.
