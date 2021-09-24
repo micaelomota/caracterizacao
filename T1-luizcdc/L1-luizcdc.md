@@ -41,7 +41,9 @@ _Colocar uma figura / árvore, com pais e filhos_.
 + Propósito
 + Sistema de Tipagem
 + Ambiente de Execução
+  : A linguagem é interpretada, e há diversos interpretadores implementados diferentemente para executá-la. Cada um desses oferece um ambiente de execução diferente com acesso a ferramentas distintas, mas o interpretador original da linguagem, CPython, oferece uma API para programas em C que implementa toda a comunicação necessária entre o Python e o C.
 + Implementação
+  : A implementação original é chamada CPython, escrita em C. O CPython compila o código em Python para seu bytecode próprio e o interpreta. Outras implementações famosas são PyPy, que implementa um compilador para código de máquina nativo JIT que oferece um desempenho muito maior sem sacrificar o dinamismo da linguagem, Jython que compila para bytecode da JVM - Java Virtual Machine, permitindo interfaceamento e inserção dentro de programas Java e vice-versa e Cython, que é uma versão compilada do Python com ferramentas adicionais.
 + Custos
  _Custos aqui ..._
 
