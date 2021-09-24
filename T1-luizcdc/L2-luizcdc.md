@@ -41,7 +41,9 @@ _Colocar uma figura / árvore, com pais e filhos_.
 + Propósito
 + Sistema de Tipagem
 + Ambiente de Execução
+  : O Elixir é compilado para bytecode da máquina virtual da linguagem Erlang, BEAM (_Bogdan/Björn's Erlang Abstract Machine_). Bytecode gerado pela Elixir é completamente compatível com bytecode Erlang, portanto o ambiente de execução do Elixir inclui todas as bibliotecas e programas disponíveis também para o Erlang, e mantém as mesmas capacidades de interface com bibliotecas e programas de outras linguagens e do sistema operacional.
 + Implementação
+  : Embora as versões iniciais do Elixir tenham sido escritas em Erlang, a linguagem é atualmente implementada majoritariamente com código em Elixir, com uma porcentagem significativa mas minoritária de seu código em Erlang. A implementação consta em um compilador que traduz os arquivos ".ex" em arquivos ".beam", e um interpretador que na verdade compila os arquivos ".exs" em memória ao ser solicitada a execução e executa o bytecode gerado. Um detalhe importante de se destacar é que recentemente a máquina virtual BEAM implementou rotinas de compilação JIT, e mesmo sem participação direta dos desenvolvedores do Elixir a linguagem teve um ganho de desempenho considerável.
 + Custos
  _Custos aqui ..._
 
@@ -81,3 +83,7 @@ _Colocar uma figura / árvore, com pais e filhos_.
 
 1. https://www.gartner.com/en/documents/2071615/programming-languages
 framework for assessing and characterizing programming languages and assessing their applicability to specific projects
+2. https://elixirforum.com/t/jit-in-erlang-what-does-it-mean-for-elixir/34311/2
+JIT in Erlang – what does it mean for Elixir?
+3. https://github.com/elixir-lang/elixir
+Github - elixir-lang/elixir
