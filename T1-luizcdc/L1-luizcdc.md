@@ -30,9 +30,13 @@ Fontes:
 
 ## Apresentação e histórico
 
-_Breve texto de apresentação._
+Python é uma linguagem de programação multiparadigma de alto nível. Foi publicada em 1991 pelo seu criador Guido van Rossum. Seu nome é inspirado no programa de televisão britânico _Monty Python's Flying Circus_. A linguagem está atualmente na versão 3.9 e seu desenvolvimento está ativo, sendo atualizada constantemente com novos recursos e otimizações. É atualmente uma das linguagens de programação mais populares no mundo, figurando em alguns rankings em primeiro lugar.
+
 _Comentar sobre perspectivas / papéis._
-_Colocar uma figura / árvore, com pais e filhos_.
+
+
+![image](./res/python-tree.png)
+
 
 ## Características da Linguagem
 
