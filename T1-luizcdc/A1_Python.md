@@ -1,87 +1,15 @@
-<!--
-Recomendações:
-1. A
-2. B
+# Atividade A1 - Python
 
-Contribuidores:
-+ Kenia e Luiz
-+ Mauricio Santiago, Gustavo Santos, Matheus Novais, Ivens Joris, Matheus Silva
-+ Álvaro Souza Oliveira; Carlos Mosselman Cabral Neto; Thiago Vieira Souza Andrade; Caio Nery Matos Santos; Vanessa Machado Araújo
-+ Daniel
-
-Fontes:
-+ Criação do TOC
-  + [Table of contents generated with markdown-toc](http://ecotrust-canada.github.io/markdown-toc/)
----
-
--->
-
-# Guia para Caracterização de Linguagens de Programação
-
-+ Linguagem de Programação: **Python**
-
-  + [Apresentação e histórico](#apresenta--o-e-hist-rico)
-  + [Características da Linguagem](#caracter-sticas-da-linguagem)
-  + [Capacidades da Linguagem](#capacidades-da-linguagem)
-  + [Produtividade do Desenvolvedor](#produtividade-do-desenvolvedor)
-  + [Ecossistema](#ecossistema)
-  + [Informações Adicionais](#informa--es-adicionais)
-  + [Referências](#refer-ncias)
-
-## Apresentação e histórico
-
-_Breve texto de apresentação._
-_Comentar sobre perspectivas / papéis._
-_Colocar uma figura / árvore, com pais e filhos_.
-
-## Características da Linguagem
-
-+ Paradigma
-  : Python é uma linguagem multiparadigma que suporta POO, funcional, procedural e imperativa. Seu suporte a programação funcional não é ideal, porém, pois alguns constructos importantes para programação funcional não são simples de se fazer, tal qual estruturas de dados imutáveis, por exemplo. Embora não suporte nativamente a programação lógica, esse paradigma pode ser explorado no Python através de módulos/extensões como o PySwip, interfaceando entre Python e SWI-Prolog.
-+ Propósito
-+ Sistema de Tipagem
-+ Ambiente de Execução
-+ Implementação
-+ Custos
- _Custos aqui ..._
-
-## Capacidades da Linguagem
-
-+ Metaprogramação
-+ Gerenciamento de Ciclo de Vida
-+ Segurança
-+ Performance
-+ Escalabilidade
-+ Confiabilidade
-+ Concorrência e Threading
-+ Custos
-  _Custos aqui ..._
-
-## Produtividade do Desenvolvedor
-
-+ Frameworks e Contâiners
-+ Ferramentas Disponíveis
-+ Sintaxe, Semântica e Operações Predefinidas
-  + Legibilidade
-  + Redigibilidade
-+ Custos
-
-## Ecossistema
-
-+ Maturidade
-+ Comunidade
-+ Governança
-+ Fragmentação
-
----
-
-## Informações Adicionais
++ **a) modelo de tradução (compilação, etc.?)**
+  + Python é uma linguagem interpretada com um passo intermediário de compilação para bytecode (na sua implementação de referência, CPython). Há outras implementações da linguagem que compilam para máquinas virtuais diferentes (IronPython, Jython), uma versão interpretada com um compilador JIT (PyPy) e uma versão compilada que traduz código Python para código C e o compila.
++ **b) nomes, variáveis e vinculação**
+  + Python suporta identificadores Unicode tal qual especificado pelo anexo 31 do Padrão Unicode. Na versão atual (3.9) possui 35 palavras reservadas. 
++ **c) escopo, tempo de vida e ambientes de referência.**
+  + A linguagem tem escopo estático, e suas regras de escopo determinam que um escopo aninhado tem acesso às variáveis de todos os escopos que o englobam, inclusive o escopo global. Definir uma função e seus argumentos, importar um módulo ou um conteúdo de um módulo, definir uma classe ou atribuir um valor a uma variável são formas de introduzir um novo nome ao escopo local. Os escopos em Python são gerenciados através de namespaces, implementados (e acessíveis em tempo de execução) com dicionários que são atributos de cada função, módulo, etc. Apenas funções criam novos escopos em Python, e declarações de funções podem estar aninhadas (mas uma função declarada dentro de outra função só é acessível dentro da função externa imediata e dentro dela mesma, recursivamente, porém não nos escopos mais externos e global).
+  + Tempo de vida
+  + Ambientes de referência
 
 ## Referências
 
-1. https://www.gartner.com/en/documents/2071615/programming-languages
-framework for assessing and characterizing programming languages and assessing their applicability to specific projects
-2. https://docs.python.org/3/howto/functional.html
-Functional Programming HOWTO - Python 3 Manual
-3. https://github.com/yuce/pyswip
-PySwip
+1. https://docs.python.org/3/reference/lexical_analysis.html
+Lexical analysis - Python 3.9.7 documentation
