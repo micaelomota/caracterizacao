@@ -229,8 +229,22 @@
 Java é uma linguagem de escopo estático, portanto suas variáveis são referenciadas dentro do ambiente de referência estático. Por exemplo, um método de uma classe não pode fazer referência a uma variável declarada por um ancestral dela.
 
 #### Referências <h4> 
+<p> 
 https://www.learningjournal.guru/article/programming-in-java/scope-and-lifetime-of-a-variable/
+</p>
+
+<p> 
 https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html
+</p>
+
+<p> 
 https://www.geeksforgeeks.org/compilation-execution-java-program/
+</p>
+
+<p> 
 https://www.javatpoint.com/static-binding-and-dynamic-binding
+</p>
+
+<p> 
 https://techvidvan.com/tutorials/static-and-dynamic-binding-in-java-differences-and-examples/
+</p>

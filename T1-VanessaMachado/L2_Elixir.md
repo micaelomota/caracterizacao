@@ -161,11 +161,21 @@
 </div>
 
 #### Referências <h4> 
-https://hexdocs.pm/elixir/1.12/naming-conventions.html#trailing-bang-foo
-https://medium.com/@fxn/how-does-elixir-compile-execute-code-c1b36c9ec8cf
-https://elixir-lang.readthedocs.io/en/latest/technical/scoping.html
-https://medium.com/@bdias.ti/elixir-quando-e-como-usar-670a84971f78
+<p> 
+    https://hexdocs.pm/elixir/1.12/naming-conventions.html#trailing-bang-foo
+</p> 
 
+<p>
+    https://medium.com/@fxn/how-does-elixir-compile-execute-code-c1b36c9ec8cf
+</p> 
+
+<p>
+    https://elixir-lang.readthedocs.io/en/latest/technical/scoping.html
+</p> 
+
+<p>
+    https://medium.com/@bdias.ti/elixir-quando-e-como-usar-670a84971f78
+</p> 
 
 
 
