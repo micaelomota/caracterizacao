@@ -70,13 +70,9 @@
 ~~~
 ##### Exemplo.3 <h5>
 ~~~
-    
-~~~
-##### Exemplo.4 <h5>
-~~~
     my_app.ex
 ~~~
-##### Exemplo.5 <h5>
+##### Exemplo.4 <h5>
 ~~~
     //valor que não deve ser usado 
     {:ok, _contents} = File.read("README.md")
@@ -91,7 +87,7 @@
     //funções para anexar metadados 
     String.__info__(:functions)
 ~~~
-##### Exemplo.6 <h5>
+##### Exemplo.5 <h5>
 ~~~
     //versão com (!)
 
@@ -103,11 +99,11 @@
     //versão sem (!)
 
     case File.read(file) do
-        {:ok, body}      -> # do something with the `body`
-        {:error, reason} -> # handle the error caused by `reason`
+        {:ok, body}      -> # faze algo com o `body`
+        {:error, reason} -> # lidar com o erro causado por `reason`
     end
 ~~~
-##### Exemplo.7 <h5>
+##### Exemplo.6 <h5>
 ~~~
     //Retorna true se term for uma lista de palavras-chave; caso contrário, retorna false
         
@@ -129,7 +125,7 @@
 
         
 ~~~
-##### Exemplo.8 <h5>
+##### Exemplo.7 <h5>
 ~~~
     map_size(%{a: "foo", b: "bar"}) //retorna o tamanho do map
 
@@ -149,13 +145,6 @@
     
 </div>
 
-### VINCULAÇÃO <h3> 
-<div style="text-align: justify">
-    
-    
-</div>
-
-
 ## Escopo, Tempo De Vida e Ambientes de Referência <h2> 
 
 <div style="text-align: justify">
@@ -171,8 +160,11 @@
     </p> 
 </div>
 
-
-
+#### Referências <h4> 
+https://hexdocs.pm/elixir/1.12/naming-conventions.html#trailing-bang-foo
+https://medium.com/@fxn/how-does-elixir-compile-execute-code-c1b36c9ec8cf
+https://elixir-lang.readthedocs.io/en/latest/technical/scoping.html
+https://medium.com/@bdias.ti/elixir-quando-e-como-usar-670a84971f78
 
 
 
