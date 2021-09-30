@@ -92,7 +92,6 @@ Ex:
 var obj = {
   minhaFunc2: minhaFunc
 }
-
 function minhaFunc(){
   console.log(this);
 }
