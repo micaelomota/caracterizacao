@@ -6,7 +6,7 @@
 
 ## Modelo de compilação:
 
-A linguagem Clojure é definidica como uma linguagem compilada pelo fato de rodar sob a JVM (máuina virtual Java) compilando seu código "on the fly" para o byte code e permitindo que você rode o código em qualquer ambiente sem necessidade de recompilação.
+A linguagem Clojure é definida como uma linguagem compilada pelo fato de rodar sob a JVM (máquina virtual Java) compilando seu código "on the fly" para o byte code e permitindo que você rode o código em qualquer ambiente sem necessidade de recompilação.
 
 ## Nomes, variáveis e vinculação:
 
@@ -93,7 +93,7 @@ nova-variavel ;; => Erro
 
 #
 
-- Dinâmica: O Clojure tem o processo de vinculação dinâmica, ou seja, em tempo d e execução, proporciado simplismente pelo uso da keyword "bindind".
+- Dinâmica: O Clojure tem o processo de vinculação dinâmica, ou seja, em tempo de execução, proporciado simplismente pelo uso da keyword "bindind".
 
 Ex:
 
@@ -104,7 +104,7 @@ user> (binding [x 1] (foo))
 nil
 ```
 
-- Estática: O clojure tem a vinculação de valores que ocorre em tempo de compilação proporcianada pelo simples uso do "let" na atribuição.
+- Estática: O clojure tem a vinculação de valores que ocorre em tempo de compilação proporcionada pelo simples uso do "let" na atribuição.
 
 ```
 user> (defn foo [] (println x))
@@ -123,7 +123,7 @@ nil
 
 Uma variável declarada através da keyword "def" é responsável pela definiçào de símbolos globais.
 
-Tempo de vida - Para essa situação a variável tem o tempo de vida igual ao tempo de execução do programa, visto que a mesma está associada ao objeto global, e esse escopo só é removido, quando o programa é finalizado.
+Tempo de vida - Para essa situação a variável tem o tempo de vida igual ao tempo de execução do programa.
 
 Ex:
 
@@ -135,7 +135,7 @@ Ex:
 
 Uma variável declarada através da "let-expression", basicamente uma macro cujo primeiro parâmetro é um vetor (que em Clojure declaramos com [ e ] - encare como o Array de outras linguagens, exceto que não precisamos de vírgulas entre os elementos, logo um vetor com os valores 1 4 5 seria escrito [1 4 5]) que precisa ter elementos par – o elemento par é o nome da variável/símbolo, e o elemento ímpar é seu valor.
 
-Tempo de vida - Para essa situação, como foi mencionado acima, a variável tem o tempo de vida de duração da execução desse subprograma(função/método), de forma que no momento que a função for finalizada, ela deixa de existir.
+Tempo de vida - Para essa situação, como foi mencionado acima, a variável tem o tempo de vida de duração da execução dessa função, de forma que no momento que a função for finalizada, ela deixa de existir.
 
 Ex:
 

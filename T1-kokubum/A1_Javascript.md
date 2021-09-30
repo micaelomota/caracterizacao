@@ -6,7 +6,7 @@
 
 ## Modelo de compilação:
 
-A linguagem Javascript normalmente é definida como uma linguagem interpretada, ou seja, que não passa pelo processo de parser/compilação, isso se dá muito ao fato de não termos acesso ao binário gerado pelo processo da compilação como nas linguagens padrões, porém isso é um equívoco, visto que antes de ser executado pelo interpretador, o programa definido sofrerá um processo de parser para uma AST(Abstract Syntax Tree - Árvore Sintática Abstrata) e conversão da AST para um tipo de byte code optimizada pelo compilador JIT sendo esse executado pela VM do Javascript. Então sim, podemos dizer que a linguagem Javascript de ser executada no momento, como linguagens de script interpretada, ela também possui aspectos de compilação durante esse processo (parser).
+A linguagem Javascript normalmente é definida como uma linguagem interpretada, ou seja, que não passa pelo processo de parser/compilação, isso se dá muito ao fato de não termos acesso ao binário gerado pelo processo da compilação como nas linguagens padrões, porém isso é um equívoco, visto que antes de ser executado pelo interpretador, o programa definido sofrerá um processo de parser para uma AST(Abstract Syntax Tree - Árvore Sintática Abstrata) e conversão da AST para um tipo de byte code otimizado pelo compilador JIT sendo esse executado pela VM do Javascript. Então sim, podemos dizer que a linguagem Javascript apesar de ser executada no momento, como linguagens de script interpretada, ela também possui aspectos de compilação durante esse processo (parser).
 
 ## Nomes, variáveis e vinculação:
 
@@ -27,7 +27,7 @@ Obs: É válido lembrar que todas essas definições são padrões adotados pela
 
 #
 
-- Variável global: Variáveis que estão disponíveis para acesso em qualquer local do programa, ou seja, são as variáveis que estão linkadas ao objeto global que represeta o programa em execução.
+- Variável global: Variáveis que estão disponíveis para acesso em qualquer local do programa, ou seja, são as variáveis que estão linkadas ao objeto global que representa o programa em execução.
 - Varável local: São variáveis que estão visíveis apenas dentro do escopo em que foram definidas, podendo esse ser um escopo de uma função, ou de um bloco (if/while)
 - Variável de classe: Variáveis de acesso apenas a classe (declarados como "static").
 - Variável de instância: Variáveis que foram definidas no corpo de um objeto, e não dentro de métodos do mesmo, sendo essas, nada mais que variáveis locais.
