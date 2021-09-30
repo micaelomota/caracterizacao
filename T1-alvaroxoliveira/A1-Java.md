@@ -18,7 +18,7 @@ Fontes:
 
 # Guia para Caracterização de Linguagens de Programação
 
-+ Linguagem de Programação: <nome>
++ Linguagem de Programação: <Java>
 
   * [Apresentação e histórico](#apresenta--o-e-hist-rico)
   * [Características da Linguagem](#caracter-sticas-da-linguagem)
