@@ -11,7 +11,7 @@ JS é case-sensitive e usa a formatação unicode.
 ## Variáveis
 
 - As variáveis devem ser definidas antes da execução;
-- odem conter 0-9, A-Z, a-z, "\_", mas devem começar com letras, underscore ou "$";
+- Podem conter 0-9, A-Z, a-z, "\_", mas devem começar com letras, underscore ou `$`;
 - Possui nomes reservados que não podem ser usados;
 
 ```
@@ -42,9 +42,16 @@ dado = "Apenas uma string";
 ## Escopo
 
 Uma variável pode ser global, local ou do bloco. A disponibilidade da variável depende de onde ela for declarada.
+
+| Variável | Disponibilidade       |
+| :------- | :-------------------- |
+| var      | escopo global e local |
+| const    | escopo local e bloco  |
+| let      | escopo local e bloco  |
+
 Existia um problema nesse quesito até antes da ECMAScript 6, porque variáveis "var" mesmo sendo declaradas em um escopo local, podiam ser referenciadas externamente. Isso foi resolvido com o uso de "const e let", que se restrigem ao escopo da função.
 
-Para restringir o uso de variáveis também é possível usar:
+Para restringir o uso de var's também é possível usar:
 
 ```
 use strict;
@@ -54,7 +61,7 @@ Se recomenda usar let em escopos de bloco de loop para que essa varáviel receba
 
 ```
 for( let i = 0; i < 10 ; i++ ) {
-  console.log("Teste");
+console.log("Teste");
 }
 ```
 
@@ -68,4 +75,10 @@ for( let i = 0; i < 10 ; i++ ) {
 
 ### Local
 
+As variáveis locais são definidas dentro de uma função.
+
 ### Dinâmico
+
+```
+
+```
