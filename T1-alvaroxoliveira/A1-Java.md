@@ -105,5 +105,28 @@
 
 ## Escopo, tempo de vida e ambientes de referência.
 
+### Escopo e tempo de vida
+
+<body style="text-align: justify">
+    <p>
+      Cada tipo de variável tem seu tipo de escopo e tempo de vida específico:
+    </p>
+    <p>
+      <ol>
+        <li><b>Variáveis de Classe</b>: Declarada dentro de uma classe, fora de todos os blocos, conhecida também como variável estática. Seu tempo de vida vai do inicio do programa até o final da sua execução.</li>
+        <li><b>Variáveis de instância</b>: Seu escopo é definido dentro de uma classe, mas declarada fora de todos os blocos e subprogramas, conhecida como instância. Seu tempo de vida vai desde quando foi declarada até que o objeto instanciado seja removido da memória.</li>
+        <li><b>Variáveis Locais</b>: Seu escopo é definido dentro de um bloco ou subprograma. Seu tempo de vida finaliza quando o bloco ou subprograma seja finalizado. Exemplo é quando um método execute todas as suas instruções.</li>
+      </ol>
+    </p>
+</body>
+
+### Ambientes de Referência
+
+<body style="text-align: justify">
+    <p>
+      A linguagem Java é dita de escopo estático e apesar de ter recursos os quais podemos fazer vinculações dinâmicas, suas variáveis são referenciadas dentro de um ambiente estático.
+    </p>
+</body>
+
 
 
