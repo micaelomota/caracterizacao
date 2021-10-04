@@ -1,0 +1,16 @@
+# Linguagem de Programação: JavaScript 
+
+# Modelo de tradução
+
+Linguagem de programção interpretada.
+
+# Nomes - Variáveis - Vinculação
+
+Vinculação é dinâmica.
+
+# Escopo - Tempo de vida - Ambientes de referência
+
+Em JavaScript, há variáveis locais e globais, multiplos escopos. Temos sempre um objeto global, que no Browser geralmente é o "window", de onde podemos acessar variáveis globais ou declarar novas. Também podemos fazer uso da keyword "var" na declaração, que utiliza o escopo imediato ao contrário da keyword "let" "const". 
+
+O tempo de vida das variáveis é implicit heap-dynamic.
+Há vários ambientes de referência, o global, o quando um método é chamado, recorrência, etc. 
