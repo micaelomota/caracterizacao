@@ -224,9 +224,190 @@
     <p> 
         Apesar de ter recursos que permitem vinculações estáticas e também vinculações dinâmicas, Java é considerada uma linguagem de escopo estático. Desta forma, a referência de variáveis se dá dentro do ambiente estático. 
     </p> 
+    <p> 
+        Java é uma linguagem de escopo estático, portanto suas variáveis são referenciadas dentro do ambiente de referência estático. Por exemplo, um método de uma classe não pode fazer referência a uma variável declarada por um ancestral dela.
+    </p> 
 </div>
 
-Java é uma linguagem de escopo estático, portanto suas variáveis são referenciadas dentro do ambiente de referência estático. Por exemplo, um método de uma classe não pode fazer referência a uma variável declarada por um ancestral dela.
+## Estruturas de controle <h2> 
+
+<div style="text-align: justify">
+    <p> 
+        Uma estrutura de controle é uma forma sintática em uma linguagem de programação que expressa o fluxo de controle sobre uma lista específica de instruções para tomar decisões entre o caminho alternativo ou caminhos dados e executa as instruções na sequência em que aparecem, uma por uma. Essa condição é chamada de cumprimento da sequência. A instrução que será realizada a seguir não está necessariamente localizada na próxima linha. Este cenário é conhecido como transferência de controle do programa.
+    </p> 
+    <p> 
+        Em Java, existem três tipos de estruturas de controle. 
+    </p> 
+    <p> <b>A saber :</b> </p>            
+    </p>
+</div>
+
+<div style="text-align: justify"> 
+<b>1. Ramificações ou declarações condicionais :</b> Usadas para escolher entre dois ou mais caminhos. Determina se uma certa instrução ou bloco de instruções será executado ou não. Se a condição for verdadeira, um bloco da instrução será executado, caso contrário, não. São três: <br> 
+</div>
+
+<div style="text-align: justify"> 
+        <b>1.1 if / else / else if :</b>             
+    </p>
+</div>
+
+<div style="text-align: justify"> 
+        <b>1.1.1 : if </b>             
+    </p>
+</div>
+
+~~~
+    if (condição) { 
+        // código que deverá ser executado caso resposta para a condição seja verdadeira
+    }   
+~~~
+
+<div style="text-align: justify"> 
+        <b>1.1.2 : if, else </b>             
+    </p>
+</div>
+
+~~~
+    if (condição) { 
+        // código que deverá ser executado caso resposta para a condição seja verdadeira
+    } 
+    else { 
+        // código que deverá ser executado caso resposta para a condição verificada no if seja falsa
+    }
+~~~
+
+<div style="text-align: justify"> 
+        <b>1.1.3 : if, else if, else </b>             
+    </p>
+</div>
+
+~~~
+    if (condição1) { 
+        // código que deverá ser executado caso resposta para a condição seja verdadeira
+    } else if (condição2) { 
+        // código que deverá ser executado caso resposta para a condição seja verdadeira
+    } 
+    … 
+    else { 
+        // código que deverá ser executado caso resposta para todas as condições anteriores forem falsas 
+    }
+~~~
+
+<div style="text-align: justify">
+    <p> <b>1.2 Estruturas if, else if e else aninhadas  :</b> As instruções aninhadas significam uma instrução certa estrutura envolvida por uma outra estrutura mais externa.<br>
+</div>
+
+~~~
+    if (condição1) { 
+        // código que deverá ser executado caso resposta para a condição seja verdadeira
+        if (condição2) { 
+            // código que deverá ser executado caso resposta para a condição seja verdadeira          
+        }
+        ...
+    }   
+~~~
+<div style="text-align: justify">
+    <p> 
+        O mesmo pode ser feito para aninhar as demais estruturas. Em tese, é possível encadear ou aninhar blocos infinitamente, mas isso é tido como prejudicial para a legibilidade do código.
+    </p> 
+</div>
+
+<div style="text-align: justify">
+    <p> <b>1.3 Switch case :</b> Usada quando tem-se vários casos para escolher. A expressão switch (condição) é avaliada uma vez e o valor da expressão é comparado com os valores de cada caso. Se houver uma correspondência, o bloco de código associado será executado. Se não houver correspondência, o programa irá procurar a cláusula padrão opcional e, se encontrada, transfere o controle para essa cláusula, executando as instruções associadas.<br>
+</div>
+
+~~~
+    switch (expressão) { 
+        caso n: 
+            bloco de código 
+        caso n+1: 
+            bloco de código 
+        ...
+        padrão: 
+            bloco de código 
+    }
+~~~
+
+<div style="text-align: justify">
+        <b>2. Loops :</b> Usados ​​para iterar por meio de vários valores / objetos e executar repetidamente blocos de código específicos. Os tipos básicos de loop em Java são : <br>          
+    </p>
+</div>
+
+<div style="text-align: justify"> 
+        <b>2.1 for  :</b>             
+    </p>
+</div>
+
+~~~
+    for (expressão 1; condição; expressão 2){
+        // comando que será executado até que a condição não seja 
+            mais respeitada
+    }
+~~~
+
+<div style="text-align: justify"> 
+        <b>2.2 while  :</b>             
+    </p>
+</div>
+
+~~~
+    while (condição) {
+        // comando que será executado até que a condição não seja 
+            mais respeitada
+    }
+~~~
+
+<div style="text-align: justify"> 
+        <b>2.3 do while  :</b>             
+    </p>
+</div>
+
+~~~
+    do {
+		// comando que será executado ao menos uma vez
+    }   
+    while(condição); //Se a resposta pra condição for true o bloco de 
+                        comando é executado novamente.
+~~~
+
+<div style="text-align: justify">
+        <b>3. Ramificação de instruções :</b> usadas para alterar o fluxo de controle em loops. Existem dois tipos em Java :<br>              
+    </p>
+</div>
+
+<div style="text-align: justify"> 
+        <b>3.1 break :</b>             
+    </p>
+</div>
+
+~~~
+    for (expressão 1; condição1; expressão 2){
+        // comando que será executado até que a condição não seja 
+            mais respeitada
+        if (condição2) { 
+            break; //Se a condição2 for verdadeira, sai mais cedo do loop 
+                    mesmo que a condição1 ainda seja respeitada
+        }
+    }
+~~~
+
+<div style="text-align: justify"> 
+        <b>3.2 continue :</b>             
+    </p>
+</div>
+
+~~~
+    for (expressão 1; condição1; expressão 2){
+        // comando que será executado até que a condição não seja 
+            mais respeitada
+        if (condição2) { 
+            continue; //Se a condição2 for verdadeira, pula o resto do 
+                        loop em que estamos
+        }
+    }
+~~~
+
+
 
 #### Referências <h4> 
 <p> 
@@ -247,4 +428,12 @@ https://www.javatpoint.com/static-binding-and-dynamic-binding
 
 <p> 
 https://techvidvan.com/tutorials/static-and-dynamic-binding-in-java-differences-and-examples/
+</p>
+
+<p>
+https://medium.com/javarevisited/control-structures-in-java-conditional-statements-e4d8da0421cc
+</p>
+
+<p>
+https://www.baeldung.com/java-control-structures
 </p>

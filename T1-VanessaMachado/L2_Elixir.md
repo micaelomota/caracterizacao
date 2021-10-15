@@ -160,6 +160,81 @@
     </p> 
 </div>
 
+# Estruturas de controle <h2> 
+
+<div style="text-align: justify">
+    <p> 
+        Uma estrutura de controle é uma forma sintática em uma linguagem de programação que expressa o fluxo de controle sobre uma lista específica de instruções para tomar decisões entre o caminho alternativo ou caminhos dados e executa as instruções na sequência em que aparecem, uma por uma. Essa condição é chamada de cumprimento da sequência. 
+    </p> 
+    <p> 
+        Em Elixir, existem quatro tipos de estruturas de controle. 
+    </p> 
+    <p> <b>A saber :</b> </p>            
+    </p>
+</div>
+
+<div style="text-align: justify"> 
+        <b>1. if e unless :</b> São definidos como macros, não como construções de linguagem. Os únicos valores falsos são "nil" e o booleano false.         
+    </p>
+</div>
+
+<div style="text-align: justify"> 
+        <b>1.1 if :</b>             
+    </p>
+</div>
+
+~~~
+    iex> if String.valid?("String") do
+    ...>   "String válida!" //caso seja string
+    ...> else
+    ...>   "String inválida!" //caso não seja string
+    ...> end  
+~~~
+
+<div style="text-align: justify"> 
+        <b>1.2 unless :</b>             
+    </p>
+</div>
+
+~~~
+    iex> unless is_integer("String") do // Caso não respeite a condição, 
+                                            entra no bloco
+    ...>   "Não é um inteiro!"
+    ...> end
+    "Não é um inteiro!"  
+~~~
+
+<div style="text-align: justify"> 
+        <b>2. case :</b> A instrução Case pode ser considerada uma substituição da instrução switch presente em linguagens imperativas. Case pega uma variável e aplica a correspondência de padrões a ela com diferentes casos. Se houver correspondência de qualquer caso,  executa o código associado a esse caso e sai da instrução. Se nenhuma correspondência for encontrada, ele sai da instrução com um CaseClauseError exebindo que nenhuma cláusula correspondente foi encontrada. Deve-se, sempre, ter um caso com "_" que corresponde a todos os valores. Isso ajuda na prevenção do erro mencionado acima e é comparável ao caso padrão em declarações switch-case.         
+    </p>
+</div>
+
+~~~
+    case value do
+        match1 
+	    match2 
+	    match3 
+	    ...
+	    _ // Executar caso nenhuma correpondência for encontrada 
+    end 
+~~~
+
+<div style="text-align: justify"> 
+        <b>3. cond :</b> As declarações cond são usadas quando queremos executar um código com base em várias condições. Funciona como uma construção if, else em várias outras linguagens de programação.
+
+.         
+    </p>
+</div>
+
+~~~
+    cond do
+        boolean_expressão1 //Executa se a condição for verdadeira
+        boolean_expressão2 //Executa se a condição for verdadeira
+        ...
+        true // Executa se nenhuma das condições acima for verdadeira
+    end
+~~~
+
 #### Referências <h4> 
 <p> 
     https://hexdocs.pm/elixir/1.12/naming-conventions.html#trailing-bang-foo
