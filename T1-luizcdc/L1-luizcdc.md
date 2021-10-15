@@ -34,9 +34,7 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
 
 _Comentar sobre perspectivas / papéis._
 
-
 ![image](./res/python-tree.png)
-
 
 ## Características da Linguagem
 
@@ -76,10 +74,17 @@ _Comentar sobre perspectivas / papéis._
 ## Ecossistema
 
 + Maturidade
+  : Python é uma linguagem com uma visão de projeto clara e muito bem estabelecida, um sistema de governança codificado na documentação do projeto e uma enorme comunidade de usuários. Durante 30 anos de existência em contínuo desenvolvimento, documentação, pacotes, bibliotecas e frameworks de alta qualidade e confiabilidade foram sendo acumulados. Python é, portanto, uma das linguagens de programação mais maduras dentre as mais utilizadas na atualidade.
 + Comunidade
+  : Devido ao seu uso difundido, a comunidade de usuários e desenvolvedores da linguagem é vasta e seus membros são notavelmente tolerantes, respeitosos, acolhedores e muito amigável com iniciantes, sendo Python uma escolha comum na atualidade de primeira linguagem de programação também devido à sua forma de escrever que se aproxima em muitos aspectos da língua inglesa. Dezenas de conferências sobre a linguagem são organizadas independentemente todos os anos por todos os continentes, tendo uma conferência oficial reaizada nos Estados Unidos, a PyCon.
 + Governança
+  : Atualmente o projeto Python (que é de código aberto e de licença GNU General Public License) é governado pela Python Software Foundation, uma organização sem fins lucrativos. Um conselho de cinco membros é eleito pela equipe oficial de desenvolvedores do núcleo da linguagem (Python core team) a cada lançamento de uma nova grande versão (aproximadamente uma vez ao ano). Não mais que dois membros do conselho podem ser empregados de uma mesma empresa para evitar conflitos de interesse.
+  O _Python core team_ é uma lista de desenvolvedores com um histórico notável de contribuições (não somente em código) para o projeto da linguagem, cujo ingresso na lista foi votado por dois terços dos membros ativos da lista e não foi vetado pelo conselho. Já o conselho tem, através de votação por todos seus membros ,poderes de decisão e veto sobre as propostas de melhoramento da linguagem e gerenciar os canais e plataformas associadas à Python Software Foundation. O estatuto de governança da linguagem recomenda que o conselho "use seus poderes o mínimo possível, buscando procurar consenso e estabelecer regras ao invés de apenas decidir as situações caso a caso".
+  Mudanças na linguagem são propostas através de PEPs (Python Enhancement Proposals), que são aceitas ou não pelo conselhos e então aplicadas na implementação de referência (CPython).
+  Em geral, é fácil concluir que o Python tem um dos sistemas de governança mais robustos entre as linguagens de programação FOSS utilizadas na atualidade, o que sugere estabilidade e sucesso de longo prazo ao projeto.
 + Fragmentação
-
+  : Embora haja múltiplas implementações da linguagem, não há em geral "forks" causados por discordâncias nas decisões de governância. Embora cada implementação alternativa tenha seu papel e usos mais apropriados que a implementação de referência, todas procuram seguir implementando as novas funcionalidades trazidas pela implementação principal exceto quando imprático ou impossível, mesmo se um pouco atrasadas na entrega. As comunidades de desenvolvedores das principais implementações alternativas têm um bom relacionamento com a comunidade que participa do desenvolvimento da principal, participando das decisões e muitas vezes contribuindo para ambos os projetos.
+  
 ---
 
 ## Informações Adicionais
@@ -93,4 +98,8 @@ Functional Programming HOWTO - Python 3 Manual
 3. https://github.com/yuce/pyswip
 PySwip
 4. https://docs.python.org/3/faq/general.html#what-is-python
-   General Python FAQ — Python 3.10.0 documentation - What is Python?
+General Python FAQ — Python 3.10.0 documentation - What is Python?
+5. https://www.python.org/community/workshops/
+Conferences and Workshops | Python.org
+6. https://www.python.org/dev/peps/pep-0013/
+PEP 13 -- Python Language Governance | Python.org
