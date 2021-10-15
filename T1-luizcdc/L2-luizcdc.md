@@ -74,9 +74,13 @@ _Comentar sobre perspectivas / papéis._
 ## Ecossistema
 
 + Maturidade
+  : Embora tenha apenas 10 anos de existência, o Elixir é uma linguagem estável e executa numa máquina virtual ainda mais robusta que antecede a sua criação. A interoperabilidade com programas e módulos escritos em Erlang, tal como uma coleção de bibliotecas que já ultrapassa 12 mil pacotes individuais torna o ecossistema do Elixir maduro o suficiente para a construção de aplicações críticas, como bem exemplificado pela adoção da linguagem em grandes organizações como Pinterest, Discord, PepsiCo, Slack, Postmates e Moz.
 + Comunidade
+  : A comunidade em torno do Elixir é amigável e acolhedora, e em geral seus membros são fãs fervorosos da linguagem que se dedicam para acelerar a sua adoção e crescimento da sua popularidade. O time oficial de desenvolvedores da linguagem mantém um [fórum](https://elixirforum.com/about) relativamente movimentado, com quase 3 mil usuários ativos e 425 novos tópicos de discussão por mês.
 + Governança
+  : Um time (Elixir Core Team) de seis membros controla o projeto open-source oficial da linguagem. Não há estatutos que regem decisões e processo de governança.
 + Fragmentação
+  : Até hoje nunca houve implementações alternativas ou forks da linguagem, portanto podemos afirmar que a fragmentação de seu ecossistema é zero.
 
 ---
 
@@ -92,3 +96,5 @@ JIT in Erlang – what does it mean for Elixir?
 Github - elixir-lang/elixir
 4. https://www.monterail.com/blog/famous-companies-using-elixir
 Eight Famous Companies Using Elixir—And Why They Made the Switch
+5. https://hex.pm/packages
+Packages | Hex
