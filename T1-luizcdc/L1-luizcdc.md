@@ -67,6 +67,11 @@ _Comentar sobre perspectivas / papéis._
 + Frameworks e Contâiners
 + Ferramentas Disponíveis
 + Sintaxe, Semântica e Operações Predefinidas
+  + Sistema de Tipos
+    : Python é dinamicamente tipada, segue a ideia de "duck typing" e não requer declarações de tipos de variáveis antes de sua utilização, usando inferência de tipo ao atribuir um valor a um nome previamente inexistente no ambiente de referência atual. Apesar disso, Python é type-safe pois checa os tipos antes de realizar qualquer operação, resultando em exceção se as variáveis e valores envolvidos são de tipos inadequados, e também não permite cópia direta de uma região de memória inicializada com um tipo diferente do tipo do destino. A linguagem também oferece anotação opcional de tipos sem nenhuma consequência em tempo de compilação ou de execução (apenas aumenta legibilidade e auxilia o funcionamento de linters e utilitários checadores de tipos).
+    A linguagem oferece os tipos escalares int, float, complex, bool e None. O tipo int tem precisão arbitrária nativamente, crescendo de acordo com a necessidade. Também oferece os tipos estruturados embutidos list, tuple, range, set, dict, str, bytearray e bytes, e para criar dados estruturados arbitrários há a declaração de classes.
+    Em relação à orientação a objetos, Python oferece uma abordagem incompleta mas flexível. Métodos e atributos nunca são verdadeiramente privados, mas há uma convenção de que atributos cujo nome começa com dois underlines (__varname) devem ser tratados como privados. Pode-se oferecer acesso indireto a esses atributos através de getters e setters (anotação @property). Python suporta herança múltipla, embora seu algoritmo de ordem de resolução de métodos seja um pouco complicado. Não há suporte para declaração de interfaces. Polimorfismo é obtido através do uso de herança (polimorfismo de subtipo) e de "duck typing", não existindo polimorfismo paramétrico.
+    Há apenas equivalência de tipos por nome. Há conversão implícita em certas operações se suportado. Sobrecarga de tipos é possível através de herança (declarar uma classe que heda de um certo tipo sem nenhuma modificação).
   + Legibilidade
   + Redigibilidade
 + Custos
@@ -84,7 +89,7 @@ _Comentar sobre perspectivas / papéis._
   Em geral, é fácil concluir que o Python tem um dos sistemas de governança mais robustos entre as linguagens de programação FOSS utilizadas na atualidade, o que sugere estabilidade e sucesso de longo prazo ao projeto.
 + Fragmentação
   : Embora haja múltiplas implementações da linguagem, não há em geral "forks" causados por discordâncias nas decisões de governância. Embora cada implementação alternativa tenha seu papel e usos mais apropriados que a implementação de referência, todas procuram seguir implementando as novas funcionalidades trazidas pela implementação principal exceto quando imprático ou impossível, mesmo se um pouco atrasadas na entrega. As comunidades de desenvolvedores das principais implementações alternativas têm um bom relacionamento com a comunidade que participa do desenvolvimento da principal, participando das decisões e muitas vezes contribuindo para ambos os projetos.
-  
+
 ---
 
 ## Informações Adicionais
@@ -103,3 +108,5 @@ General Python FAQ — Python 3.10.0 documentation - What is Python?
 Conferences and Workshops | Python.org
 6. https://www.python.org/dev/peps/pep-0013/
 PEP 13 -- Python Language Governance | Python.org
+7. https://stackoverflow.com/a/36826546/11541975
+oop - "public" or "private" attribute in Python ? What is the best way? - Stack Overflow
