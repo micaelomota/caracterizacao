@@ -256,7 +256,10 @@
 </div>
 
 ~~~
-    
+   iex> if true do
+        a = 1 + 2
+        a + 10
+        end 
 ~~~
 
 #### Referências <h4> 
