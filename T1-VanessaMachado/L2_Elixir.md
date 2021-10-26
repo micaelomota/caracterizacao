@@ -167,7 +167,7 @@
         Uma estrutura de controle é uma forma sintática em uma linguagem de programação que expressa o fluxo de controle sobre uma lista específica de instruções para tomar decisões entre o caminho alternativo ou caminhos dados e executa as instruções na sequência em que aparecem, uma por uma. Essa condição é chamada de cumprimento da sequência. 
     </p> 
     <p> 
-        Em Elixir, existem quatro tipos de estruturas de controle. 
+        Em Elixir, existem alguns tipos de estruturas de controle. 
     </p> 
     <p> <b>A saber :</b> </p>            
     </p>
@@ -235,6 +235,30 @@
     end
 ~~~
 
+<div style="text-align: justify"> 
+        <b>4. With:</b> útil quando é possível usar instruções aninhadas ou em situações que não podem ser combinadas de forma limpa. A estrutura with é composta pelas palavras-chave, os geradores e, finalmente, uma expressão.     
+    </p>
+</div>
+
+~~~
+    iex> usuario = %{primeiro: "João", ultimo: "Silva"}
+    %{primeiro: "João", ultimo: "Silva"}
+    iex> with {:ok, primeiro} <- Map.fetch(usuario, :primeiro),
+    ...> {:ok, ultimo} <- Map.fetch(usuario, :ultimo),
+    ...> do: ultimo <> ", " <> primeiro
+
+    Saída: "Callan, Sean"
+~~~
+
+<div style="text-align: justify"> 
+        <b>5. do/end:</b> Permitem definir o bloco inicial e final a ser executado se uma dada condição for atendida.     
+    </p>
+</div>
+
+~~~
+    
+~~~
+
 #### Referências <h4> 
 <p> 
     https://hexdocs.pm/elixir/1.12/naming-conventions.html#trailing-bang-foo
@@ -252,6 +276,28 @@
     https://medium.com/@bdias.ti/elixir-quando-e-como-usar-670a84971f78
 </p> 
 
+<p> 
+https://elixirbridge.org/02_Intro_to_Elixir/07-control-structures.html
+</p>
 
+<p> 
+https://elixirschool.com/en/lessons/basics/control_structures#with-3
+</p>
+
+<p> 
+http://elixir-school.herokuapp.com/en/lessons/basics/control-structures#with
+</p>
+
+<p> 
+https://www.tutorialspoint.com/elixir/elixir_decision_cond.htm
+</p>
+
+<p> 
+https://www.tutorialspoint.com/elixir/elixir_loops.htm
+</p>
+
+<p> 
+https://www.tutorialspoint.com/elixir/elixir_decision_case.htm
+</p>
 
 
