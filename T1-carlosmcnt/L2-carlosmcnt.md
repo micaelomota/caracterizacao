@@ -1,8 +1,14 @@
 # Caracterização de Linguagens de Programação
 
-### Linguagem de Programação: Elixir 
+## Linguagem de Programação: Elixir 
 
-  * [Apresentação e histórico](#apresenta--o-e-hist-rico)
+  * [Apresentação e histórico](#apresentação-e-histórico)
+   * [Características da Linguagem](#características-da-linguagem)
+  * [Capacidades da Linguagem](#capacidades-da-linguagem)
+  * [Produtividade do Desenvolvedor](#produtividade-do-desenvolvedor)
+  * [Ecossistema](#ecossistema)
+  * [Informações Adicionais](#informa--es-adicionais)
+  * [Referências](#referências)
 
 ## Apresentação e histórico
 
@@ -12,6 +18,10 @@ _Na linguagem Elixir, os processos são isolados se comunicam por meio de mensag
 
 _Entre os projetos que utilizam Elixir na sua programação, destacam-se o WhatsApp, Discord, Pinterest, entre outros aplicativos e sites. A presença de Elixir nesses grandes projetos mostram o quão importante ela vem se tornando._
 
+
+___
+## Características da linguagem:
+___
 
 ## Modelo de compilação:
 
@@ -40,7 +50,7 @@ Aliases, pseudônimos também utilizados em Elixir, segue o padrão CamelCase, c
 ```elixir
     File.read!("naoexiste.txt")
 
-    # retorna uma exceção de erro se o arquivo não existir. se existir, retorna o conteúdodo arquivo em um código binário 
+    #Retorna uma exceção de erro se o arquivo não existir. se existir, retorna o conteúdodo arquivo em um código binário 
 ```
 
 "?" no final significa uma função que retorna um valor booleano.
@@ -48,7 +58,7 @@ Aliases, pseudônimos também utilizados em Elixir, segue o padrão CamelCase, c
 ```elixir
     Keyword.keyword?([])
 
-    # se [] é uma palavra-chave, retorna verdade 
+    #Se [] é uma palavra-chave, retorna verdade 
 ```
 
 O prefixo "is_" verifica tipos de variáveis (se ela for par ou impar, por exemplo), estruturas ou se é uma referência, entre outros tipos, com resposta em variável booleana.
@@ -56,7 +66,7 @@ O prefixo "is_" verifica tipos de variáveis (se ela for par ou impar, por exemp
 ```elixir
     Integer.is_odd(7)
 
-    # se 7 é ímpar, retorna verdade 
+    #Se 7 é ímpar, retorna verdade 
 ```
 
 As palavras length e size tem características diferentes do que em outras linguagens. Uma operação que utiliza size roda em tempo constante, pois o tamanho é armazenado por toda a estrutura. Uma operação que utiliza length roda em tempo linear, pois toda a estrutura precisa ser percorrida.
@@ -72,6 +82,10 @@ Existem 2 tipos de variáveis em Elixir:
 As variáveis locais fazem parte do escopo do bloco onde foram declaradas, no qual essas variáveis possuem tempo de vida que dura enquanto a execução da função continuar.
 
 As variáveis globais fazem parte do escopo global, no qual essas variáveis possuem tempo de vida que permanece até o fim da execução do programa.
+
+___
+## Produtividade do desenvolvedor:
+___
 
 ## Estruturas de controle:
 
@@ -143,11 +157,11 @@ iex> with {:ok, first} <- Map.fetch(user, :first),
 "Callan, Sean"  #Saida do código
 ```
 
+___
 ## Referências
 
 1. https://www.hostgator.com.br/blog/elixir-linguagem-programacao-brasileira/
 2. https://medium.com/@fxn/how-does-elixir-compile-execute-code-c1b36c9ec8cf
 3. https://www.tutorialspoint.com/elixir/elixir_variables.htm
 4. https://hexdocs.pm/elixir/1.12/naming-conventions.html
-5. https://elixirschool.com/pt/lessons/basics/control_structures
-    
+5. https://elixirschool.com/pt/lessons/basics/control_structures   

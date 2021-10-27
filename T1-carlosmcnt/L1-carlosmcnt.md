@@ -1,16 +1,26 @@
 # Caracterização de Linguagens de Programação
 
-### Linguagem de Programação: Java
+## Linguagem de Programação: Java
 
-  * [Apresentação e histórico](#apresenta--o-e-hist-rico)
-  * [Características da Linguagem](#caracter-sticas-da-linguagem)
+  * [Apresentação e histórico](#apresentação-e-histórico)
+   * [Características da Linguagem](#características-da-linguagem)
   * [Capacidades da Linguagem](#capacidades-da-linguagem)
   * [Produtividade do Desenvolvedor](#produtividade-do-desenvolvedor)
   * [Ecossistema](#ecossistema)
   * [Informações Adicionais](#informa--es-adicionais)
-  * [Referências](#refer-ncias)
+  * [Referências](#referências)
 
+## Apresentação e histórico
 
+_Java é uma linguagem de programação que atua sob o paradigma da orientação a objetos e foi lançada em 1995 por James Gosling, na empresa Sun Microsystems. Atualmente, Java é a segunda linguagem mais popular no mundo, que mostra o quão importante ela é para o mundo da programação._
+
+_As aplicações em Java são executadas na máquina virtual Java, a JVM, que permite que elas funcionem em qualquer plataforma que possua ela, como dispositivos móveis, aplicações para web, entre outros. Justamente por isso, Java é a linguagem mais utilizada no ambiente corporativo_
+
+_Entre os grandes projetos que utilizam Java, existe o jogo Minecraft, os ambientes de desenvolvimento Eclipse e Netbeans, o aplicativo de download Azureus, etc._
+
+___
+## Características da linguagem:
+___
 ## Modelo de compilação:
 
 Na linguagem Java, os programas são compilados em bytecode, um código intermediário entre o código fonte e o código de máquina. O conteúdo de cada classe no programa base é separado em vários arquivos com extensão .class. Quando o código está prestes a ser executado, o bytecode é convertido, usando o compilador just-in-time, gerando um código de máquina que será inserido na memória e executado.
@@ -116,12 +126,14 @@ O escopo das variáveis locais ocorre no espaço definido para o bloco onde são
 Java é uma linguagem de escopo estático, portanto suas variáveis são referenciadas dentro do ambiente de referência estático. Por exemplo, um método de uma classe não pode fazer referência a uma variável declarada por um ancestral dela. 
 
 Apesar de ser uma linguaguem de escopo estático, Java pode utilizar funções e métodos dinâmicos, como o método Override visto no exemplo da vinculação dinâmica.
-
-## Estruturas de controle:
+___
+## Produtividade do desenvolvedor:
+___
+### Estruturas de controle:
 
 As estruturas de controle são blocos para avaliar variáveis e escolher as direções válidas a depender dos parâmetros informados. Elas especificam o fluxo do controles nos programas e ajuda a tornar os códigos mais claros e precisos. As estruturas podem ser de repetição, condicionais ou estruturas de salto. 
 
-Estruturas de tomadas de decisão:
+### Estruturas de tomadas de decisão:
 
 ### if/else/else if
 
@@ -162,22 +174,95 @@ default:
 }  
 ```
 
-Estruturas de repetição:
+### Estruturas de repetição:
 
 ### for
 
 A estrutura `for` é utilizada para quando sabemos a quantidade de vezes que iremos executar um bloco de código. Primeiro, temos a inicialiazação da variável, depois a checagem da condição no bloco e o incremento ou decremento na variável, que vai definir se o loop continuará ou não. A checagem da condição define até quando o loop irá continuar.
 
 ```java    
+    //O iterador começa em um, incrementa após cada iteração e para quando chegar em 4.
   for(int i=1; i<=4; i++){    
     fat=fat*i;    
   }    
-  System.out.println("O fatorial de 4 é: "+fat);    
+  System.out.println("O fatorial de 4 é: " + fat);    
 ```
 
+### while
 
+A estrutura `while` é utilizada quando não temos a quantidade de vezes que iremos executar um bloco. A única condição desse laço é a que determina até quando ele irá iterar.
 
+```java    
+  //Todos os números menores que 10 serão impressos até que pare no 1.
+  int n = 10;
+  while(n >= 1){    
+    System.out.println(n);
+    n--;   
+  }     
+```
 
+### do while
+
+A estrutura `do while` funciona da mesma forma que o while, com a única diferença sendo a checagem da condição, que é feita após executar o loop. Desse jeito, uma iteração é sempre executada nessa estrutura.
+
+```java    
+  //Todos os números menores que 10 serão impressos até que pare no 1.
+  int n = 10;
+  do {
+    System.out.println(n);
+    n--; 
+  } while(n >= 1);       
+```
+
+### for each
+
+A estrutura `for each` é uma versão diferente da estrutura `for`, pois ela não precisa de um iterador, e uma variável é utilizada para percorrer uma array ou uma outro conjunto de variáveis.
+
+```java
+  //Percorre o vetor de números com a variável numero
+  int numeros[] = {1, 2, 3, 4, 5}
+  for(int numero: numeros) {
+    System.out.println(numero);
+  }        
+```
+
+### Estruturas de salto:
+
+### continue
+
+A estrutura `continue` age de acordo com o que seu próprio nome diz, pois ela passa por uma parte de um loop e continua depois dela, pulando para uma próxima iteração.
+
+```java    
+  //Imprime todos os números de 1 até 10, exceto pelo 5, que é pulado
+  for(int i=1; i<10; i++){ 
+    if(i == 5){
+      continue;
+    }
+    System.out.println(i);
+  }      
+```
+
+### break
+
+A estrutura `break` também age de acordo com o que seu próprio nome diz, pois ela quebra o fluxo do programa e sai de um loop (o mais interno, caso tenha um loop dentro de outro) ou `switch case`.
+
+```java    
+  //Imprime todos os números de 1 até 5, e sai do loop após o break
+  for(int i=1; i<10; i++){ 
+    System.out.println(i);
+    if(i == 5){
+      break;
+    }
+  }      
+```
+
+___
 ## Referências
 
-1. https://www.javatpoint.com/control-flow-in-java
+
+1. https://www.tecmundo.com.br/mercado/222806-5-linguagens-programacao-usadas-2021.htm
+2. https://mauriciogeneroso.medium.com/java-oca-1z0-808-1-1-java-b%C3%A1sico-como-funciona-o-java-a1b93cea39a4
+3. https://www.javatpoint.com/pt/conven%C3%A7%C3%B5es-de-nomenclatura-java
+4. https://www.learningjournal.guru/article/programming-in-java/scope-and-lifetime-of-a-variable/
+5. https://www.javatpoint.com/static-binding-and-dynamic-binding
+6. https://www.javatpoint.com/control-flow-in-java
