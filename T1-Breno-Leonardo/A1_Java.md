@@ -187,9 +187,252 @@ Execução mais rápida | Execução lenta
  
  
 
+## Estruturas de controle
+
+Todas as expressões condicionais usadas nas estruturas de controle são expressões booleanas. O resultado das expressões deve ser sempre true ou false. Não há conversões automáticas envolvendo booleanos em Java (evita erros de programação comuns em C/C++). Como por exemplo:
+
+Esse codigo é aceito em C, já em Java não compila.
+```
+int x= 10;
+if(x=5){
+ ...
+}
+```
+
+Codigo correto:
+```
+int x= 10;
+if(x==5){
+ ...
+}
+```
+
+As estruturas de controle se dividem em:
+
+**Estruturas de seleção**
+
+ if, if-else, switch
+
+**Estruturas de repetição**
+
+ for, while, do-while
+ 
+ **Desvios (somente em estruturas de repetição)**
+ 
+ continue, break, rótulos
+ 
+Java não possui um comando goto, porém “goto” é uma
+palavra reservada.
+
+**Controle Condicional: Seleção simples e dupla**
+
+![image](https://user-images.githubusercontent.com/58619307/139143309-5ffca8c8-7a5d-43ca-a5ac-c29720a79527.png)
+
+Os operadores relacionais para as expressoes booleanas são:
+
+ equal to ==
+
+ not equal to >=
+
+ less than <
+
+ greater than >
+
+ less than or equal to <=
+
+ greater than or equal to >=
+ 
+ Operadores Lógicos:
+ 
+ Operadores && (and), || (or) e ! (not)
+ 
+ ## If
+ 
+Conhecida como declaração condicional, as instruções são executadas se a condição for verdadeira. Chaves não são necessárias se apenas uma afirmação estiver relacionada à condição.
 
 
+```
+if(nota>=9.0){
+  System.out.println("A");
+}
+else if(nota>=8.0){
+  System.out.println("B");
+}
+else
+  System.out.println("C");
+```
+ Neste exemplo é possivel observar a utilização do else if e else, dessa forma, se a expressão booleana 1 for verdadeira, o bloco de código 1 será executado. Caso seja falsa, o bloco de código 1 será ignorado e será testada a expressão booleana 2. Se ela for verdadeira, o bloco de código 2 será executado. Caso contrário, o programa vai ignorar esse bloco de código e executar o bloco 3, declarado dentro do else.
+
+Outra opção é o operador condicional "?",possui a mesma semântica da estrutura if-else, é o unico operador ternário da linguagem Java,o primeiro operando é uma expressão booleana retorna o segundo operando se a expressão condicional for true ou o terceiro operando se for false
+```
+System.out.println( (media >= 7) ? “Aprovado” : “Reprovado” );
+int x = (y != 0) ? 50 : 500;
+String titulo = (sex == 'f') ? "Sra." : "Sr.“ ;
+```
+
+**Seleção múltipla: switch**
+
+Avalia uma expressão de
+números inteiros e tenta
+selecionar um rótulo (case):
+
+Caso haja um case correspondente, transfere o controle para
+a primeira instrução após o
+rótulo
+
+Caso contrário, o controle será
+transferido para a primeira
+instrução após o rótulo
+default
+
+break provoca a saída do
+comando switch
+
+![image](https://user-images.githubusercontent.com/58619307/139147940-a297415e-4f69-4706-98b0-328b049dacf8.png)
+
+```
+switch(expr1) {
+  case expr2:
+    instruções;
+    break;
+  case expr3:
+    instruções;
+    break;
+  default:
+    instruções;
+}
+```
+
+Na instrução switch (expr1),
+expr1 deve ser compatível com
+atribuições do tipo int, sendo
+permitidos os tipos de dados
+short, int, byte ou char, pois
+pode ser feita a coerção (cast)
+para o tipo int, o que não é
+possível com os tipos long ou de
+ponto flutuante.
+
+```
+switch(letra) {
+  case 'A' : System.out.println("A");
+        break;
+  case 'B' : System.out.println("B");
+        break;
+  default : System.out.println("?");
+}
+```
+
+**Estrutura de repetição: while**
+
+Especifica uma ação que será repetida enquanto
+uma condição for verdadeira.
+
+```
+while (expressão booleana){
+  instruções;
+}
+```
+
+```
+int x = 0;
+while (x < 10) {
+  System.out.println ("item " + x);
+  x++;
+}
+```
+
+**Estrutura de repetição: do-while**
+
+![image](https://user-images.githubusercontent.com/58619307/139148705-9d640eb6-af54-4a54-bc1d-1fac138336de.png)
 
 
+O loop será executado pelo menos uma vez, pois a
+condição só é testada no final
+
+```
+do
+{
+  instruções;
+} while (expressão booleana);
+```
+
+```
+int x = 0;
+do {
+  System.out.println ("item " + x);
+  x++;
+} while (x < 10);
+```
+
+**Estrutura de repetição: for**
+
+![image](https://user-images.githubusercontent.com/58619307/139148741-4bde8001-2bf6-49e1-9ef4-953c8285bb5a.png)
 
 
+Repete um bloco de comandos um número prédeterminado de vezes. Normalmente está associada
+a algum contador.
+
+```
+for(inicialização ; expressão booleana ; passo de repetição) {
+  instruções
+}
+```
+
+```
+for ( int x = 0; x < 10; x++ ) {
+  System.out.println ("item " + x);
+}
+```
+
+**Comandos de desvio: break e continue**
+
+break: interrompe a execução do bloco de repetição. Continua com a próxima instrução após o bloco.
+
+continue: interrompe a iteração atual. Ignora as instruções restantes no bloco, testa a condição e reinicia com a próxima iteração.
+
+```
+public static void main( String args[] ) {
+  int count;
+  for ( count = 1; count <= 10; count++ ) {
+    if ( count == 5 )
+      break;
+    System.out.print(count + “ “);
+   } // fim for
+  System.out.println(“\nValor de count: ” + count);
+} // fim main
+```
+Saida: 
+
+1 2 3 4
+
+Valor de count: 5
+
+```
+public static void main( String args[] ) {
+  final int SKIP = 5; // constante
+  for (int count = 1; count <= 10; count++ ) {
+    if ( count == SKIP )
+      continue;
+    System.out.print(count + " ");
+  } // fim for
+  System.out.println("\nNumero " + SKIP + " nao foi impresso");
+} // fim main
+```
+Saida:
+
+1 2 3 4 6 7 8 9 10
+
+Numero 5 nao foi impresso
+
+**Usando rótulos**
+
+break e continue sempre atuam sobre o bloco de repetição
+onde são chamados.
+
+Em blocos de repetição contidos em outros blocos, pode-se usar
+rótulos para fazer break e continue atuarem em blocos externos.
+
+Os rótulos só podem ser usados antes de do, while e for
+
+ As chamadas só podem ocorrer dentro de blocos de repetição
