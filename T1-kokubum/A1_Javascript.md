@@ -100,3 +100,212 @@ obj.minhaFunc2(); // referência do obj
 
 minhaFunc(); //window (objeto global)
 ```
+
+## Estruturas de Controle:
+
+#
+
+Na linguagem Javascript existem algumas estruturas de controle que lhe permitem modificar o fluxo de execução de um programa. Estas estruturas permitem executar o código baseado em condições lógicas ou um número determinado de vezes.
+
+### **1. Condicional:**
+
+#
+
+- **if/else**
+
+```
+if (cipher_char === from_char) {
+   result = result + to_char;
+   x++;
+} else {
+   result = result + clear_char;
+}
+```
+
+- **if/else if**
+
+```
+if (condição1)
+   instrução1 é executada se a condição 1 for verdadeira
+else if (condição2)
+   instrução2 é executada se a condição1 é falsa e a condição2 é verdadeira
+else if (condição3)
+   instrução3 é executada se a condição2 é falsa e a condição3 é verdadeira
+...
+else
+   instruçãoN
+```
+
+Múltiplas condicionais if ... else podem ser aninhados quando necessário. Observe que não existe elseif (em uma palavra). O correto é a instrução com espaços (else if), conforme abaixo:
+
+### **2. Repetição:**
+
+#
+
+- **for_statement**
+
+```
+for ([expressaoInicial]; [condicao]; [incremento])
+  declaracao
+```
+
+1.1 A expressão expressao Inicial é inicializada e, caso possível, é executada. Normalmente essa expressão inicializa um ou mais contadores, mas a sintaxe permite expressões de qualquer grau de complexidade. Podendo conter também declaração de variáveis.
+
+1.2 A expressão condicao é avaliada. caso o resultado de condicao seja verdadeiro, o laço é executado. Se o valor de condicao é falso, então o laço terminará. Se a expressão condicao é omitida, a condicao é assumida como verdadeira.
+
+1.3 A instrução é executada. Para executar múltiplas declarações, use uma declaração em bloco ({ ... }) para agrupá-las.
+
+1.4 A atualização da expressão incremento, se houver, executa, e retorna o controle para o passo 2.
+
+- **do...while_statement**
+
+```
+do
+  declaracao
+while (condicao);
+```
+
+A instrução será executada uma vez antes da condição ser verificada. Para executar multiplas instruções utilize uma declaração de bloco ({ ... }) para agrupá-las.
+
+- **while_statement**
+
+```
+while (condicao)
+  declaracao
+```
+
+Uma declaração while executa suas instruções, desde que uma condição especificada seja avaliada como verdadeira.
+
+- **for...in_statement**
+
+```
+for (variavel in objeto) {
+  declaracoes
+}
+```
+
+A declaração for...in executa iterações a partir de uma variável específica, percorrendo todas as propriedades de um objeto. Para cada propriedade distinta, o JavaScript executará uma iteração.
+
+```
+function dump_props(obj, obj_name) {
+  var result = "";
+  for (var i in obj) {
+    result += obj_name + "." + i + " = " + obj[i] + "<br>";
+  }
+  result += "<hr>";
+  return result;
+}
+
+Output:
+
+car.make = Ford
+car.model = Mustang
+```
+
+- **for...of_statement**
+
+```
+for (variavel of objeto) {
+  declaracoes
+}
+```
+
+A declaração for...of cria uma laço com objetos interativos ((incluindo, Array, Map, Set, assim por conseguinte ), executando uma iteração para o valor de cada propriedade distinta.
+
+```
+let arr = [3, 5, 7];
+arr.foo = "hello";
+
+for (let i in arr) {
+   console.log(i); // logs "0", "1", "2", "foo"
+}
+
+for (let i of arr) {
+   console.log(i); // logs "3", "5", "7"
+}
+```
+
+### **3. Salto**
+
+#
+
+- **label_statement**
+
+```
+label : declaracao
+```
+
+Um label pode usar qualquer idenficador que não seja uma palavra reservada do JavaScript. Você pode identificar qualquer instrução com um label.
+
+```
+markLoop:
+while (theMark == true) {
+   facaAlgo();
+}
+```
+
+- **break_statement**
+
+```
+for (i = 0; i < a.length; i++) {
+  if (a[i] == theValue) {
+    break;
+  }
+}
+```
+
+Use break para terminar laços, switch, ou um conjunto que utiliza label.
+
+```
+var x = 0;
+var z = 0
+labelCancelaLaco: while (true) {
+  console.log("Laço exterior: " + x);
+  x += 1;
+  z = 1;
+  while (true) {
+    console.log("Laço interior: " + z);
+    z += 1;
+    if (z === 10 && x === 10) {
+      break labelCancelaLaco;
+    } else if (z === 10) {
+      break;
+    }
+  }
+}
+```
+
+- **continue_statement**
+
+```
+i = 0;
+n = 0;
+while (i < 5) {
+  i++;
+  if (i == 3) {
+    continue;
+  }
+  n += i;
+}
+```
+
+A declaração continue pode ser usada para reiniciar uma instrução while, do-while, for, ou label.
+
+```
+checkiandj:
+  while (i < 4) {
+    console.log(i);
+    i += 1;
+    checkj:
+      while (j > 4) {
+        console.log(j);
+        j -= 1;
+        if ((j % 2) == 0) {
+          continue checkj;
+        }
+        console.log(j + " é estranho.");
+      }
+      console.log("i = " + i);
+      console.log("j = " + j);
+  }
+```
