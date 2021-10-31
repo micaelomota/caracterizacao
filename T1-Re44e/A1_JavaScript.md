@@ -14,3 +14,17 @@ Em JavaScript, há variáveis locais e globais, além de multiplos escopos. Temo
 
 O tempo de vida das variáveis é implicit heap-dynamic.
 Há vários ambientes de referência, o global, o quando um método é chamado, recorrência, etc. 
+
+# Estruturas de controle
+
+O JavaScript suporta um conjunto compacto de declarações, especificamente de fluxo de controle, que você pode utilizar para atribuir uma grande interatividade as páginas web por exemplo.
+
+Exemplo de uma declaração if-else:
+
+```zsh
+  if (condicao) {
+    declaracao_1;
+  } else {
+    declaracao_2;
+  }
+```
