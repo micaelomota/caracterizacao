@@ -86,20 +86,83 @@
         <li>if and unleess</li>
         <li>do end blocks</li>
     </ol>
+</body>
+
+### Case
+
+<body style="text-align: justify">
     <p>
         Case nos permite compara um valor com muitos padrões até encontrarmos um valor correspondente. Podemos ver o caso de uso que existe no site da linguagem:
     </p>
-    <code> 
-        iex> case {1, 2, 3} do
-        ...>   {4, 5, 6} ->
-        ...>     "This clause won't match"
-        ...>   {1, x, 3} ->
-        ...>     "This clause will match and bind x to 2 in this clause"
-        ...>   _ ->
-        ...>     "This clause would match any value"
-        ...> end
-        "This clause will match and bind x to 2 in this clause"
-    </code>
+</body>
+    
+    iex> case {1, 2, 3} do
+    ...>   {4, 5, 6} ->
+    ...>     "This clause won't match"
+    ...>   {1, x, 3} ->
+    ...>     "This clause will match and bind x to 2 in this clause"
+    ...>   _ ->
+    ...>     "This clause would match any value"
+    ...> end
+    "This clause will match and bind x to 2 in this clause"
+
+<body style="text-align: justify">
+    <p>
+        Para padronizar a correspondência com uma variável existente, é preciso usar o <code>^</code> operador.
+    </p>
 </body>
 
+    iex> case {1, 2, 3} do
+    ...>   {1, x, 3} when x > 0 ->
+    ...>     "Will match"
+    ...>   _ ->
+    ...>     "Would match, if guard condition were not satisfied"
+    ...> end
+    "Will match"
+
+### Cond
+
+
+<body style="text-align: justify">
+    <p>
+        Case é útil quando é preciso comparar valores diferentes. No entanto, em várias circunstancias, queremos verificar várias condições e obter o resultado daquela primeira que não for falsa. Para esse caso usamos o <code>cond</code>. Ele é equivalente ao if/else if em linguagens imperativas. Se todas as condições retornarem <code>nil</code> ou <code>false</code>, um erro <code>CondClauseError</code> será gerado. Então para que isso não ocorra, normalmente é adicionado uma condição no final igual a <code>true<code>, que servirá como um suporte para não cair no erro citado.
+    </p>
+</body>
+
+``` 
+iex> cond do
+...>   2 + 2 == 5 ->
+...>     "This is never true"
+...>   2 * 2 == 3 ->
+...>     "Nor this"
+...>   true ->
+...>     "This is always true (equivalent to else)"
+...> end
+"This is always true (equivalent to else)"
+``` 
+
+### If e Unless
+
+<body style="text-align: justify">
+    <p>
+        Além dessas citadas acima, temos também o if e o unless que tem sua utilidade quando se precisa verificar apenas uma condição. Se a expressão if for verdadeira o bloco entre seu <code>do-end</code> será executado, caso contrário, retorna <code>nil</code> ou <code>false</code>. Exatamente o oposto ocorre para <code>unless</code>. Outra coisa é que também suportam os blocos <code>else</code>.
+    </p>
+</body>
+
+``` iex> if true do
+    ...>   "This works!"
+    ...> end
+    "This works!"
+    iex> unless true do
+    ...>   "This will never be seen"
+    ...> end
+    nil  
+```
+
+
+<body style="text-align: justify">
+    <p>
+        Case é útil quando é preciso comparar valores diferentes. No entanto, em várias circunstancias, queremos verificar várias condições e obter o resultado daquela primeira que não for falsa. Para esse caso usamos o <code>cond</code>. Ele é equivalente ao if/else if em linguagens imperativas. Se todas as condições retornarem <code>nil</code> ou <code>false</code>, um erro <code>CondClauseError</code> será gerado. Então para que isso não ocorra, normalmente é adicionado uma condição no final igual a <code>true<code>, que servirá como um suporte para não cair no erro citado.
+    </p>
+</body>
 
