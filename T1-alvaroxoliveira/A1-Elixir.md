@@ -112,6 +112,7 @@
     </p>
 </body>
 
+``` 
     iex> case {1, 2, 3} do
     ...>   {1, x, 3} when x > 0 ->
     ...>     "Will match"
@@ -119,7 +120,7 @@
     ...>     "Would match, if guard condition were not satisfied"
     ...> end
     "Will match"
-
+``` 
 ### Cond
 
 
@@ -129,18 +130,17 @@
     </p>
 </body>
 
+```
+    iex> cond do
+    ...>   2 + 2 == 5 ->
+    ...>     "This is never true"
+    ...>   2 * 2 == 3 ->
+    ...>     "Nor this"
+    ...>   true ->
+    ...>     "This is always true (equivalent to else)"
+    ...> end
+    "This is always true (equivalent to else)"
 ``` 
-iex> cond do
-...>   2 + 2 == 5 ->
-...>     "This is never true"
-...>   2 * 2 == 3 ->
-...>     "Nor this"
-...>   true ->
-...>     "This is always true (equivalent to else)"
-...> end
-"This is always true (equivalent to else)"
-``` 
-
 ### If e Unless
 
 <body style="text-align: justify">
@@ -158,11 +158,3 @@ iex> cond do
     ...> end
     nil  
 ```
-
-
-<body style="text-align: justify">
-    <p>
-        Case é útil quando é preciso comparar valores diferentes. No entanto, em várias circunstancias, queremos verificar várias condições e obter o resultado daquela primeira que não for falsa. Para esse caso usamos o <code>cond</code>. Ele é equivalente ao if/else if em linguagens imperativas. Se todas as condições retornarem <code>nil</code> ou <code>false</code>, um erro <code>CondClauseError</code> será gerado. Então para que isso não ocorra, normalmente é adicionado uma condição no final igual a <code>true<code>, que servirá como um suporte para não cair no erro citado.
-    </p>
-</body>
-
