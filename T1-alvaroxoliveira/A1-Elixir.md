@@ -95,7 +95,8 @@
         Case nos permite compara um valor com muitos padrões até encontrarmos um valor correspondente. Podemos ver o caso de uso que existe no site da linguagem:
     </p>
 </body>
-    
+
+~~~~
     iex> case {1, 2, 3} do
     ...>   {4, 5, 6} ->
     ...>     "This clause won't match"
@@ -105,22 +106,23 @@
     ...>     "This clause would match any value"
     ...> end
     "This clause will match and bind x to 2 in this clause"
+~~~~ 
 
 <body style="text-align: justify">
     <p>
         Para padronizar a correspondência com uma variável existente, é preciso usar o <code>^</code> operador.
     </p>
+    <code> 
+        iex> case {1, 2, 3} do
+        ...>   {1, x, 3} when x > 0 ->
+        ...>     "Will match"
+        ...>   _ ->
+        ...>     "Would match, if guard condition were not satisfied"
+        ...> end
+        "Will match"
+    </code>
 </body>
 
-``` 
-    iex> case {1, 2, 3} do
-    ...>   {1, x, 3} when x > 0 ->
-    ...>     "Will match"
-    ...>   _ ->
-    ...>     "Would match, if guard condition were not satisfied"
-    ...> end
-    "Will match"
-``` 
 ### Cond
 
 
@@ -130,7 +132,7 @@
     </p>
 </body>
 
-```
+~~~~
     iex> cond do
     ...>   2 + 2 == 5 ->
     ...>     "This is never true"
@@ -140,7 +142,7 @@
     ...>     "This is always true (equivalent to else)"
     ...> end
     "This is always true (equivalent to else)"
-``` 
+~~~~ 
 ### If e Unless
 
 <body style="text-align: justify">
@@ -149,7 +151,8 @@
     </p>
 </body>
 
-``` iex> if true do
+~~~~ 
+    iex> if true do
     ...>   "This works!"
     ...> end
     "This works!"
@@ -157,4 +160,4 @@
     ...>   "This will never be seen"
     ...> end
     nil  
-```
+~~~~
