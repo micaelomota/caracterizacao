@@ -112,23 +112,23 @@
     <p>
         Para padronizar a correspondência com uma variável existente, é preciso usar o <code>^</code> operador.
     </p>
-    <code> 
-        iex> case {1, 2, 3} do
-        ...>   {1, x, 3} when x > 0 ->
-        ...>     "Will match"
-        ...>   _ ->
-        ...>     "Would match, if guard condition were not satisfied"
-        ...> end
-        "Will match"
-    </code>
 </body>
+~~~~
+    iex> case {1, 2, 3} do
+    ...>   {1, x, 3} when x > 0 ->
+    ...>     "Will match"
+    ...>   _ ->
+    ...>     "Would match, if guard condition were not satisfied"
+    ...> end
+    "Will match"
+~~~~
 
 ### Cond
 
 
 <body style="text-align: justify">
     <p>
-        Case é útil quando é preciso comparar valores diferentes. No entanto, em várias circunstancias, queremos verificar várias condições e obter o resultado daquela primeira que não for falsa. Para esse caso usamos o <code>cond</code>. Ele é equivalente ao if/else if em linguagens imperativas. Se todas as condições retornarem <code>nil</code> ou <code>false</code>, um erro <code>CondClauseError</code> será gerado. Então para que isso não ocorra, normalmente é adicionado uma condição no final igual a <code>true<code>, que servirá como um suporte para não cair no erro citado.
+        Case é útil quando é preciso comparar valores diferentes. No entanto, em várias circunstancias, queremos verificar várias condições e obter o resultado daquela primeira que não for falsa. Para esse caso usamos o <code>cond</code>. Ele é equivalente ao if/else if em linguagens imperativas. Se todas as condições retornarem <code>nil</code> ou <code>false</code>, um erro <code>CondClauseError</code> será gerado. Então para que isso não ocorra, normalmente é adicionado uma condição no final igual a <code>true</code>, que servirá como um suporte para não cair no erro citado.
     </p>
 </body>
 
@@ -143,6 +143,7 @@
     ...> end
     "This is always true (equivalent to else)"
 ~~~~ 
+
 ### If e Unless
 
 <body style="text-align: justify">
