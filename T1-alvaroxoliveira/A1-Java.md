@@ -128,5 +128,149 @@
     </p>
 </body>
 
+## Estruturas de controle a nível de Instrução
 
+<body style="text-align: justify">
+    <p>
+      O compilador Java executa o código de cima para baixo. As instruções no código são executadas de acordo com a ordem em que aparecem. No entanto, o Java fornece instruções que podem ser usadas para fazer o controle o fluxo em códigos escritos na linguagem. Essas são chamadas de instruções de fluxo de controle. É um dos recursos fundamentais do Java e também de outras linguagens de programação, que fornece um bom fluxo de programa.
+    </p>
+    <p>
+      O java Fornece três tipos de instruções de fluxo de controle, as quais são:
+    </p>
+    <ol>
+      <li>
+        Declarações de tomada de decisão.
+        <ul>
+          <li>
+            Declarações do tipo <code>if/else if/else</code>.
+          </li>
+          <li>
+            Declarações do tipo <code>switch/case</code>.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Instruções de repetição:
+        <ul>
+          <li>
+            Repetições do tipo <code>for</code>. 
+          </li>
+          <li>
+            Repetições do tipo <code>for-each</code>. 
+          </li>
+          <li>
+            Repetições do tipo <code>while</code>. 
+          </li>
+          <li>
+            Repetições do tipo <code>do-while</code>. 
+          </li>
+        </ul>
+      </li>
+      <li>
+        Declarações de salto (jump).
+        <ul>
+          <li>
+            Declarações do tipo <code>break</code>;
+          </li>
+          <li>
+            Declarações do tipo <code>continue</code>.
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+      Em Java uma instrução do tipo if é chamada de condicional, ou seja, seu uso é para avaliar expressões lógicas. Essa expressão lógica retorna verdadeiro ou falso e com isso há o desvio de fluxo dependendo do resultado da expressão. Existem quatro tipos dessas expressões:
+      <ol>
+        <li>
+          Declaração <code>if</code> simples, na qual o <code>if</code> recebe uma expressão entre parenteses e caso a expressão seja verdadeira ele executa um bloco de código que é declarado logo após os parênteses.
+        </li>
+        <li>
+          Declaração <code>if/else</code>, na qual existe um <code>else</code> logo após o <code>if</code> que executará um bloco de código caso a expressão que o <code>if</code> testou seja falsa.
+        </li>
+        <li>
+          Declaração <code>if/else-if</code>, na qual existem várias condições aninhadas, as quais existe primeiramente um <code>if</code> e logo após condições <code>else if</code> também recebendo outras expressões entre parênteses e executando blocos de código para cada uma dessas outras expressões booleanas e podendo serem terminadas com <code>else</code> caso todas as outras expressões anteriores forem falsas.
+        </li>
+        <li>
+          Declaração <code>if</code> aninhada é basicamente um conjunto de expressões <code>if</code>, na qual existe um <code>if</code> que contem dentro do seu bloco de código outros <code>if</code> ou <code>if-else</code> aninhados.
+        </li>
+      </ol>
+    </p>
+    <p>
+      Em Java as instruções do tipo switch são super parecidas com às instruções do tipo if-else-if. Essas instruções contém vários blocos de código chamados cases, e um único case é executado com base na variável que está sendo alternada. A instrução switch tem uma certa vantagem em ser usada ao invés dos if's aninhados por conta da legibilidade que entrega.
+    </p>
+    <p>
+      Pontos que devem ser levados em consideração ao usar switch:
+    </p>
+    <ul>
+      <li>
+        As condições de case podem ser de tipos primitivos ou enumaration e também, a partir do Java 7 podem ser usadas as Strings.
+      </li>
+      <li>
+        Cases não podem ser duplicados.
+      </li>
+      <li>
+        A instrução default é chamada quando nenhum dos casos corresponde à condição, semelhanto ao else e também é opcional.
+      </li>
+      <li>
+        A instrução break finaliza um bloco de código quando a condição é satisfeita. Também é opcional e o próximo caso é executado.
+      </li>
+      <li>
+        Obviamente ao usar esse tipo de estrutura, a condição case deve ser do mesmo tipo que a váriável usada na expressão switch.
+      </li>
+    </ul>
+    <p>
+      Falando agora sobre loop, no Java precisamos também considerar casos onde precisamos executar certos blocos de código mais de uma vez, então usamos estruturas de controle que chamamos de estruturas de repetição. Para executar esses loops, precisamos também de certas condições, para que haja uma entrada nessas repetições e também para que haja uma parada, pois um loop infinito nunca é um caso desejado para os programadores.
+    </p>
+    <p>
+      Em java temos três tipos de loops que são executados de forma bastante semelhante, apesar da sintaxe de cada um se diferenciar um do outro. Essas formas são:
+    </p>
+    <ul>
+      <li>
+        O loop for.
+      </li>
+      <li>
+        O loop for-each.
+      </li>
+      <li>
+        O loop while.
+      </li>
+      <li>
+        O loop do-while.
+      </li>
+    </ul>
+    <p>
+      O loop for é utilizado quando se há um loop controlado de certa forma que conhecemos o ponto de entrada no loop e o ponto de parada, ou seja, conhecemos quando vamos entrar e quando vamos sair do código. Este loop tem a sintaxe do tipo:
+      <code>for(condicaoDeInicio; condicaoDeParada; controleIncrementoOuDecremento) {// bloco de código associado.}</code>
+    </p>
+    <p>
+      O loop for-each é utilizado quando se deeja um loop iterável para atravessar estruturas de dados mais complexas como arrays ou collections. Neste tipo de loop não há necessidade de haver uma variável iteirável para ser um contador de loop para ser atualizada. O for-each então chega na estrura e executa seu bloco de código para cada um dos elementos dessas estruturas e fornece com isso uma segurança de que não irá dar erro por conta de alguma variável tentando ser acessada mas que na verdade não existe.
+      <code>for(TipoDaEsrutura elemento: nomeDaEsrutura){// bloco de código associado.}</code>
+    </p>
+    <p>
+      No loop While, as instruções são repetidas várias vezes, sem haver um controle tão rigoroso com nos loops anteriores. Esses loops são ideais quando não se sabe exatamente quantas iterações deverão ter para satisfazer as condições. Este loop ele carrega também uma expressão booleana que quando não satisfeita o loop para. Então também caso não seja tão rigorosamente controlado poderá gerar erros. A sintaxe é a seguinte:
+      <code>while(condicao){// bloco de código associado.}</code>
+    </p>
+    <p>
+      No loop do-While, é semelhante filosoficamente com o anterior, porem o bloco de código é executado pelo menos uma vez para depois verificar a condição. Ou seja, é para ser executado quando a quantidade de execuções não é definida e precisamos executar o bloco de código pelo menos uma vez. A sintaxe é a seguinte:
+      <code>do{// bloco de código associado.} while(condicao);</code>
+    </p>
+    <p>
+      Por fim, temos as declarações de Jump (saltos) que são usadas para transferir controle do programa para instruções específicas. Essas instruções basicamente transferem o controle e fluxo para outras partes do programa e existem duas delas bem conhecidas na linguagem Java que são:
+    </p>
+    <ul>
+      <li>
+        O salto break.
+      </li>
+      <li>
+        O salto continue.
+      </li>
+    </ul>
+    <p>
+      O break basicamente serve para parar a execução de um fluxo atual e transferir o controle para uma próxima instrução que está fora daquele contexto ou bloco que está inserido, sempre dentro de uma estrutura switch ou mesmo dentro de uma das estruturas de repetição.
+    </p>
+    <p>
+      O salto continue ao contrário do break, não desvia a instrução para fora da estrutura de repetição ou switch, ele apenas interrompe aquela parte específica e pula para a próxima iteração de forma imediata.
+    </p>
+
+</body>
 
