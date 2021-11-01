@@ -74,5 +74,32 @@
     </p>
 </body>
 
+## Estruturas de controle a nível de Instrução
+
+<body style="text-align: justify">
+    <p>
+        Elixir possui quatro tipos de desvios de controle principais:
+    </p>
+    <ol>
+        <li>case</li>
+        <li>cond</li>
+        <li>if and unleess</li>
+        <li>do end blocks</li>
+    </ol>
+    <p>
+        Case nos permite compara um valor com muitos padrões até encontrarmos um valor correspondente. Podemos ver o caso de uso que existe no site da linguagem:
+    </p>
+    <code> 
+        iex> case {1, 2, 3} do
+        ...>   {4, 5, 6} ->
+        ...>     "This clause won't match"
+        ...>   {1, x, 3} ->
+        ...>     "This clause will match and bind x to 2 in this clause"
+        ...>   _ ->
+        ...>     "This clause would match any value"
+        ...> end
+        "This clause will match and bind x to 2 in this clause"
+    </code>
+</body>
 
 
