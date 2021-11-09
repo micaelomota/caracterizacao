@@ -55,3 +55,85 @@
 		</ol>
 	</p>
 </body> 
+
+#### Trailing bang <code>foo!</code> 
+
+<body>
+	<p>
+		Um trailing bang (ponto de exclamação) significa uma função ou macro em que os casos de falha levantam uma exceção. 
+	</p>
+	<p>
+		Muitas funções vêm em pares, como <code>File.read/1<code/> e <code>File.read!/1<code/>. <code>File.read/1<code/> retornará uma tupla de sucesso ou falha, enquanto <code>File.read!/1<code/> retornará um valor simples ou então levantará uma exceção 
+	</p>
+	<p>
+		A versão sem ! é preferível quando você deseja lidar com resultados diferentes usando correspondência de padrões.
+	</p>
+	<p>
+		No entanto, se você espera que o resultado sempre seja bem-sucedido (por exemplo, se você espera que o arquivo sempre exista), a variação bang pode ser mais conveniente e irá gerar uma mensagem de erro mais útil (do que uma correspondência de padrão com falha) em caso de falha.
+	</p>
+	<p>
+		Mais exemplos de funções emparelhadas: <code>Base.decode16/2<code/> e <code>Base.decode16!/2<code/>, <code>File.cwd/0<code/> e <code>File.cwd!/0<code/>.
+	</p>
+	<p>
+		Existem também algumas funções não emparelhadas, sem variante não bang. O trailing bang ainda significa que gerará uma exceção em caso de falha. Exemplo: <code>Protocol.assert_protocol!/1<code/>.
+	</p>
+</body>
+
+#### Trailing question mark <code>foo?</code>
+
+<body>
+	<p>
+		As funções que retornam um booleano são nomeadas com um ponto de interrogação à direita. 
+	</p>
+	<p>
+		Exemplos: <code>Keyword.keyword?/1</code>, <code>Mix.debug?/0</code>, <code>String.contains?/2</code>.
+	</p>
+	<p>
+		No entanto, as funções que retornam booleanos e são válidas em guardas seguem outra convenção, descrita a seguir. 
+	</p>
+</body>
+
+#### <code>is_</code> prefix <code>is_foo</code>
+
+<body>
+	<p>
+		As verificações de tipo e outras verificações booleanas permitidas nas cláusulas de guarda são nomeadas com um prefixo <code>is_</code>. 
+	</p>
+	<p>
+		Exemplos: <code>Integer.is_even/1</code>, <code>Kernel.is_list/1</code>
+	</p>
+	<p>
+		Essas funções e macros seguem a convenção Erlang de um prefixo <code>is_</code>, em vez de um ponto de interrogação final, precisamente para indicar que são permitidas em cláusulas de guarda.
+	</p>
+	<p>
+		Observe que as verificações de tipo que não são válidas nas cláusulas de proteção não seguem esta convenção. Por exemplo: <code>Keyword.keyword?/1</code>. 
+	</p>
+</body> 
+
+#### Nomes especiais
+
+<body>
+	<p>
+		Alguns nomes têm um significado específico em Elixir. Segue esses casos abaixo:
+	</p>
+</body>
+
+##### length and size
+
+<body>
+	<p>
+		Quando você vê o tamanho em um nome de função, significa que a operação é executada em tempo constante, porque o tamanho é armazenado junto com a estrutura de dados.
+	</p>
+	<p>
+		Exemplos: <code>Kernel.map_size/1</code>, <code>Kernel.tuple_size/1</code>
+	</p>
+	<p>
+		Quando você vê o comprimento, a operação é executada em tempo linear ("tempo O (n)") porque toda a estrutura de dados deve ser percorrida.
+	</p>
+	<p>
+		Exemplos: <code>Kernel.length/1</code>, <code>String.length/1</code>
+	</p>
+	<p>
+		Em outras palavras, as funções que usam a palavra "size" em seu nome levarão o mesmo tempo, independentemente de a estrutura de dados ser pequena ou enorme. Por outro lado, as funções com "length" no nome levarão mais tempo à medida que a estrutura de dados aumenta de tamanho. 
+	</p>
+</body>
