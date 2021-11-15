@@ -30,10 +30,9 @@ Fontes:
 
 ## Apresentação e histórico
 
-Elixir é uma linguagem de programação funcional e concorrente dinâmica e moderna criada em 2011 pelo desenvolvedor brasileiro José Valim, suportando metaprogramação e polimorfismo (através de seus [protocolos](https://elixir-lang.org/getting-started/protocols.html)). Executa na máquina virtual Beam permitindo que interaja e se componha com os programas e bibliotecas disponíveis no Erlang. Tem como objetivo facilitar a construção de aplicações de baixa latência em tempo real, distribuídas e tolerantes a falhas. É empregada no backend de vários serviços e websites como o Pinterest, Moz, The Financial Times e Discord.
+Elixir é uma linguagem de programação funcional e concorrente dinâmica e moderna criada em 2011 pelo desenvolvedor brasileiro José Valim, suportando metaprogramação e polimorfismo (através de seus [protocolos](https://elixir-lang.org/getting-started/protocols.html)). Executa na máquina virtual Beam permitindo que interaja e se componha com os programas e bibliotecas disponíveis no Erlang. Tem como objetivo facilitar a construção de aplicações de baixa latência em tempo real, distribuídas e tolerantes a falhas. É empregada no backend de vários serviços e websites como o Pinterest, Moz, The Financial Times, bet365 e Discord. Segundo o [TIOBE index](https://www.tiobe.com/tiobe-index/), Elixir é uma das 100 linguagens de programação mais populares atualmente, e essa tendência de ganho de popularidade deve-se principalmente à sua excelente performance e ao seu aspecto moderno unido ao rescente crescimento da popularidade da programação funcional.
 
-_Comentar sobre perspectivas / papéis._
-
+##### Árvore genealógica do Elixir:
 
 ![image](./res/elixir-tree.png)
 
@@ -67,6 +66,7 @@ _Comentar sobre perspectivas / papéis._
 + Frameworks e Contâiners
 + Ferramentas Disponíveis
 + Sintaxe, Semântica e Operações Predefinidas
+  + Sistema de Tipos
   + Legibilidade
   + Redigibilidade
 + Custos
