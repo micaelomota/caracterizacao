@@ -108,7 +108,24 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
     : FastAPI acelera e aprimora o desenvolvimento de APIs em Python.  
   + [Kivy](https://kivy.org/)
     : Framework multiplataforma para interfaces gráficas em Python. Permite o desenvolvimento de aplicativos para dispositivos móveis Android e iOS, tal como desktop (Linux, MacOS e Windows).
-+ Ferramentas Disponíveis
++ **Ferramentas Disponíveis**
+  + [Pycharm](https://www.jetbrains.com/pycharm/)
+    : A IDE mais popular para Python construída pela [JetBrains](https://www.jetbrains.com/), criadora do IntelliJ IDEA e Android Studio.
+  + [Pydev](https://www.pydev.org/)
+    : Um plugin incluso na IDE [LiClipse](https://www.liclipse.com/) (um fork do Eclipse) oferecendo suporte ao desenvolvimento de aplicações Python.
+  + [Jupyter](https://jupyter.org/)
+    : Por alguns considerado uma IDE, de certo modo, Jupyter é uma aplicação que permite gerar documentos com fórmulas, ilustrações e exemplos de código Python (que são executados no próprio Jupyter) mostrando a sua saída.
+  + [Pandas](https://pandas.pydata.org/)
+    :  Uma biblioteca de código aberto do Python que oferece análise e manipulação de dados e estatística.
+  + [Matplotlib](https://matplotlib.org/)
+    :  Matplotlib é uma bliblioteca Python que disponibiliza ferramentas para visualização de dados e outras demonstrações visuais, incluindo animações e visualizações interativas.
+  + [NumPy](https://numpy.org/)
+    :  A biblioteca NumPy utiliza de funções e estruturas de dados implementadas em C para acelerar computações em Python, oferecendo fórmulas e computações predefinidas úteis para fins científicos e matemáticos.
+  + [ScyPy](https://scipy.org/)
+    : SciPy é uma biblioteca similar ao NumPy, mas mais focada no aspecto científico. SciPy usa as ferramentas disponibilizadas pelo NumPy para oferecer mais funcionalidades em alto nível e com maior nível de precisão.  
+  + [TensorFlow](https://www.tensorflow.org/) e [PyTorch](https://pytorch.org/)
+    :  Ambas as bibliotecas proporcionam a criação e execução de algoritmos de machine learning e redes neurais no estado da arte. São as bibliotecas mais populares para esses fins considerando todas as linguagens de programação.  
+  
 + Sintaxe, Semântica e Operações Predefinidas
   + Legibilidade
   + Redigibilidade
