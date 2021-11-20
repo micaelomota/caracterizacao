@@ -2,6 +2,87 @@
 
 ### Linguagem de Programação : ELIXIR <h3>
 
+## Histórico <h2>
+<div style="text-align: justify">
+    <p>
+        Criada por José Valim em 2012, a linguagem elixir se tornou muito útil nos últimos tempos. Foi criada em um projeto de pesquisa e desenvolvimento patrocinado pela Plataformatec. O principal objetivo do desenvolvedor era melhorar a flexibilidade e produtividade da Máquina Virtual Erlang (BEAM), mantendo a funcionalidade das ferramentas fornecidas pela Erlang.
+    </p>
+    <p>
+        A linguagem foi lançada sob a licença Apache. Esta licença permite que as pessoas usem, modifiquem e distribuam  sem pagar royalties aos desenvolvedores. Isso pode ser visto como uma das razões por trás da popularidade da Elixir.
+    </p>
+</div>
+
+## Capacidades da linguagem <h2>
+
+### Macros e Metaprogramação <h3>
+<div style="text-align: justify">
+    <p>
+    Metaprogramação é escrever programas que manipulam outros programas ou a si próprios.    Macros é uma funcionalidade do Elixir que permite a extensão da linguagem. Em outras palavras, é possível criar “código que escreve código” em tempo de compilação. É bem útil quando se quer adicionar funcionalidades diferentes na linguagem, ou um “sintax sugar” para deixar o código mais legível.
+    </p>
+</div>
+
+### Segurança e Confiabilidade <h3>
+<div style="text-align: justify">
+    <p>
+    </p>
+</div>
+
+### Performance <h3>
+<div style="text-align: justify">
+    <p>
+        Elixir é uma das melhores linguagens de programação para aplicativos de alta performance.       
+    </p>
+</div>
+
+### Custo <h3>
+<div style="text-align: justify">
+    <p>
+    </p>
+</div>
+
+## Produtividade do Desenvolvedor <h2>
+<div style="text-align: justify">
+    <p>
+        Com o Elixir, os desenvolvedores obterão maior produtividade com menos código. Eles podem escrever código fácil de testar e também de manter. Elixir também é muito escalável e possui um sistema de tolerância a falhas embutido para desastres naturais ou outros eventos imprevistos.  
+    </p>
+</div>
+
+### Ferramentas <h3>
+<div style="text-align: justify">
+    <p>
+        O Elixir conta, por exemplo, com o Mix, uma ferramenta de compilação que fornece tarefas para criar, compilar, testar aplicativos e gerenciar projetos e dependências. E através do Hex, seu package manager oficial, é possível encontrar uma quantidade gigante de libs, incluindo as do Erlang. 
+    </p>
+    <p>
+        Disponibiliza o ExUnit para a realização de testes unitários e, ainda, possui um terminal interativo, o IEx (Elixir’s Interactive Shell), que oferece funcionalidades como: Autocompletar, Histórico e Avaliação de expressões.
+    </p>
+</div>
+
+### Frameworks <h3>
+<div style="text-align: justify">
+    <p>
+        Alguns dos Frameworks mais conhecidos do Elixir são:
+    </p>
+    <p>
+    <b>Phoenix:</b> Permite criar aplicativos interativos na web rapidamente. Pode ser utilizado, portanto, para o desenvolvimento web, de APIs e aplicativos HTML5.<br>
+    <b>Nerves:</b> Trata-se da plataforma e infraestrutura de código aberto que permite criar, implantar e gerenciar dispositivos IoT com total segurança, velocidade e em escala. Também serve para Embedded.<br>
+    <b>Plug:</b> Destinado para aplicações na web.<br>
+    <b>Sugar:</b> Muito utilizado para desenvolvimento web, garantindo rapidez, facilidade e eficácia ao projeto.<br>
+    </p>
+</div>
+
+### Legibilidade e Redigibilidade <h3>
+<div style="text-align: justify">
+    <p>
+        Elixir apresenta sintaxe extremamente legível e inspirada em Ruby, uma linguagem conhecida por ser focada no bem estar do programador. 
+    </p>
+    <p>
+        Podemos, por exemplo, utilizar “?” ou “!” na nomenclatura de funções e variáveis, tornando-as mais legíveis e agradáveis. Parênteses não são obrigatórios e não precisamos declarar o retorno explicitamente em funções com “return”. Também temos “Pattern Matching” (reconhecimento de padrões),”Guards” e o invejável “Pipe Operator”, que torna possível economizar diversas linhas de código e tornar a legibilidade muito alta.
+    </p>
+    <p>
+        Com Elixir temos um código muito mais legível e intuitivo e com uma redigibilidade fácil, permitindo liberdades e abstrações.
+    </p>
+</div>
+
 ## Modelo de Tradução <h2>
 <div style="text-align: justify">
     <p>  
@@ -220,9 +301,7 @@
 ~~~
 
 <div style="text-align: justify"> 
-        <b>3. cond :</b> As declarações cond são usadas quando queremos executar um código com base em várias condições. Funciona como uma construção if, else em várias outras linguagens de programação.
-
-.         
+        <b>3. cond :</b> As declarações cond são usadas quando queremos executar um código com base em várias condições. Funciona como uma construção if, else em várias outras linguagens de programação.    
     </p>
 </div>
 
@@ -261,6 +340,10 @@
         a + 10
         end 
 ~~~
+
+## Ecossistema <h2>
+<p> 
+</p>
 
 #### Referências <h4> 
 <p> 
