@@ -95,7 +95,19 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
 
 ## Produtividade do Desenvolvedor
 
-+ Frameworks e Contâiners
++ **Frameworks e Contâiners**
+  + [Django](https://www.djangoproject.com/)
+    : Django é provavelmente o framework web mais popular em Python. É um framework "full stack". Tem grande flexibilidade e permite a construção de aplicações complexas e escaláveis.
+  + [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+    :  Flask é um framework web também muito popular que compete com o Django, porém com uma filosofia diferente: é um microframework, isto é, não implementa funções que podem ser facilmente acessadas através de bibliotecas de terceiros.
+  + [Bottle](https://bottlepy.org/docs/dev/)
+    : O framework Bottle inclui roteamento, templates e um servidor HTTP embutido, dentre outras utilidades. É mais recomendado para aplicações não muito grandes que cabem num só arquivo (a ideia é que cada arquivos seja uma "garrafa"), tais como APIs não muito complexas.
+  + [Web2py](http://www.web2py.com/)
+    : Inspirado no Django, esse framework full stack é repleto de funcionalidades e oferece uma [IDE própria](https://wingware.com/doc/howtos/web2py). Foi originalmente criado como ferramenta educacional.
+  + [FastAPI](https://fastapi.tiangolo.com/)
+    : FastAPI acelera e aprimora o desenvolvimento de APIs em Python.  
+  + [Kivy](https://kivy.org/)
+    : Framework multiplataforma para interfaces gráficas em Python. Permite o desenvolvimento de aplicativos para dispositivos móveis Android e iOS, tal como desktop (Linux, MacOS e Windows).
 + Ferramentas Disponíveis
 + Sintaxe, Semântica e Operações Predefinidas
   + Legibilidade
