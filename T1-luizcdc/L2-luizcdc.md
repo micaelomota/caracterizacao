@@ -41,6 +41,7 @@ Elixir é uma linguagem de programação funcional e concorrente dinâmica e mod
 + Paradigma
   :  A linguagem provê uma coleção de ferramentas ricas para o paradigma de programação funcional, que são complementadas por uma série características e constructos que favorecem a programação concorrente. A linguagem também oferece um processador de macros poderoso, tornando-se uma das linguagens de programação mais propícias à metaprogramação.
 + Propósito
+  : Foi criada para melhorar a produtividade e capacidade de extensão dentro da máquina virtual do Erlang, ainda mantendo interoperabilidade com as bibliotecas existentes para o Erlang. O objetivo foi de criar uma linguagem com baixa latência, alta performance e capacidade para processar muitos dados com eficiência, trazendo características de outras linguagens modernas ao ecossistema Erlang.
 + Sistema de Tipagem
 + Ambiente de Execução
   : O Elixir é compilado para bytecode da máquina virtual da linguagem Erlang, BEAM (_Bogdan/Björn's Erlang Abstract Machine_). Bytecode gerado pela Elixir é completamente compatível com bytecode Erlang, portanto o ambiente de execução do Elixir inclui todas as bibliotecas e programas disponíveis também para o Erlang, e mantém as mesmas capacidades de interface com bibliotecas e programas de outras linguagens e do sistema operacional.
