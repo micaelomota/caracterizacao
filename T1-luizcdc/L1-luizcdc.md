@@ -84,14 +84,18 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
   : A redefinição de builtins como feito no exemplo só tem efeito no escopo local e não prejudica o funcionamento da linguagem em escopo global.
 
 + Gerenciamento de Ciclo de Vida
-  Python conta com um garbage collector que conta as referências a um objeto e libera a memória ocupada por esse objeto assim que o número de referências a ela chegue a zero. Uma referência pode ser removida com redefinição do um nome (para então guardar a referência para um outro objeto), manualmente com a keyword _del_, ou pela a destruição do seu ambiente de referência(ao finalizar a execução da função, por exemplo).
+  : Python conta com um garbage collector que conta as referências a um objeto e libera a memória ocupada por esse objeto assim que o número de referências a ela chegue a zero. Uma referência pode ser removida com redefinição do um nome (para então guardar a referência para um outro objeto), manualmente com a keyword _del_, ou pela a destruição do seu ambiente de referência (ao finalizar a execução da função, por exemplo).
 + Segurança
+  : Python é memory-safe, type-safe e thread-safe. Não há manipulação de ponteiros, não se pode atribuir uma região de memória de um tipo para outro tipo sem realizar a conversão, e a Global Interpreter Lock impede múltiplas threads acessando a mesma região de memória. Aliasing é permitido.
 + Performance
+  : Python é uma linguagem de alto nível com performance relativamente lenta, porém muitas bibliotecas e subrotinas da linguagem são implementadas e executadas em C ao invés de código nativo Python, portanto para certas aplicações o Python pode igualar ou superar outras linguagens normalmente mais rápidas.
+  ![image](res/speed-graph.png)
 + Escalabilidade
+  : Aplicações complexas e intensivas em requisitos de performance não são muito adequadas para desenvolvimento em Python. Python é muito utilizada para prototipar aplicações, com o desenvolvimento subsequente sendo reiniciado utilizando outra linguagem. Mesmo assim, Python é muito utilizada como uma linguagem de "cola", isto é, para intermediar comunicação entre módulos de um sistema de software escritos em várias linguagens diferentes.
 + Confiabilidade
+  : Python é uma linguagem estável e amplamente adotada, tal como uma das mais populares. Portanto, é altamente estável e confiável, bugs são raros e são detectados e corrigidos muito rapidamente.
 + Concorrência e Threading
-+ Custos
-  _Custos aqui ..._
+  : Python oferece funcionalidade de Threading, porém muito limitada em ganho de performance devido ao GIL explicado no item "custos" da seção "Características da Linguagem". O GIL, por outro lado, garante a thread-safety da linguagem, portanto se performance não é a preocupação principal pode ser uma boa escolha.  
 
 ## Produtividade do Desenvolvedor
 
@@ -108,13 +112,13 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
     : FastAPI acelera e aprimora o desenvolvimento de APIs em Python.  
   + [Kivy](https://kivy.org/)
     : Framework multiplataforma para interfaces gráficas em Python. Permite o desenvolvimento de aplicativos para dispositivos móveis Android e iOS, tal como desktop (Linux, MacOS e Windows).
+  + [Jupyter](https://jupyter.org/)
+    : Por alguns considerado uma IDE, de certo modo, Jupyter é uma aplicação que permite gerar documentos com fórmulas, ilustrações e exemplos de código Python (que são executados no próprio Jupyter) mostrando a sua saída.
 + **Ferramentas Disponíveis**
   + [Pycharm](https://www.jetbrains.com/pycharm/)
     : A IDE mais popular para Python construída pela [JetBrains](https://www.jetbrains.com/), criadora do IntelliJ IDEA e Android Studio.
   + [Pydev](https://www.pydev.org/)
     : Um plugin incluso na IDE [LiClipse](https://www.liclipse.com/) (um fork do Eclipse) oferecendo suporte ao desenvolvimento de aplicações Python.
-  + [Jupyter](https://jupyter.org/)
-    : Por alguns considerado uma IDE, de certo modo, Jupyter é uma aplicação que permite gerar documentos com fórmulas, ilustrações e exemplos de código Python (que são executados no próprio Jupyter) mostrando a sua saída.
   + [Pandas](https://pandas.pydata.org/)
     :  Uma biblioteca de código aberto do Python que oferece análise e manipulação de dados e estatística.
   + [Matplotlib](https://matplotlib.org/)
@@ -127,8 +131,45 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
     :  Ambas as bibliotecas proporcionam a criação e execução de algoritmos de machine learning e redes neurais no estado da arte. São as bibliotecas mais populares para esses fins considerando todas as linguagens de programação.  
   
 + Sintaxe, Semântica e Operações Predefinidas
-  + Legibilidade
-  + Redigibilidade
+  + Estruturas de controle
+    + Seleção
+      : Há if, elif (equivalente a else if) e else. If e else também podem ser usados numa única linha, similar ao operador ternário do C.
+
+        ```Python
+        x = 'Olá!' if y == '' else 'Olá, ' + y + '!'
+        ```
+
+      : Recentemente na versão 3.10, o Python ganhou o statement "match-case", similar a um statement "switch" mas com pattern matching (portanto mais "poderoso"). O exemplo abaixo foi retirado da [documentação do Python 3.10](https://docs.python.org/3/whatsnew/3.10.html):
+
+        ```Python
+        # point is an (x, y) tuple
+        match point:
+            case (0, 0):
+                print("Origin")
+            case (0, y):
+                print(f"Y={y}")
+            case (x, 0):
+                print(f"X={x}")
+            case (x, y):
+                print(f"X={x}, Y={y}")
+            case _:
+                raise ValueError("Not a point")
+        ```
+
+      : Não há branching incondicional em Python.
+
+    + Repetição
+      : Existem dois tipos de loops em Python, _for_ e _while_. _While_ é controlado por condição (checagem de condição verdadeira ou falsa) e o _for_ através de iteração (necessariamente percorre um objeto iterável). Para realizar repetição por contagem, há o construtor _range_ que gera uma estrutura iterável dinâmica (em Python chamada de _generator_) que percorre a sequência numérica especificada.
+  + Legibilidade e Redigibilidade
+    : Python tem no centro de sua filosofia a legibilidade. Existe um poema incluso com a linguagem (acessível através do statement "import this") chamado "Zen of Python" que representa essa filosofia. Nele há trechos que dizem: "Belo é melhor que feio", "Explícito é melhor que implícito", "Simples é preferível a complexo", "Deve haver uma maneira óbvia – e preferivelmente única – de fazer algo" e "Legibilidade importa". Essas orientações demonstram a preocupação dos desenvolvedores da linguagem e os desenvolvedores que utilizam a linguagem a aderir à maneira "pythônica" de escrever código. Além disso, consistência é igualmente valorizada. A sintaxe e semântica do Python foi construída justamente para se assemelhar a pseudocódigo escrito baseado na lingua inglesa, portanto ser fácil de ler.
+    As operações/constructos predefinidas e as maneiras simples oferecidas de realizar procedimentos às vezes complexos em outras linguagens tornam Python também altamente redigível. Um exemplo são as comprehensions, que iteram sobre os elementos de uma coleção para gerar uma nova coleção de acordo com regras especificadas, tudo numa única linha de código com uma sintaxe simples:
+          
+      ```Python
+      # cria uma nova lista elevando ao quadrado apenas os elementos
+      # da lista antiga que eram inteiros
+      new_list = [x ** 2 for x in old_list if isinstance(x,int)]
+      ```
+     : Existem críticas que podem ser feitas a às decisões de design do Python, porém. O uso de indentação para definir escopos pode resultar em pouco espaço para escrever o código em níveis de identação mais profundos, também causando perda de flexibilidade. A ausência de declaração de tipos pode dificultar a compreensão da natureza dos argumentos de uma função, por exemplo, mas isso é mitigado com as anotações de tipos opcionais.
 + Custos
 
 ## Ecossistema
