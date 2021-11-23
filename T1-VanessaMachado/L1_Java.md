@@ -14,11 +14,8 @@
         Java é uma linguagem de programação expressamente projetada para uso no ambiente distribuído da Internet. Ele foi projetado para ter a “aparência e comportamento” da linguagem de programação C ++ , mas é mais simples de usar e impõe um modelo de programação orientado a objetos .
      </p>
      <p>
-        Foi testado, refinado, estendido e comprovado por uma comunidade dedicada de desenvolvedores, arquitetos e entusiastas de Java. Apesar de suas origens remontar a quase duas décadas, Java tem evoluído de forma consistente ao longo dos anos. 
+        Foi testado, refinado, estendido e comprovado por uma comunidade dedicada de desenvolvedores, arquitetos e entusiastas de Java. Apesar de suas origens remontar a quase duas décadas, Java tem evoluído de forma consistente ao longo dos anos. Mesmo entre a ascensão de linguagens rivais,permanece popular entre as empresas. 
     </p>
-
-
-
 </div>
 
 ## Capacidades da linguagem <h2>
@@ -61,6 +58,19 @@
     </p>
     <p>
         Por outro lado, Java é uma linguagem interpretada, por isso, ainda é um pouco mais lenta do que as linguagens compiladas, por exemplo, C, C ++, etc.
+    </p>
+</div>
+
+### Escalabilidade <h3>
+<div style="text-align: justify">
+    <p>
+        Escalabilidade significa que um aplicativo pode lidar com mais e mais usuários alterando a configuração do hardware em vez do próprio aplicativo. Normalmente, isso significa, entre outras coisas, que é particionado em partes que podem ser executadas em servidores separados.
+    </p>
+    <p>
+        Escalável pode significar coisas diferentes no contexto da linguagem de programação e do tempo de execução.
+    </p>
+    <p>
+    A linguagem Java suporta modularidade e verificação estática em um nível suficiente para construir grandes sistemas (grandes projetos com vários desenvolvedores etc.). O desempenho de compilação e tempo de execução é suficiente para ter um ambiente de compilação e teste de integração contínua para um grande projeto. Existem ferramentas de suporte suficientes para análise, depuração, criação de perfil, entre outros. A linguagem e as bibliotecas fornecem fornecem algoritmos e estruturas de dados assintoticamente ideais.As construções de linguagem permitem e exploram o potencial de otimização e se adaptam bem ao hardware moderno. Por outro lado o tempo de execução, em java, não está livre de sobrecarga e custos de funcionalidade desnecessários ou indesejados,em particular, há muita sobrecarga de espaço. 
     </p>
 </div>
 
@@ -561,6 +571,13 @@
 <p> 
     A maturidade, padrões, multiplataforma, retrocompatibilidade e a maior comunidade de desenvolvimento do mundo são algumas das características que tornam o Java a principal plataforma de desenvolvimento. 
 </p>
+<p>
+    A comunidade de desenvolvedores Java reúne-se em grupo denominados JUGs (Java User Groups). No Brasil o movimento de grupos de usuários expandiu-se bastante e tem formado alguns dos maiores grupos de usuários Java do mundo,como por exemplo, o PortalJava, GUJ e o JavaFree.
+</p>
+<p>
+    Java representa um enorme ecossistema e fonte de empregos. Estima-se que existam nove milhões de desenvolvedores Java em todo o mundo em 2017, de acordo com a Oracle. Uma pesquisa recente no site de empregos Dice.com encontrou quase 12.000 empregos relacionados a Java nos EUA, em comparação com aproximadamente 9.000 empregos em JavaScript e 7.600 em Python.
+</p>
+
 
 
 ## Referências <h2> 

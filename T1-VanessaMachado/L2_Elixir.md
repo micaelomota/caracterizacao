@@ -34,6 +34,13 @@
     </p>
 </div>
 
+### Escalabilidade <h3>
+<div style="text-align: justify">
+    <p>
+        Como o Elixir é executado em Erlang VM, ele é capaz de executar aplicativos em vários nós de comunicação. Isso facilita a criação de aplicativos da Web e IoT maiores que podem ser escalados em vários servidores diferentes. Ter vários servidores virtualizados em um sistema distribuído também leva a um melhor desempenho do aplicativo.
+    </p>
+</div>
+
 ### Custo <h3>
 <div style="text-align: justify">
     <p>
@@ -342,8 +349,15 @@
 ~~~
 
 ## Ecossistema <h2>
-<p> 
+<p>
+Embora Elixir seja uma linguagem bastante jovem, tem tempo para desenvolver uma comunidade de usuários ativa, onde até mesmo engenheiros altamente qualificados estão dispostos a ajudar e compartilhar seus conhecimentos. Além disso, há muita ajuda ou tutoriais facilmente disponíveis para desenvolvedores que trabalham com Elixir.
 </p>
+<p>
+Apresenta ótima documentação. Tudo o que precisamos  saber sobre a linguagem está disponível na internet, de forma bem clara. Isso geralmente é um déficit em linguagens que estão a pouco tempo no mercado. Mas no caso de Elixir, isso não ocorre.
+Apesar da comunidade ainda não ser tão grande, temos MUITO conteúdo para aprendizado na web.
+</p>
+
+
 
 #### Referências <h4> 
 <p> 
@@ -386,4 +400,19 @@ https://www.tutorialspoint.com/elixir/elixir_loops.htm
 https://www.tutorialspoint.com/elixir/elixir_decision_case.htm
 </p>
 
+<p> 
+https://medium.com/true-henrique/elixir-10-motivos-para-aprender-6cd4d6876f05
+</p>
+
+<p>
+https://www.cleverism.com/skills-and-tools/elixir/ 
+</p>
+
+<p> 
+https://www.hostgator.com.br/blog/elixir-linguagem-programacao-brasileira/
+</p>
+
+<p> 
+https://outsourceit.today/how-good-is-elixir-performance/
+</p>
 
