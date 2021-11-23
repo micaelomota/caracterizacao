@@ -8,7 +8,7 @@
 ## HISTÓRICO <h2>
 <div style="text-align: justify"> 
 
-![Evolução da linguagem JAVA, contendo pais e filhos:](/caracterização/T1-VanessaMachado/evoluçãoJava.jpg)   
+![Evolução da linguagem JAVA, contendo pais e filhos:](./T1-VanessaMachado/evoluçãoJava.jpg)   
     <p>
         Java é uma linguagem de programação orientada a objetos.Começou a ser desenvolvida em 1991, na Sun Microsystems. Teve inicio com o Green Project, no qual os mentores foram Patrick Naughton, Mike Sheridan, e James Gosling. Este projeto, inicialmente, não tinha intenção de criar uma linguagem de programação, mais sim de antecipar a “próxima onda” que aconteceria na área da informática e programação.
     </p>
@@ -142,7 +142,7 @@
     </p> 
     <p> <b>Tipos:</b> </p> 
         <b>Variáveis ​​de instância :</b> Aquela que é declarada dentro de uma classe, mas fora fora de quaisquer métodos e blocos;<br>
-        <b>Variáveis ​​de classe :</b> Aquela que é declarada dentro de uma classe, fora de todos os blocos e é declarada como estática;
+        <b>Variáveis ​​de classe :</b> Aquela que é declarada dentro de uma classe, fora de todos os blocos e é declarada como estática;<br>
         <b>Variáveis ​​Locais :</b> TAquelas declaradas no início de um subalgoritmo. São visíveis, ou seja, podem ser utilizadas somente pelo subalgoritmo onde foram declaradas. Outros subalgoritmos ou mesmo o algoritmo principal não podem utiliza-las;<br>
     </p>
 </div>
