@@ -7,11 +7,8 @@
 
 ## HISTÓRICO <h2>
 <div style="text-align: justify"> 
-    <p>
-        Evolução da linguagem JAVA, contendo pais e filhos:
-    </p>
-    
-![Evolução da linguagem JAVA, contendo pais e filhos:](/evoluçãoJava.jpg)   
+
+![Evolução da linguagem JAVA, contendo pais e filhos:](T1-VanessaMachado/evoluçãoJava.jpg)   
     <p>
         Java é uma linguagem de programação orientada a objetos.Começou a ser desenvolvida em 1991, na Sun Microsystems. Teve inicio com o Green Project, no qual os mentores foram Patrick Naughton, Mike Sheridan, e James Gosling. Este projeto, inicialmente, não tinha intenção de criar uma linguagem de programação, mais sim de antecipar a “próxima onda” que aconteceria na área da informática e programação.
     </p>
