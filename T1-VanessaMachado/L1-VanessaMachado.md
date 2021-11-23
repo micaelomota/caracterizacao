@@ -8,18 +8,18 @@
 ## HISTÓRICO <h2>
 <div style="text-align: justify"> 
 
-![Evolução da linguagem JAVA, contendo pais e filhos:](./T1-VanessaMachado/evoluçãoJava.jpg)   
+![Evolução da linguagem JAVA, contendo pais e filhos:](https://github.com/NessaMd/caracterizacao/blob/main/T1-VanessaMachado/evolucaoElixir.jpg)   
     <p>
-        Java é uma linguagem de programação orientada a objetos.Começou a ser desenvolvida em 1991, na Sun Microsystems. Teve inicio com o Green Project, no qual os mentores foram Patrick Naughton, Mike Sheridan, e James Gosling. Este projeto, inicialmente, não tinha intenção de criar uma linguagem de programação, mais sim de antecipar a “próxima onda” que aconteceria na área da informática e programação.
+    Java é uma linguagem de programação orientada a objetos.Começou a ser desenvolvida em 1991, na Sun Microsystems. Teve inicio com o Green Project, no qual os mentores foram Patrick Naughton, Mike Sheridan, e James Gosling. Este projeto, inicialmente, não tinha intenção de criar uma linguagem de programação, mais sim de antecipar a “próxima onda” que aconteceria na área da informática e programação.
     </p>
     <p>
-        Nesta época, a internet estava ficando cada vez mais popular, e a equipe do Green Project começou a pensar em aplicações para o Oak na internet, onde a palavra chave é interação. Eles conseguiram adaptar a linguagem Oak para a internet, e em 1995 foi lançado o Java, que era uma versão atualizada do Oak para a internet.
+    Nesta época, a internet estava ficando cada vez mais popular, e a equipe do Green Project começou a pensar em aplicações para o Oak na internet, onde a palavra chave é interação. Eles conseguiram adaptar a linguagem Oak para a internet, e em 1995 foi lançado o Java, que era uma versão atualizada do Oak para a internet.
     </p>
     <p>
-        Java é uma linguagem de programação expressamente projetada para uso no ambiente distribuído da Internet. Ele foi projetado para ter a “aparência e comportamento” da linguagem de programação C ++ , mas é mais simples de usar e impõe um modelo de programação orientado a objetos .
+    Java é uma linguagem de programação expressamente projetada para uso no ambiente distribuído da Internet. Ele foi projetado para ter a “aparência e comportamento” da linguagem de programação C ++ , mas é mais simples de usar e impõe um modelo de programação orientado a objetos .
      </p>
      <p>
-        Foi testado, refinado, estendido e comprovado por uma comunidade dedicada de desenvolvedores, arquitetos e entusiastas de Java. Apesar de suas origens remontar a quase duas décadas, Java tem evoluído de forma consistente ao longo dos anos. Mesmo entre a ascensão de linguagens rivais,permanece popular entre as empresas. 
+    Foi testado, refinado, estendido e comprovado por uma comunidade dedicada de desenvolvedores, arquitetos e entusiastas de Java. Apesar de suas origens remontar a quase duas décadas, Java tem evoluído de forma consistente ao longo dos anos. Mesmo entre a ascensão de linguagens rivais,permanece popular entre as empresas. 
     </p>
 </div>
 
@@ -588,6 +588,7 @@
 </div>
 
 ## ECOSSISTEMA <h2>
+<div style="text-align: justify">
 <p> 
     A maturidade, padrões, multiplataforma, retrocompatibilidade e a maior comunidade de desenvolvimento do mundo são algumas das características que tornam o Java a principal plataforma de desenvolvimento. 
 </p>
@@ -597,4 +598,68 @@
 <p>
     Java representa um enorme ecossistema e fonte de empregos. Estima-se que existam nove milhões de desenvolvedores Java em todo o mundo em 2017, de acordo com a Oracle. Uma pesquisa recente no site de empregos Dice.com encontrou quase 12.000 empregos relacionados a Java nos EUA, em comparação com aproximadamente 9.000 empregos em JavaScript e 7.600 em Python.
 </p>
+</div>
 
+## INFORMAÇÕES ADICIONAIS <h2> 
+
+### REFERÊNCIAS: <h3> 
+<p> 
+https://www.learningjournal.guru/article/programming-in-java/scope-and-lifetime-of-a-variable/
+</p>
+
+<p> 
+https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html
+</p>
+
+<p> 
+https://www.geeksforgeeks.org/compilation-execution-java-program/
+</p>
+
+<p> 
+https://www.javatpoint.com/static-binding-and-dynamic-binding
+</p>
+
+<p> 
+https://techvidvan.com/tutorials/static-and-dynamic-binding-in-java-differences-and-examples/
+</p>
+
+<p>
+https://medium.com/javarevisited/control-structures-in-java-conditional-statements-e4d8da0421cc
+</p>
+
+<p>
+https://www.baeldung.com/java-control-structures
+</p>
+
+<p> 
+http://b.web.umkc.edu/buckleyb/cs_441.htm
+</p>
+
+<p>
+https://www.devmedia.com.br/principais-ferramentas-de-apoio-ao-desenvolvimento-java/34126 
+</p>
+
+<p> 
+https://www.redhat.com/pt-br/topics/cloud-native-apps/what-is-a-Java-framework
+</p>
+
+<p> 
+https://codeinstitute.net/blog/what-is-java/
+</p>
+
+<p> 
+https://www.devmedia.com.br/java-historia-e-principais-conceitos/25178
+</p>
+
+
+<p> 
+https://www.javatpoint.com/why-java-is-secure
+</p>
+
+<p> 
+https://www.javatpoint.com/features-of-java#High-Performance
+</p>
+
+<p> 
+https://blogs.oracle.com/java/post/metaprogramming-manipulating-data-about-data
+</p>
