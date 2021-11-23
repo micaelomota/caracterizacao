@@ -495,11 +495,9 @@
 </div>
 
 ### CUSTO: <h3>
-<div style="text-align: justify">
-    <p>
+<p style='text-align: right;'>  
         É projetado para permitir o desenvolvimento de aplicativos portáteis de alto desempenho para a mais ampla gama de plataformas de computação possível, permitindo, portanto, os princípios fundamentais de acessibilidade abrangente, bem como interação de plataforma cruzada. Ao disponibilizar aplicativos em ambientes heterogêneos, as empresas podem fornecer mais serviços e aumentar a produtividade, comunicação e colaboração do usuário final - e reduzir drasticamente o custo de propriedade de aplicativos corporativos e de consumo.
-    </p>
-</div>
+</p> 
 
 ## PRODUTIVIDADE DO DESENVOLVEDOR <h2>
 <div style="text-align: justify">
