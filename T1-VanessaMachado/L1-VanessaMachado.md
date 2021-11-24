@@ -5,12 +5,12 @@
 <p>
 </p>
 
-* [Histórico e Apresentação](#historico-e-apresentação)
-* [Características da Linguagem](#características-da-linguagem)
-* [Capacidades da Linguagem](#capacidade-da-linguagem)
-* [Produtividade do desenvolvedor](#produtividade-do-desenvolvedor)
-* [Ecossistema](#ecossistema)
-* [Informações Adicionais](#informações-adicionais)
+* [HISTÓRICO E APRESENTAÇÃO](#historico-e-apresentação)
+* [CARACTERÍSTICAS DA LINGUAGEM](#características-da-linguagem)
+* [CAPACIDADES DA LINGUAGEM](#capacidade-da-linguagem)
+* [PRODUTIVIDADE DO DESENVOLVEDOR](#produtividade-do-desenvolvedor)
+* [ECOSSISTEMA](#ecossistema)
+* [INFORMAÇÕES ADICIONAIS](#informações-adicionais)
   
 
 ## HISTÓRICO E APRESENTAÇÃO <h2>
