@@ -1,4 +1,4 @@
-# Trabalho 1 : Versão Final L1 <h1>
+# Trabalho 1 : Versão Final L2 <h1>
 ##### Autoria: Vanessa Machado Araújo <h5>
 
 ### Linguagem de Programação : Elixir <h3>
