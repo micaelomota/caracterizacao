@@ -5,7 +5,14 @@
 <p>
 </p>
 
-## HISTÓRICO <h2>
+* [Histórico e Apresentação](#HISTÓRICO-E-APRESENTAÇÃO)
+* [Características da Linguagem](#CARACTERÍSTICAS-DA-LINGUAGEM)
+* [Capacidades da Linguagem](#CAPACIDADES-DA-LINGUAGEM)
+* [Produtividade do desenvolvedor](#PRODUTIVIDADE-DO-DESENVOLVEDOR)
+* [Ecossistema](#ECOSSISTEMA)
+* [Informações Adicionais](#INFORMAÇÕES-ADICIONAIS)
+
+## HISTÓRICO E APRESENTAÇÃO <h2>
 <div style="text-align: justify"> 
     <p>
         Origem da linguagem Elixir:
@@ -200,7 +207,92 @@
     </p> 
 </div>
 
-### ESTRUTURAS DE CONTROLE <h3> 
+## CAPACIDADES DA LINGUAGEM <h2>
+
+### MACROS E METAPROGRAMAÇÃO: <h3>
+<div style="text-align: justify">
+    <p>
+    Metaprogramação é escrever programas que manipulam outros programas ou a si próprios.    Macros é uma funcionalidade do Elixir que permite a extensão da linguagem. Em outras palavras, é possível criar “código que escreve código” em tempo de compilação. É bem útil quando se quer adicionar funcionalidades diferentes na linguagem, ou um “sintax sugar” para deixar o código mais legível.
+    </p>
+</div>
+
+### SEGURANÇA E CONFIABILIDADE: <h3>
+<div style="text-align: justify">
+    <p>
+        Com relação a segurança, sabe-se que uma das características mais positivas da linguagem  Elixir é sua tolerância a falhas. Ela fornece mecanismos de segurança que permitem que a aplicação continue funcionando mesmo quando algo dá errado. Os processos alertam sobre uma falha nos processos dependentes, mesmo em outros servidores, para que os problemas possam ser corrigidos imediatamente.
+    </p>
+    <p>
+        Como já dito em outro tópico, foi na base do Erlang que José Valim desenvolveu o Elixir. Sendo mantido todo o poder da linguagem mãe, como é o caso da confiabilidade.essa manuntenção é possível pois o Elixir compila para a máquina virtual do Erlang, o BEAM (Bogdan’s Erlang Abstract Machine).
+    </p>
+</div>
+
+### PERFORMANCE: <h3>
+<div style="text-align: justify">
+    <p>
+        Elixir é uma das melhores linguagens de programação para aplicativos de alta performance.       
+    </p>
+</div>
+
+### ESCALABILIDADE: <h3>
+<div style="text-align: justify">
+    <p>
+        Como o Elixir é executado em Erlang VM, ele é capaz de executar aplicativos em vários nós de comunicação. Isso facilita a criação de aplicativos da Web e IoT maiores que podem ser escalados em vários servidores diferentes. Ter vários servidores virtualizados em um sistema distribuído também leva a um melhor desempenho do aplicativo.
+    </p>
+</div>
+
+### CUSTO: <h3>
+<div style="text-align: justify">
+    <p>
+    Elixir é ótimo para aplicações que precisam ter alta disponibilidade, apresenta muito boa capacidade de resposta. Sua aplicação pode responder a requisições independente de quantos clientes estão conectados. Ela nunca quebra. Mesmo que você tenha uma código com erro em alguma linha, o restante da aplicação continua funcionando. Com tudo isso, o código Elixir é fácil de crescer e manter, e isso reflete um baixo custo.
+    </p>
+</div>
+
+## PRODUTIVIDADE DO DESENVOLVEDOR <h2>
+<div style="text-align: justify">
+    <p>
+        Com o Elixir, os desenvolvedores obterão maior produtividade com menos código. Eles podem escrever código fácil de testar e também de manter. Elixir também é muito escalável e possui um sistema de tolerância a falhas embutido para desastres naturais ou outros eventos imprevistos.  
+    </p>
+</div>
+
+### FRAMEWORS: <h3>
+<div style="text-align: justify">
+    <p>
+        Alguns dos Frameworks mais conhecidos do Elixir são:
+    </p>
+    <p>
+    <b>Phoenix:</b> Permite criar aplicativos interativos na web rapidamente. Pode ser utilizado, portanto, para o desenvolvimento web, de APIs e aplicativos HTML5.<br>
+    <b>Nerves:</b> Trata-se da plataforma e infraestrutura de código aberto que permite criar, implantar e gerenciar dispositivos IoT com total segurança, velocidade e em escala. Também serve para Embedded.<br>
+    <b>Plug:</b> Destinado para aplicações na web.<br>
+    <b>Sugar:</b> Muito utilizado para desenvolvimento web, garantindo rapidez, facilidade e eficácia ao projeto.<br>
+    </p>
+</div>
+
+### FERRAMENTAS: <h3>
+<div style="text-align: justify">
+    <p>
+        O Elixir conta, por exemplo, com o Mix, uma ferramenta de compilação que fornece tarefas para criar, compilar, testar aplicativos e gerenciar projetos e dependências. E através do Hex, seu package manager oficial, é possível encontrar uma quantidade gigante de libs, incluindo as do Erlang. 
+    </p>
+    <p>
+        Disponibiliza o ExUnit para a realização de testes unitários e, ainda, possui um terminal interativo, o IEx (Elixir’s Interactive Shell), que oferece funcionalidades como: Autocompletar, Histórico e Avaliação de expressões.
+    </p>
+</div>
+
+### SINTAXE, SEMÂNTICA e OPERAÇÕES PREDEFINIDAS: <h3>
+
+#### LEGIBILIDADE e REDIGIBILIDADE: <h4>
+<div style="text-align: justify">
+    <p>
+        Elixir apresenta sintaxe extremamente legível e inspirada em Ruby, uma linguagem conhecida por ser focada no bem estar do programador. 
+    </p>
+    <p>
+        Podemos, por exemplo, utilizar “?” ou “!” na nomenclatura de funções e variáveis, tornando-as mais legíveis e agradáveis. Parênteses não são obrigatórios e não precisamos declarar o retorno explicitamente em funções com “return”. Também temos “Pattern Matching” (reconhecimento de padrões),”Guards” e o invejável “Pipe Operator”, que torna possível economizar diversas linhas de código e tornar a legibilidade muito alta.
+    </p>
+    <p>
+        Com Elixir temos um código muito mais legível e intuitivo e com uma redigibilidade fácil, permitindo liberdades e abstrações.
+    </p>
+</div>
+
+#### ESTRUTURAS DE CONTROLE: <h4> 
 <div style="text-align: justify">
     <p> 
         Uma estrutura de controle é uma forma sintática em uma linguagem de programação que expressa o fluxo de controle sobre uma lista específica de instruções para tomar decisões entre o caminho alternativo ou caminhos dados e executa as instruções na sequência em que aparecem, uma por uma. Essa condição é chamada de cumprimento da sequência. 
@@ -298,91 +390,6 @@
         a + 10
         end 
 ~~~
-
-## CAPACIDADES DA LINGUAGEM <h2>
-
-### MACROS E METAPROGRAMAÇÃO: <h3>
-<div style="text-align: justify">
-    <p>
-    Metaprogramação é escrever programas que manipulam outros programas ou a si próprios.    Macros é uma funcionalidade do Elixir que permite a extensão da linguagem. Em outras palavras, é possível criar “código que escreve código” em tempo de compilação. É bem útil quando se quer adicionar funcionalidades diferentes na linguagem, ou um “sintax sugar” para deixar o código mais legível.
-    </p>
-</div>
-
-### SEGURANÇA E CONFIABILIDADE: <h3>
-<div style="text-align: justify">
-    <p>
-        Com relação a segurança, sabe-se que uma das características mais positivas da linguagem  Elixir é sua tolerância a falhas. Ela fornece mecanismos de segurança que permitem que a aplicação continue funcionando mesmo quando algo dá errado. Os processos alertam sobre uma falha nos processos dependentes, mesmo em outros servidores, para que os problemas possam ser corrigidos imediatamente.
-    </p>
-    <p>
-        Como já dito em outro tópico, foi na base do Erlang que José Valim desenvolveu o Elixir. Sendo mantido todo o poder da linguagem mãe, como é o caso da confiabilidade.essa manuntenção é possível pois o Elixir compila para a máquina virtual do Erlang, o BEAM (Bogdan’s Erlang Abstract Machine).
-    </p>
-</div>
-
-### PERFORMANCE: <h3>
-<div style="text-align: justify">
-    <p>
-        Elixir é uma das melhores linguagens de programação para aplicativos de alta performance.       
-    </p>
-</div>
-
-### ESCALABILIDADE: <h3>
-<div style="text-align: justify">
-    <p>
-        Como o Elixir é executado em Erlang VM, ele é capaz de executar aplicativos em vários nós de comunicação. Isso facilita a criação de aplicativos da Web e IoT maiores que podem ser escalados em vários servidores diferentes. Ter vários servidores virtualizados em um sistema distribuído também leva a um melhor desempenho do aplicativo.
-    </p>
-</div>
-
-### CUSTO: <h3>
-<div style="text-align: justify">
-    <p>
-    Elixir é ótimo para aplicações que precisam ter alta disponibilidade, apresenta muito boa capacidade de resposta. Sua aplicação pode responder a requisições independente de quantos clientes estão conectados. Ela nunca quebra. Mesmo que você tenha uma código com erro em alguma linha, o restante da aplicação continua funcionando. Com tudo isso, o código Elixir é fácil de crescer e manter, e isso reflete um baixo custo.
-    </p>
-</div>
-
-## PRODUTIVIDADE DO DESENVOLVEDOR <h2>
-<div style="text-align: justify">
-    <p>
-        Com o Elixir, os desenvolvedores obterão maior produtividade com menos código. Eles podem escrever código fácil de testar e também de manter. Elixir também é muito escalável e possui um sistema de tolerância a falhas embutido para desastres naturais ou outros eventos imprevistos.  
-    </p>
-</div>
-
-### FRAMEWORS: <h3>
-<div style="text-align: justify">
-    <p>
-        Alguns dos Frameworks mais conhecidos do Elixir são:
-    </p>
-    <p>
-    <b>Phoenix:</b> Permite criar aplicativos interativos na web rapidamente. Pode ser utilizado, portanto, para o desenvolvimento web, de APIs e aplicativos HTML5.<br>
-    <b>Nerves:</b> Trata-se da plataforma e infraestrutura de código aberto que permite criar, implantar e gerenciar dispositivos IoT com total segurança, velocidade e em escala. Também serve para Embedded.<br>
-    <b>Plug:</b> Destinado para aplicações na web.<br>
-    <b>Sugar:</b> Muito utilizado para desenvolvimento web, garantindo rapidez, facilidade e eficácia ao projeto.<br>
-    </p>
-</div>
-
-### FERRAMENTAS: <h3>
-<div style="text-align: justify">
-    <p>
-        O Elixir conta, por exemplo, com o Mix, uma ferramenta de compilação que fornece tarefas para criar, compilar, testar aplicativos e gerenciar projetos e dependências. E através do Hex, seu package manager oficial, é possível encontrar uma quantidade gigante de libs, incluindo as do Erlang. 
-    </p>
-    <p>
-        Disponibiliza o ExUnit para a realização de testes unitários e, ainda, possui um terminal interativo, o IEx (Elixir’s Interactive Shell), que oferece funcionalidades como: Autocompletar, Histórico e Avaliação de expressões.
-    </p>
-</div>
-
-### SINTAXE, SEMÂNTICA e OPERAÇÕES PREDEFINIDAS: <h3>
-
-#### LEGIBILIDADE e REDIGIBILIDADE: <h4>
-<div style="text-align: justify">
-    <p>
-        Elixir apresenta sintaxe extremamente legível e inspirada em Ruby, uma linguagem conhecida por ser focada no bem estar do programador. 
-    </p>
-    <p>
-        Podemos, por exemplo, utilizar “?” ou “!” na nomenclatura de funções e variáveis, tornando-as mais legíveis e agradáveis. Parênteses não são obrigatórios e não precisamos declarar o retorno explicitamente em funções com “return”. Também temos “Pattern Matching” (reconhecimento de padrões),”Guards” e o invejável “Pipe Operator”, que torna possível economizar diversas linhas de código e tornar a legibilidade muito alta.
-    </p>
-    <p>
-        Com Elixir temos um código muito mais legível e intuitivo e com uma redigibilidade fácil, permitindo liberdades e abstrações.
-    </p>
-</div>
 
 ## ECOSSISTEMA <h2>
 <div style="text-align: justify">
