@@ -7,19 +7,22 @@
 
 ## HISTÓRICO <h2>
 <div style="text-align: justify"> 
+    <p>
+        Origem e descendência da linguagem JAVA:
+    </p>
 
 ![Evolução da linguagem JAVA, contendo pais e filhos:](https://github.com/NessaMd/caracterizacao/blob/main/T1-VanessaMachado/evolucaoElixir.jpg)   
     <p>
-    Java é uma linguagem de programação orientada a objetos.Começou a ser desenvolvida em 1991, na Sun Microsystems. Teve inicio com o Green Project, no qual os mentores foram Patrick Naughton, Mike Sheridan, e James Gosling. Este projeto, inicialmente, não tinha intenção de criar uma linguagem de programação, mais sim de antecipar a “próxima onda” que aconteceria na área da informática e programação.
+        Java é uma linguagem de programação orientada a objetos.Começou a ser desenvolvida em 1991, na Sun Microsystems. Teve inicio com o Green Project, no qual os mentores foram Patrick Naughton, Mike Sheridan, e James Gosling. Este projeto, inicialmente, não tinha intenção de criar uma linguagem de programação, mais sim de antecipar a “próxima onda” que aconteceria na área da informática e programação.
     </p>
     <p>
-    Nesta época, a internet estava ficando cada vez mais popular, e a equipe do Green Project começou a pensar em aplicações para o Oak na internet, onde a palavra chave é interação. Eles conseguiram adaptar a linguagem Oak para a internet, e em 1995 foi lançado o Java, que era uma versão atualizada do Oak para a internet.
+        Nesta época, a internet estava ficando cada vez mais popular, e a equipe do Green Project começou a pensar em aplicações para o Oak na internet, onde a palavra chave é interação. Eles conseguiram adaptar a linguagem Oak para a internet, e em 1995 foi lançado o Java, que era uma versão atualizada do Oak para a internet.
     </p>
     <p>
-    Java é uma linguagem de programação expressamente projetada para uso no ambiente distribuído da Internet. Ele foi projetado para ter a “aparência e comportamento” da linguagem de programação C ++ , mas é mais simples de usar e impõe um modelo de programação orientado a objetos .
+        Java é uma linguagem de programação expressamente projetada para uso no ambiente distribuído da Internet. Ele foi projetado para ter a “aparência e comportamento” da linguagem de programação C ++ , mas é mais simples de usar e impõe um modelo de programação orientado a objetos .
      </p>
      <p>
-    Foi testado, refinado, estendido e comprovado por uma comunidade dedicada de desenvolvedores, arquitetos e entusiastas de Java. Apesar de suas origens remontar a quase duas décadas, Java tem evoluído de forma consistente ao longo dos anos. Mesmo entre a ascensão de linguagens rivais,permanece popular entre as empresas. 
+        Foi testado, refinado, estendido e comprovado por uma comunidade dedicada de desenvolvedores, arquitetos e entusiastas de Java. Apesar de suas origens remontar a quase duas décadas, Java tem evoluído de forma consistente ao longo dos anos. Mesmo entre a ascensão de linguagens rivais,permanece popular entre as empresas. 
     </p>
 </div>
 
@@ -76,7 +79,7 @@
     </p>  
 </div>
 
-### NOMES, VARIAÁVEIS e VINCULAÇÃO <h3>
+### NOMES, VARIÁVEIS e VINCULAÇÃO <h3>
 
 #### NOMES: <h4>
 <div style="text-align: justify">
@@ -495,9 +498,11 @@
 </div>
 
 ### CUSTO: <h3>
-<p style='text-align: right;'>  
+<div style="text-align: justify">
+    <p>
         É projetado para permitir o desenvolvimento de aplicativos portáteis de alto desempenho para a mais ampla gama de plataformas de computação possível, permitindo, portanto, os princípios fundamentais de acessibilidade abrangente, bem como interação de plataforma cruzada. Ao disponibilizar aplicativos em ambientes heterogêneos, as empresas podem fornecer mais serviços e aumentar a produtividade, comunicação e colaboração do usuário final - e reduzir drasticamente o custo de propriedade de aplicativos corporativos e de consumo.
-</p> 
+    </p>
+</div>
 
 ## PRODUTIVIDADE DO DESENVOLVEDOR <h2>
 <div style="text-align: justify">

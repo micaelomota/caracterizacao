@@ -416,3 +416,6 @@ https://www.hostgator.com.br/blog/elixir-linguagem-programacao-brasileira/
 https://outsourceit.today/how-good-is-elixir-performance/
 </p>
 
+<p>
+http://www.each.usp.br/petsi/jornal/?p=2459
+</p>
