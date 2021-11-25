@@ -6,7 +6,7 @@
 
 * [HISTÓRICO E APRESENTAÇÃO](#historico-e-apresentação)
 * [CARACTERÍSTICAS DA LINGUAGEM](#características-da-linguagem)
-* [CAPACIDADES DA LINGUAGEM](#capacidade-da-linguagem)
+* [CAPACIDADES DA LINGUAGEM](#capacidades-da-linguagem)
 * [PRODUTIVIDADE DO DESENVOLVEDOR](#produtividade-do-desenvolvedor)
 * [ECOSSISTEMA](#ecossistema)
 * [INFORMAÇÕES ADICIONAIS](#informações-adicionais)
