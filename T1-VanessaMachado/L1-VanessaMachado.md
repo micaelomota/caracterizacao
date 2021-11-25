@@ -4,7 +4,7 @@
 ### Linguagem de Programação : JAVA <h3>
 
 
-* [HISTÓRICO E APRESENTAÇÃO](#historico-e-apresentação)
+* [HISTÓRICO E APRESENTAÇÃO](#histórico-e-apresentação)
 * [CARACTERÍSTICAS DA LINGUAGEM](#características-da-linguagem)
 * [CAPACIDADES DA LINGUAGEM](#capacidades-da-linguagem)
 * [PRODUTIVIDADE DO DESENVOLVEDOR](#produtividade-do-desenvolvedor)
