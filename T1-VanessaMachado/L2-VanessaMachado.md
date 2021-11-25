@@ -2,13 +2,11 @@
 ##### Autoria: Vanessa Machado Araújo <h5>
 
 ### Linguagem de Programação : Elixir <h3>
-<p>
-</p>
 
 * [HISTÓRICO E APRESENTAÇÃO](#historico-e-apresentação)
 * [CARACTERÍSTICAS DA LINGUAGEM](#características-da-linguagem)
 * [CAPACIDADES DA LINGUAGEM](#capacidade-da-linguagem)
-* [PRODUTIVIDADE DO DESENVOLVEDOR](#produtividade-do-desenvolvedor)
+* [Produtividade do Desenvolvedor](#produtividade-do-desenvolvedor)
 * [ECOSSISTEMA](#ecossistema)
 * [INFORMAÇÕES ADICIONAIS](#informações-adicionais)
 
@@ -247,7 +245,7 @@
     </p>
 </div>
 
-## PRODUTIVIDADE DO DESENVOLVEDOR <h2>
+## Produtividade do Desenvolvedor <h2>
 <div style="text-align: justify">
     <p>
         Com o Elixir, os desenvolvedores obterão maior produtividade com menos código. Eles podem escrever código fácil de testar e também de manter. Elixir também é muito escalável e possui um sistema de tolerância a falhas embutido para desastres naturais ou outros eventos imprevistos.  

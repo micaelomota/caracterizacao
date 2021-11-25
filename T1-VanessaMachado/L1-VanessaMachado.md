@@ -2,8 +2,7 @@
 ##### Autoria: Vanessa Machado Araújo <h5>
 
 ### Linguagem de Programação : JAVA <h3>
-<p>
-</p>
+
 
 * [HISTÓRICO E APRESENTAÇÃO](#historico-e-apresentação)
 * [CARACTERÍSTICAS DA LINGUAGEM](#características-da-linguagem)
