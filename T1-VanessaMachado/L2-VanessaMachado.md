@@ -6,11 +6,11 @@
 * [HISTÓRICO E APRESENTAÇÃO](#historico-e-apresentação)
 * [CARACTERÍSTICAS DA LINGUAGEM](#características-da-linguagem)
 * [CAPACIDADES DA LINGUAGEM](#capacidade-da-linguagem)
-* [Produtividade do Desenvolvedor](#produtividade-do-desenvolvedor)
+* [PRODUTIVIDADE DO DESENVOLVEDOR](#produtividade-do-desenvolvedor)
 * [ECOSSISTEMA](#ecossistema)
 * [INFORMAÇÕES ADICIONAIS](#informações-adicionais)
 
-## HISTÓRICO E APRESENTAÇÃO <h2>
+## HISTÓRICO E APRESENTAÇÃO 
 <div style="text-align: justify"> 
     <p>
         Origem da linguagem Elixir:
@@ -27,7 +27,7 @@
     </p>
 </div>
 
-## CARACTERÍSTICAS DA LINGUAGEM <h2>
+## CARACTERÍSTICAS DA LINGUAGEM 
 
 ### PARADIGMA <h3>
 <div style="text-align: justify">
@@ -205,7 +205,7 @@
     </p> 
 </div>
 
-## CAPACIDADES DA LINGUAGEM <h2>
+## CAPACIDADES DA LINGUAGEM 
 
 ### MACROS E METAPROGRAMAÇÃO: <h3>
 <div style="text-align: justify">
@@ -245,7 +245,7 @@
     </p>
 </div>
 
-## Produtividade do Desenvolvedor <h2>
+## PRODUTIVIDADE DO DESENVOLVEDOR 
 <div style="text-align: justify">
     <p>
         Com o Elixir, os desenvolvedores obterão maior produtividade com menos código. Eles podem escrever código fácil de testar e também de manter. Elixir também é muito escalável e possui um sistema de tolerância a falhas embutido para desastres naturais ou outros eventos imprevistos.  
@@ -389,7 +389,7 @@
         end 
 ~~~
 
-## ECOSSISTEMA <h2>
+## ECOSSISTEMA 
 <div style="text-align: justify">
     <p>
         Embora Elixir seja uma linguagem bastante jovem, tem tempo para desenvolver uma comunidade de usuários ativa, onde até mesmo engenheiros altamente qualificados estão dispostos a ajudar e compartilhar seus conhecimentos. Além disso, há muita ajuda ou tutoriais facilmente disponíveis para desenvolvedores que trabalham com Elixir.
@@ -402,7 +402,7 @@
      </p>
 </div>
 
-## INFORMAÇÕES ADICIONAIS <h2> 
+## INFORMAÇÕES ADICIONAIS  
 
 ### REFERÊNCIAS: <h3> 
 <p> 

@@ -12,7 +12,7 @@
 * [INFORMAÇÕES ADICIONAIS](#informações-adicionais)
   
 
-## HISTÓRICO E APRESENTAÇÃO <h2>
+## HISTÓRICO E APRESENTAÇÃO 
 <div style="text-align: justify"> 
     <p>
         Origem e descendência da linguagem JAVA:
@@ -33,7 +33,7 @@
     </p>
 </div>
 
-## CARACTERÍSTICAS DA LINGUAGEM <h2>
+## CARACTERÍSTICAS DA LINGUAGEM 
 
 ### PARADIGMA <h3>
 <div style="text-align: justify">
@@ -271,7 +271,7 @@
 </div>
 
 
-## CAPACIDADES DA LINGUAGEM <h2>
+## CAPACIDADES DA LINGUAGEM 
 
 ### METAPROGRAMAÇÃO: <h3>
 <div style="text-align: justify">
@@ -334,7 +334,7 @@
     </p>
 </div>
 
-## PRODUTIVIDADE DO DESENVOLVEDOR <h2>
+## PRODUTIVIDADE DO DESENVOLVEDOR 
 <div style="text-align: justify">
     <p>
         Java se tornou inestimável para os desenvolvedores, permitindo-lhes:
@@ -599,7 +599,7 @@
 ~~~
 
 
-## ECOSSISTEMA <h2>
+## ECOSSISTEMA 
 <div style="text-align: justify">
 <p> 
     A maturidade, padrões, multiplataforma, retrocompatibilidade e a maior comunidade de desenvolvimento do mundo são algumas das características que tornam o Java a principal plataforma de desenvolvimento. 
@@ -612,7 +612,7 @@
 </p>
 </div>
 
-## INFORMAÇÕES ADICIONAIS <h2> 
+## INFORMAÇÕES ADICIONAIS  
 
 ### REFERÊNCIAS: <h3> 
 <p> 
