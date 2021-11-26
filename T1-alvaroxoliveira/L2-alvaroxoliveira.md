@@ -1,7 +1,5 @@
-Informações sobre L2 escolhida, estruturadas segundo template.md.
+<!-- Caracterização da Linguagem L2 - Elixir - Álvaro Souza Oliveira -->
 
-# Elixir
 
-Estrutura a ser definida e colocada aqui.
+# Linguagem 2 - Elixir
 
-## Informações Adicionais

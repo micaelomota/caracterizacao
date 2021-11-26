@@ -1,7 +1,4 @@
-Informações seguindo o formato a ser especificado.
+<!-- Caracterização da Linguagem L1 - Java - Álvaro Souza Oliveira -->
 
-# Java 
 
-Estrutura a ser definida e colocada aqui.
-
-## Informações Adicionais
+# Linguagem 1 - Java
