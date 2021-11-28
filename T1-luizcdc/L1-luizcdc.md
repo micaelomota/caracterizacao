@@ -86,7 +86,7 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
 + Gerenciamento de Ciclo de Vida
   : Python conta com um garbage collector que conta as referências a um objeto e libera a memória ocupada por esse objeto assim que o número de referências a ela chegue a zero. Uma referência pode ser removida com redefinição do um nome (para então guardar a referência para um outro objeto), manualmente com a keyword _del_, ou pela a destruição do seu ambiente de referência (ao finalizar a execução da função, por exemplo).
 + Segurança
-  : Python é memory-safe, type-safe e thread-safe. Não há manipulação de ponteiros, não se pode atribuir uma região de memória de um tipo para outro tipo sem realizar a conversão, e a Global Interpreter Lock impede múltiplas threads acessando a mesma região de memória. Aliasing é permitido.
+  : Python é memory-safe, type-safe e thread-safe (de forma limitada). Aliasing é permitido. Não há manipulação de ponteiros, não se pode atribuir uma região de memória de um tipo para outro tipo sem realizar a conversão, e a Global Interpreter Lock impede múltiplas threads acessando a mesma região de memória ao mesmo tempo. O que pode acontecer, entretanto, é a troca do controle do processador entre threads no meio de uma operação significativa não atômica (que não é apenas uma instrução do  bytecode do Python). Para executar tais operações com segurança, é necessário temporariamente ativar uma _lock_ para impedir que o controle seja passado para outra thread.
 + Performance
   : Python é uma linguagem de alto nível com performance relativamente lenta, porém muitas bibliotecas e subrotinas da linguagem são implementadas e executadas em C ao invés de código nativo Python, portanto para certas aplicações o Python pode igualar ou superar outras linguagens normalmente mais rápidas.
   ![image](res/speed-graph.png)
@@ -131,7 +131,7 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
     :  Ambas as bibliotecas proporcionam a criação e execução de algoritmos de machine learning e redes neurais no estado da arte. São as bibliotecas mais populares para esses fins considerando todas as linguagens de programação.  
   
 + Sintaxe, Semântica e Operações Predefinidas
-  + Estruturas de controle
+  + Estruturas de Controle
     + Seleção
       : Há if, elif (equivalente a else if) e else. If e else também podem ser usados numa única linha, similar ao operador ternário do C.
 
@@ -160,6 +160,8 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
 
     + Repetição
       : Existem dois tipos de loops em Python, _for_ e _while_. _While_ é controlado por condição (checagem de condição verdadeira ou falsa) e o _for_ através de iteração (necessariamente percorre um objeto iterável). Para realizar repetição por contagem, há o construtor _range_ que gera uma estrutura iterável dinâmica (em Python chamada de _generator_) que percorre a sequência numérica especificada.
+    + Exceções:
+      : TODO;
   + Legibilidade e Redigibilidade
     : Python tem no centro de sua filosofia a legibilidade. Existe um poema incluso com a linguagem (acessível através do statement "import this") chamado "Zen of Python" que representa essa filosofia. Nele há trechos que dizem: "Belo é melhor que feio", "Explícito é melhor que implícito", "Simples é preferível a complexo", "Deve haver uma maneira óbvia – e preferivelmente única – de fazer algo" e "Legibilidade importa". Essas orientações demonstram a preocupação dos desenvolvedores da linguagem e os desenvolvedores que utilizam a linguagem a aderir à maneira "pythônica" de escrever código. Além disso, consistência é igualmente valorizada. A sintaxe e semântica do Python foi construída justamente para se assemelhar a pseudocódigo escrito baseado na lingua inglesa, portanto ser fácil de ler.
     As operações/constructos predefinidas e as maneiras simples oferecidas de realizar procedimentos às vezes complexos em outras linguagens tornam Python também altamente redigível. Um exemplo são as comprehensions, que iteram sobre os elementos de uma coleção para gerar uma nova coleção de acordo com regras especificadas, tudo numa única linha de código com uma sintaxe simples:
@@ -170,7 +172,6 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
       new_list = [x ** 2 for x in old_list if isinstance(x,int)]
       ```
      : Existem críticas que podem ser feitas a às decisões de design do Python, porém. O uso de indentação para definir escopos pode resultar em pouco espaço para escrever o código em níveis de identação mais profundos, também causando perda de flexibilidade. A ausência de declaração de tipos pode dificultar a compreensão da natureza dos argumentos de uma função, por exemplo, mas isso é mitigado com as anotações de tipos opcionais.
-+ Custos
 
 ## Ecossistema
 
