@@ -2,6 +2,166 @@
 
 ### Linguagem de Programação : JAVA <h3>
 
+## Histórico <h2>
+<div style="text-align: justify">
+    <p>
+        Java é uma linguagem de programação orientada a objetos.Começou a ser desenvolvida em 1991, na Sun Microsystems. Teve inicio com o Green Project, no qual os mentores foram Patrick Naughton, Mike Sheridan, e James Gosling. Este projeto, inicialmente, não tinha intenção de criar uma linguagem de programação, mais sim de antecipar a “próxima onda” que aconteceria na área da informática e programação.
+    </p>
+    <p>
+        Nesta época, a internet estava ficando cada vez mais popular, e a equipe do Green Project começou a pensar em aplicações para o Oak na internet, onde a palavra chave é interação. Eles conseguiram adaptar a linguagem Oak para a internet, e em 1995 foi lançado o Java, que era uma versão atualizada do Oak para a internet.
+    </p>
+    <p>
+        Java é uma linguagem de programação expressamente projetada para uso no ambiente distribuído da Internet. Ele foi projetado para ter a “aparência e comportamento” da linguagem de programação C ++ , mas é mais simples de usar e impõe um modelo de programação orientado a objetos .
+     </p>
+     <p>
+        Foi testado, refinado, estendido e comprovado por uma comunidade dedicada de desenvolvedores, arquitetos e entusiastas de Java. Apesar de suas origens remontar a quase duas décadas, Java tem evoluído de forma consistente ao longo dos anos. Mesmo entre a ascensão de linguagens rivais,permanece popular entre as empresas. 
+    </p>
+</div>
+
+## Capacidades da linguagem <h2>
+
+### Metaprogramação <h3>
+<div style="text-align: justify">
+    <p>
+        Metaprogramação é escrever programas que manipulam outros programas ou a si próprios com base em metadados. Um bom caso de uso é salvar metadados digitalizados para uso posterior durante o tempo de execução, permitindo a inicialização mais rápida de seu aplicativo.
+    </p>
+    <p>
+        Metaprogramação é o segredo por trás do sucesso de muitos frameworks Java, como Spring e Struts 2, e constitui a espinha dorsal de muitas das APIs mais fundamentais em toda a pilha de tecnologia Java. Mais importante ainda, a metaprogramação pode ser usada para melhorar seus aplicativos e testes de aplicativos. 
+    </p>
+</div>
+
+### Segurança e Confiabilidade <h3>
+<div style="text-align: justify">
+    <p>
+        Java é uma linguagem de programação bastante segura. Fornece todos os seguintes recursos para garantir isso:
+    </p>
+    <b>JVM:</b> Desempenha um papel vital para fornecer segurança. Atua verificando o código de byte. Fornece garantias de que nenhuma operação insegura será executada e também ajuda a diminuir as possibilidades de que os programadores sofram com falhas de segurança de memória.<br>
+    <b>API's de segurança:</b> As bibliotecas de classes Java fornecem várias APIs que levam à segurança. Essas APIs contêm algoritmos criptográficos e protocolos de autenticação que levam à comunicação segura.<br>
+    <b>Byte Code:</b> Sempre que um usuário compila o programa Java, o compilador cria um arquivo de classe com Bytecode, que é testado pelo JVM no momento da execução do programa em busca de vírus e outros arquivos maliciosos.<br>
+    <b>Gerente de segurança:</b> O gerenciador de segurança é responsável por verificar as permissões e propriedades das classes. Ele monitora os recursos do sistema acessados ​​pelas classes autorizadas. Ele também controla as conexões de soquete.<br>
+    <b>Nenhum conceito de ponteiros:</b> Java não oferece suporte para o conceito de ponteiros. O uso de ponteiros pode levar a operações não autorizadas de leitura ou gravação. Portanto, o usuário não pode apontar para nenhum local da memória.<br>
+    <b>Gerenciamento de memória:</b> Java gerencia automaticamente a memória, que é conhecida como coleta de lixo. A própria JVM gerencia a memória. Os programadores estão livres desse gerenciamento. Conseqüentemente, não há chance de falha no gerenciamento de memória.<br>
+    <b>Verificação de tempo de compilação:</b> A verificação do tempo de compilação também torna o Java seguro. Considere um cenário no qual um método não autorizado está tentando acessar a variável privada, neste caso, a JVM fornece o erro de tempo de compilação, evitando, assim, que o sistema trave.<br>
+    <b>Segurança criptográfica:</b> Java fornece uma classe chamada java.secrurity.SourceCode que também fornece segurança. Se obtivermos código de outras fontes, devemos verificar de onde o código está vindo. A classe mantém as informações de origem e fornece garantias para manter uma assinatura digital e segurança criptográfica.<br>
+    <b>Java Sandbox:</b> Java Sandbox é um componente importante quando se trata de segurança. É uma área restrita onde os miniaplicativos são executados. Java não fornece recursos de sistema sem verificar se um miniaplicativo deve ser executado.<br>
+    <b>Manipulação de exceção:</b> O recurso de tratamento de exceções adiciona mais segurança em Java. O recurso relata o erro ao programador durante o tempo de execução e assim, o código não será executado até que o programador o retifique.<br>
+    <b>Java ClassLoader:</b> Existem vários carregadores de classes presentes na JVM. Ele fornece e mantém namespaces para classes específicas. A vantagem do ClassLoader é que as classes não confiáveis ​​não se comportariam como uma classe confiável.<br>
+    <p>
+        Os autores a consideram  como uma linguagem confiável. No entanto, Java não é, por exemplo, uma escolha muito confiável na programação do sistema porque não expõe os detalhes de hardware de nível inferior aos desenvolvedores. Mas, apesar de suas falhas, nenhuma outra linguagem se compara ao Java em termos de flexibilidade e integração perfeita com outras estruturas e tecnologias.
+    </p>
+</div>
+
+### Performance <h3>
+<div style="text-align: justify">
+    <p>
+        Em termos de agilidade, Java é mais rápido do que outras linguagens de programação interpretadas tradicionais, isso porque o bytecode Java é "próximo" do código nativo. 
+    </p>
+    <p>
+        Por outro lado, Java é uma linguagem interpretada, por isso, ainda é um pouco mais lenta do que as linguagens compiladas, por exemplo, C, C ++, etc.
+    </p>
+</div>
+
+### Escalabilidade <h3>
+<div style="text-align: justify">
+    <p>
+        Escalabilidade significa que um aplicativo pode lidar com mais e mais usuários alterando a configuração do hardware em vez do próprio aplicativo. Normalmente, isso significa, entre outras coisas, que é particionado em partes que podem ser executadas em servidores separados.
+    </p>
+    <p>
+        Escalável pode significar coisas diferentes no contexto da linguagem de programação e do tempo de execução.
+    </p>
+    <p>
+    A linguagem Java suporta modularidade e verificação estática em um nível suficiente para construir grandes sistemas (grandes projetos com vários desenvolvedores etc.). O desempenho de compilação e tempo de execução é suficiente para ter um ambiente de compilação e teste de integração contínua para um grande projeto. Existem ferramentas de suporte suficientes para análise, depuração, criação de perfil, entre outros. A linguagem e as bibliotecas fornecem fornecem algoritmos e estruturas de dados assintoticamente ideais.As construções de linguagem permitem e exploram o potencial de otimização e se adaptam bem ao hardware moderno. Por outro lado o tempo de execução, em java, não está livre de sobrecarga e custos de funcionalidade desnecessários ou indesejados,em particular, há muita sobrecarga de espaço. 
+    </p>
+</div>
+
+### Custo <h3>
+<div style="text-align: justify">
+    <p>
+        É projetado para permitir o desenvolvimento de aplicativos portáteis de alto desempenho para a mais ampla gama de plataformas de computação possível, permitindo, portanto, os princípios fundamentais de acessibilidade abrangente, bem como interação de plataforma cruzada. Ao disponibilizar aplicativos em ambientes heterogêneos, as empresas podem fornecer mais serviços e aumentar a produtividade, comunicação e colaboração do usuário final - e reduzir drasticamente o custo de propriedade de aplicativos corporativos e de consumo.
+    </p>
+</div>
+
+## Produtividade do Desenvolvedor <h2>
+<div style="text-align: justify">
+    <p>
+        Java se tornou inestimável para os desenvolvedores, permitindo-lhes:
+    </p>
+    <p>
+    <b>*</b> Escrever software em uma plataforma e executá-lo em praticamente qualquer outra plataforma.<br>
+    <b>*</b> Criar programas que podem ser executados em um navegador da web e acessar os serviços da web disponíveis.<br>
+    <b>*</b> Desenvolver aplicativos do lado do servidor para fóruns online, lojas, enquetes, processamento de formulários HTML e muito mais.<br>
+    <b>*</b> Usar a linguagem Java para criar aplicativos ou serviços altamente personalizados.<br>
+    <b>*</b> Escrever aplicativos poderosos e eficientes para telefones celulares, processadores remotos, microcontroladores, módulos sem fio, sensores, gateways, produtos de consumo e praticamente qualquer outro dispositivo eletrônico.<br>
+    <b>*</b> Entre outros.<br>
+    </p>
+</div>
+
+### Frameworks e Contâiners <h3>
+<div style="text-align: justify">
+    <p>
+        Frameworks Java são grupos de códigos previamente escritos e reutilizáveis, usados como templates pelos desenvolvedores na criação de aplicações. Esses frameworks eliminam o trabalho manual excessivo ao programar uma aplicação uma vez que os desenvolvedores só precisam incluir código personalizado se for necessário.
+    </p>
+    <p>
+        Esses frameworks podem incluir funções e classes predefinidas,como categorias de objetos, que são usadas para processar, inserir e gerenciar dispositivos de hardware, além de interagir com o software do sistema. Isso depende do tipo de framework, da habilidade do desenvolvedor Java, do que ele está tentando realizar e das preferências pessoais dele.
+    </p>
+    <p>
+        Há vários frameworks Java disponíveis. O que determina qual deles usar são as habilidades do desenvolvedor ou os requisitos do site ou aplicação. A seguir, estão alguns frameworks open source muito usados:
+    </p>
+    <p>
+    <b>Quarkus:</b> Framework Java de stack completo, compatível com infraestruturas nativas em nuvem e baseadas em microsserviços.<br>
+    <b>Grails:</b> Escrito na linguagem de programação Groovy, oferece frameworks de aplicação web com recursos de exibição para plugins CSS e HTML.<br>
+    <b>Google Web Toolkit (GWT):</b> Conecta as equipes de desenvolvimento de front-end às de back-end.<br>
+    <p>
+        Outros frameworks Java muito usados:
+    </p>
+    <p>
+    <b>Vaadin:</b> Voltado às interfaces de usuário.<br>
+    <b>JavaServer Faces (JSF) do Oracle:</b> Oferece frameworks de front-end aos desenvolvedores de back-end.<br>
+    <b>Play:</b> Compatível com a linguagem de programação Scala, simplifica o desenvolvimento de aplicações web.<br>
+    </p>
+    <p>
+        Dificilmente uma aplicação gráfica é composta por um único componente, mas sim por vários componentes inter-relacionados. Para este tipo de aplicação, um componente fundamental é a área onde os demais componentes da aplicação estarão dispostos. Um componente que pode conter outros componentes é denominado um container.
+    </p>
+    <p>
+        Em Java, a classe Container é a classe abstrata que define as funcionalidades básicas associadas a um container, tais como adicionar e remover componentes, o que é possível através dos métodos add() e remove(), respectivamente. É possível também estabelecer qual a estratégia de disposição de componentes no container, ou seja, qual o método de gerência de layout, através do método setLayout().
+    </p>
+</div>
+
+### Ferramentas <h3>
+<div style="text-align: justify">
+    <p>
+        Dentre as diversas etapas do desenvolvimento de um software existem ferramentas que podem auxiliar o desenvolvedor na entrega de um produto muito melhor. Saber escolhe-las é um passo fundamental, pois elas também podem atrasar o projeto final. As ferramentas disponíveis para a plataforma Java são em sua grande maioria gratuitas, o que facilita a sua disseminação e a criação de aplicativos por terceiros.  
+    </p>
+    <p>
+        Compilação, configuração e deploy de aplicações, por exemplo, podem ser feitos através da própria IDE, como Eclipse. Entretanto, quando os projetos se tornam maiores e mais complexos, as construções automáticas se tornam bastante necessárias. Daí, trabalhar com ferramentas que automatizam todo o processo de construção pode economizar muito tempo e trabalho, ao invés de persistir em ficar na própria IDE. Em outros casos, a melhor alternativa é a utilização ferramentas de integração contínua, que fazem ainda mais além do que as ferramentas de construção, adicionando mais etapas e automatizando ainda mais o processo como um todo.
+    </p>
+    <p>
+        A seguir, algumas das ferramentas mais usadas atualmente:
+    </p>
+    <p>
+    <b>JUnit:</b> Para testes de unidade na plataforma Java e tem como benefício a integração com o Eclipse.<br>
+    <b>Make:</b> Ferramenta de linha de comando original para o processo de construção. Compila executáveis baseando-se em regras, dependências e comandos.<br>
+    <b>Ant:</b> É o padrão oficial para compilar projetos Java. Assim como o Make, ele trabalha com targets, dependências e comandos, porém a sintaxe é completamente diferente do Make. Além disso, o Ant utiliza um documento no padrão XML para cada projeto e elementos XML para listar comandos.<br>
+    <b>Maven:</b> Esta substituindo o Ant em diversos projetos. Ele é considerado mais do que uma ferramenta de construção, pois é conhecido como Project Object Model (Modelo de Objeto de Projeto).<br>
+    <b>CruiseControl:</b> É uma das ferramentas de integração contínua mais utilizadas pelas organizações. Inclui dezenas de plugins para uma grande variedade de funcionalidades como controle de código-fonte, tecnologias de build, notificações incluindo e-mail e mensagens instantâneas, entre outras funcionalidades.<br>
+    <b>Jenkins:</b> É uma ferramenta de integração contínua que realiza rapidamente tarefas que são demoradas como compilação do projeto, execução dos testes automatizados e alerta aos desenvolvedores a cada mudança de código no repositório ou em caso de erros ou falhas nos testes automatizados.<br>
+    <b>Entre outras</b> ...<br>
+    </p>
+</div>
+
+### Legibilidade e Redigibilidade <h3>
+<div style="text-align: justify">
+    <p>
+        A sintaxe da linguagem deve ser o mais próxima possível da notação matemática padrão e os programas nela contidos devem ser legíveis com poucas explicações adicionais.Com relação a legibilidade, Java é mais simples e mais elegante, por exemplo, do que a outra linguagem principal imperativa/orientada a objetos, que é C++. Os tipos primitivos de Java não são objetos baseados em classes. Java não tem ponteiros, tipos de enumeração, subprogramas autônomos ou herança múltipla. Java foi projetado para ser mais simples, para ser uma linguagem de facil legibilidade, e de fato é.
+    </p>
+    <p>
+        Com relação a redigibilidade, estruturas de bloco, passando parâmetros para subprogramas e procedimentos recursivos permitiram aos programadores uma capacidade de escrita que eles nunca tiveram antes. Uma questão em discussão é que em java, por exemplo, não se pode atribuir uma coerção de tipo de float a int, enquanto em C e C ++ isso é possível e frequentemente feito, ou seja, java não permite ao programador tanta liberdade, na escrita, mas isso não é um grande probleba.
+    </p> 
+    <p>
+        Se compara com outras linguagens, pode-se dizer que Java é uma linguagem até fácil de se escrever. Permite, por exemplo, abstração por meio de funções, basta escrever uma função uma vez e chamá-la várias vezes, permitem expressividade ao possibilitar convenientemente várias maneiras de escrever uma certa rotina. 
+    </p>
+</div>
+
 ## Modelo de Tradução <h2>
 <div style="text-align: justify">
     <p>  
@@ -407,9 +567,20 @@
     }
 ~~~
 
+## Ecossistema <h2>
+<p> 
+    A maturidade, padrões, multiplataforma, retrocompatibilidade e a maior comunidade de desenvolvimento do mundo são algumas das características que tornam o Java a principal plataforma de desenvolvimento. 
+</p>
+<p>
+    A comunidade de desenvolvedores Java reúne-se em grupo denominados JUGs (Java User Groups). No Brasil o movimento de grupos de usuários expandiu-se bastante e tem formado alguns dos maiores grupos de usuários Java do mundo,como por exemplo, o PortalJava, GUJ e o JavaFree.
+</p>
+<p>
+    Java representa um enorme ecossistema e fonte de empregos. Estima-se que existam nove milhões de desenvolvedores Java em todo o mundo em 2017, de acordo com a Oracle. Uma pesquisa recente no site de empregos Dice.com encontrou quase 12.000 empregos relacionados a Java nos EUA, em comparação com aproximadamente 9.000 empregos em JavaScript e 7.600 em Python.
+</p>
 
 
-#### Referências <h4> 
+
+## Referências <h2> 
 <p> 
 https://www.learningjournal.guru/article/programming-in-java/scope-and-lifetime-of-a-variable/
 </p>
@@ -436,4 +607,37 @@ https://medium.com/javarevisited/control-structures-in-java-conditional-statemen
 
 <p>
 https://www.baeldung.com/java-control-structures
+</p>
+
+<p> 
+http://b.web.umkc.edu/buckleyb/cs_441.htm
+</p>
+
+<p>
+https://www.devmedia.com.br/principais-ferramentas-de-apoio-ao-desenvolvimento-java/34126 
+</p>
+
+<p> 
+https://www.redhat.com/pt-br/topics/cloud-native-apps/what-is-a-Java-framework
+</p>
+
+<p> 
+https://codeinstitute.net/blog/what-is-java/
+</p>
+
+<p> 
+https://www.devmedia.com.br/java-historia-e-principais-conceitos/25178
+</p>
+
+
+<p> 
+https://www.javatpoint.com/why-java-is-secure
+</p>
+
+<p> 
+https://www.javatpoint.com/features-of-java#High-Performance
+</p>
+
+<p> 
+https://blogs.oracle.com/java/post/metaprogramming-manipulating-data-about-data
 </p>
