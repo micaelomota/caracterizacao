@@ -130,8 +130,8 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
   + [TensorFlow](https://www.tensorflow.org/) e [PyTorch](https://pytorch.org/)
     :  Ambas as bibliotecas proporcionam a criação e execução de algoritmos de machine learning e redes neurais no estado da arte. São as bibliotecas mais populares para esses fins considerando todas as linguagens de programação.  
   
-+ Sintaxe, Semântica e Operações Predefinidas
-  + Estruturas de Controle
++ **Sintaxe, Semântica e Operações Predefinidas**
+  + **Estruturas de Controle**
     + Seleção
       : Há if, elif (equivalente a else if) e else. If e else também podem ser usados numa única linha, similar ao operador ternário do C.
 

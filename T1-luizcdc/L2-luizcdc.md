@@ -82,7 +82,7 @@ Elixir é uma linguagem de programação funcional e concorrente dinâmica e mod
 
 ## Produtividade do Desenvolvedor
 
-+ Frameworks e Contâiners
++ **Frameworks e Contâiners**
   + [Phoenix](https://phoenixframework.org/)
     : Phoenix é o maior framework de desenvolvimento web moderno do ecossistema Elixir, utilizando como base a arquitetura MVC com modificações adequadas à programação funcional. Seu leque de ferramentas é extenso e o framework é muito versátil, sendo uma das portas de entrada para novos desenvolvedores escolherem utilizar Elixir nos seus websites.
   + [ExUnit](https://hexdocs.pm/ex_unit/1.12/ExUnit.html)
@@ -147,9 +147,18 @@ Elixir é uma linguagem de programação funcional e concorrente dinâmica e mod
         ```
 
     + Repetição
+      : Não há loops no Elixir. Toda repetição é feita através de recursão, otimizada através da otimização de chamada de cauda.
     + Exceções
-  + Legibilidade
-  + Redigibilidade
+      : Em Elixir, muitas situações em que erros ocorrem não são tratadas com exceções, e sim átomos denotando o sucesso ou não da operação (_:error_ e _:ok_, por exemplo). O mecanismo de tratamento de exceções é robusto e flexível, contando com as keywords raise, try, rescue, catch, throw, reraise, after e else.
+  + Legibilidade e Redigibilidade
+    : Elixir não é conhecida por ter uma sintaxe de particular má legibilidade, e devido ao seu design moderno tem uma legibilidade média. Um constructo que melhora muito a legibilidade e redigibilidade, por exemplo, é o _pipe operator_. Chamadas de funções aninhadas podem ser reescritas da seguinte maneira:
+
+      ```Elixir
+      chamando(funcoes(aninhadas(argumento))) # isso
+
+      aninhadas(argumento) |> funcoes |> chamando # vira isso
+
+      ```
 
 ## Ecossistema
 
