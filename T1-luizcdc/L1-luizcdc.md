@@ -161,7 +161,25 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
     + Repetição
       : Existem dois tipos de loops em Python, _for_ e _while_. _While_ é controlado por condição (checagem de condição verdadeira ou falsa) e o _for_ através de iteração (necessariamente percorre um objeto iterável). Para realizar repetição por contagem, há o construtor _range_ que gera uma estrutura iterável dinâmica (em Python chamada de _generator_) que percorre a sequência numérica especificada.
     + Exceções:
-      : TODO;
+      : As keywords de exceções no python são raise, try, except, else e finally.
+
+        ```Python
+        def foo(bar):
+          if type(bar) == str:
+            raise ValueError
+        
+        try:
+          foo("uma string")
+        except ValueError:
+          print("Será executada se a exceção ValueError acontecer.")
+        except OutraExcecao:
+          print("Será executada se a exceção OutraExcecao acontecer.")
+        else:
+          print("Será executado se a exceção não acontecer.")
+        finally:
+          print("Sempre será executada ao fim do bloco de exceções.")
+        ```
+
   + Legibilidade e Redigibilidade
     : Python tem no centro de sua filosofia a legibilidade. Existe um poema incluso com a linguagem (acessível através do statement "import this") chamado "Zen of Python" que representa essa filosofia. Nele há trechos que dizem: "Belo é melhor que feio", "Explícito é melhor que implícito", "Simples é preferível a complexo", "Deve haver uma maneira óbvia – e preferivelmente única – de fazer algo" e "Legibilidade importa". Essas orientações demonstram a preocupação dos desenvolvedores da linguagem e os desenvolvedores que utilizam a linguagem a aderir à maneira "pythônica" de escrever código. Além disso, consistência é igualmente valorizada. A sintaxe e semântica do Python foi construída justamente para se assemelhar a pseudocódigo escrito baseado na lingua inglesa, portanto ser fácil de ler.
     As operações/constructos predefinidas e as maneiras simples oferecidas de realizar procedimentos às vezes complexos em outras linguagens tornam Python também altamente redigível. Um exemplo são as comprehensions, que iteram sobre os elementos de uma coleção para gerar uma nova coleção de acordo com regras especificadas, tudo numa única linha de código com uma sintaxe simples:
