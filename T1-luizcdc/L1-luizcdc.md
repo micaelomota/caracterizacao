@@ -48,7 +48,7 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
   Em relação à orientação a objetos, Python oferece uma abordagem incompleta mas flexível. Métodos e atributos nunca são verdadeiramente privados, mas há uma convenção de que atributos cujo nome começa com dois underlines (__varname) devem ser tratados como privados. Pode-se oferecer acesso indireto a esses atributos através de getters e setters (anotação @property). Python suporta herança múltipla, embora seu algoritmo de ordem de resolução de métodos seja um pouco complicado. Não há suporte para declaração de interfaces. Polimorfismo é obtido através do uso de herança (polimorfismo de subtipo) e de "duck typing", não existindo polimorfismo paramétrico.
   Há apenas equivalência de tipos por nome. Há conversão implícita em certas operações se suportado. Sobrecarga de tipos é possível através de herança (declarar uma classe que heda de um certo tipo sem nenhuma modificação).
 + Ambiente de Execução
-  : A linguagem é interpretada, e há diversos interpretadores implementados diferentemente para executá-la. Cada um desses oferece um ambiente de execução diferente com acesso a ferramentas distintas, mas o interpretador original da linguagem, CPython, oferece uma API para programas em C que implementa toda a comunicação necessária entre o Python e o C.
+  : A linguagem é interpretada, e há diversos interpretadores implementados diferentemente para executá-la. Cada um desses oferece um ambiente de execução diferente com acesso a ferramentas distintas, mas o interpretador original da linguagem (CPython) oferece uma API para programas em C que implementa toda a comunicação necessária entre o Python e o C.
 + Implementação
   : A implementação original é chamada CPython, escrita em C. O CPython compila o código em Python para seu bytecode próprio e o interpreta. Outras implementações famosas são PyPy, que implementa um compilador para código de máquina nativo JIT que oferece um desempenho muito maior sem sacrificar o dinamismo da linguagem, Jython que compila para bytecode da JVM - Java Virtual Machine, permitindo interfaceamento e inserção dentro de programas Java e vice-versa e Cython, que é uma versão compilada do Python com ferramentas adicionais.
 + Custos
@@ -207,23 +207,43 @@ Python é uma linguagem de programação multiparadigma de alto nível. Foi publ
 
 ---
 
-## Informações Adicionais
-
 ## Referências
 
 1. https://www.gartner.com/en/documents/2071615/programming-languages
 framework for assessing and characterizing programming languages and assessing their applicability to specific projects
 2. https://docs.python.org/3/howto/functional.html
-Functional Programming HOWTO - Python 3 Manual
+Functional Programming HOWTO – Python 3 Manual
 3. https://github.com/yuce/pyswip
 PySwip
 4. https://docs.python.org/3/faq/general.html#what-is-python
-General Python FAQ — Python 3.10.0 documentation - What is Python?
+General Python FAQ — Python 3.10.0 documentation – What is Python?
 5. https://www.python.org/community/workshops/
 Conferences and Workshops | Python.org
 6. https://www.python.org/dev/peps/pep-0013/
 PEP 13 -- Python Language Governance | Python.org
 7. https://stackoverflow.com/a/36826546/11541975
-oop - "public" or "private" attribute in Python ? What is the best way? - Stack Overflow
-8. https://medium.com/fintechexplained/advanced-python-metaprogramming-980da1be0c7d
-Advanced Python: Metaprogramming - Explaining what, why and how Metaprogramming works in Python - Farhad Malik - Medium
+oop – "public" or "private" attribute in Python ? What is the best way? – Stack Overflow
+8. https://docs.python.org/3/library/stdtypes.html
+Built-in Types – Python 3 Manual
+9. https://docs.python.org/3/tutorial/classes.html
+Classes – Python 3 Manual
+10. https://www.python.org/download/alternatives/
+Alternative Python Implementations | Python.org
+11. https://medium.com/fintechexplained/advanced-python-metaprogramming-980da1be0c7d
+Advanced Python: Metaprogramming – Explaining what, why and how Metaprogramming works in Python – Farhad Malik – Medium
+12. https://towardsdatascience.com/memory-management-and-garbage-collection-in-python-c1cb51d1612c#:~:text=Garbage%20collection%20is%20implemented%20in,cleans%20up%20the%20object%20immediately.
+Memory Management And Garbage Collection In Python | by Seyma Tas
+13. https://realpython.com/python-gil/
+What Is the Python Global Interpreter Lock (GIL)? – Real Python
+14. https://opensource.com/article/17/4/grok-gil
+Grok the GIL: How to write fast and thread-safe Python
+15. https://github.com/niklas-heer/speed-comparison
+niklas-heer/speed-comparison: A repo which compares the speed of different programming languages.
+16. https://docs.python.org/3/tutorial/controlflow.html
+More Control Flow Tools — Python 3.10.0 documentation
+17. https://docs.python.org/3/tutorial/errors.html
+Errors and Exceptions — Python 3.10.0 documentation
+18. https://www.python.org/dev/peps/pep-0020/
+PEP 20 -- The Zen of Python | Python.org
+
+
