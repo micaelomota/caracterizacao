@@ -154,10 +154,23 @@ Elixir é uma linguagem de programação funcional e concorrente dinâmica e mod
     : Elixir não é conhecida por ter uma sintaxe de particular má legibilidade, e devido ao seu design moderno tem uma legibilidade média. Um constructo que melhora muito a legibilidade e redigibilidade, por exemplo, é o _pipe operator_. Chamadas de funções aninhadas podem ser reescritas da seguinte maneira:
 
       ```Elixir
-      chamando(funcoes(aninhadas(argumento))) # isso
+      aninhadas(funcoes(chamando(argumento))) # isso
 
-      aninhadas(argumento) |> funcoes |> chamando # vira isso
+      argumento                               # vira isso
+          |> chamando 
+          |> funcoes 
+          |> aninhadas 
 
+      ```
+
+    Elixir também tem as _guards_, que permitem definições distintas para funções no caso de valores específicos.
+
+      ```Elixir
+      defmodule F do
+        def factorial(0): do: 1
+        def factorial(n): do
+          n * factorial(n-1)
+        end
       ```
 
 ## Ecossistema
@@ -173,8 +186,6 @@ Elixir é uma linguagem de programação funcional e concorrente dinâmica e mod
 
 ---
 
-## Informações Adicionais
-
 ## Referências
 
 1. https://www.gartner.com/en/documents/2071615/programming-languages
@@ -187,11 +198,21 @@ Github - elixir-lang/elixir
 Eight Famous Companies Using Elixir—And Why They Made the Switch
 5. https://hex.pm/packages
 Packages | Hex
-https://elixirschool.com/en/lessons/advanced/metaprogramming/
-https://blog.appsignal.com/2021/09/07/an-introduction-to-metaprogramming-in-elixir.html
-https://blog.appsignal.com/2021/11/16/pitfalls-of-metaprogramming-in-elixir.html
-https://www.erlang-solutions.com/blog/erlang-garbage-collector/
-https://dockyard.com/blog/2021/03/30/elixir-is-safe
-https://stressgrid.com/blog/benchmarking_go_vs_node_vs_elixir/
-https://dockyard.com/blog/2020/05/28/scaling-up-with-elixir
-https://elixirschool.com/en/lessons/intermediate/concurrency
+6. https://elixirschool.com/en/lessons/advanced/metaprogramming/
+Metaprogramming · Elixir School
+7. https://blog.appsignal.com/2021/09/07/an-introduction-to-metaprogramming-in-elixir.html
+An Introduction to Metaprogramming in Elixir | AppSignal Blog
+8. https://blog.appsignal.com/2021/11/16/pitfalls-of-metaprogramming-in-elixir.html
+Pitfalls of Metaprogramming in Elixir | AppSignal Blog
+9. https://www.erlang-solutions.com/blog/erlang-garbage-collector/
+Erlang Garbage Collector - Erlang Solutions
+10. https://dockyard.com/blog/2021/03/30/elixir-is-safe
+Elixir is Safe - DockYard
+11. https://stressgrid.com/blog/benchmarking_go_vs_node_vs_elixir/
+Benchmarking Go vs Node vs Elixir
+12. https://dockyard.com/blog/2020/05/28/scaling-up-with-elixir
+Scaling Up With Elixir - DockYard
+13. https://elixirschool.com/en/lessons/intermediate/concurrency
+Concurrency · Elixir School
+14. https://elixir-lang.org/getting-started/try-catch-and-rescue.html
+try, catch, and rescue - The Elixir programming language
