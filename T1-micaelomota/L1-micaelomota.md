@@ -54,21 +54,53 @@ TypeScript 4.0 foi lançado em 20 de agosto de 2020. Embora esta versão não te
 - Propósito
 - Sistema de Tipagem
 - Ambiente de Execução
-- Implementação
-- Custos
-  _Custos aqui ... _
-
+  
+  ### Paradigma
+  
+  Typescript é uma [Linguagem de programação multiparadigma](https://pt.wikipedia.org/wiki/Linguagem_de_programa%C3%A7%C3%A3o_multiparadigma).
+  
+  Geralmente se escreve projetos em typescript usando orientação a objetos ou seguindo o paradigma funcional.
+  
+  ### Propósito
+  
+  O próposito inicial é tornar projetos escritos em javascript mais manuteníveis, confiáveis e escaláveis. E a linguagem alcança isso com ajuda do conjunto de ferramentas para desenvolvimento que ela fornece.
+  
+  ### Sistema de Tipagem
+  
+  Typescript funciona com tipagem estática através de anotações de tipos que são checadas em tempo de compilação. 
+  É possível ignorar a tipagem estática e utilizar tipagem dinâmica como no Javascript.
+  Os tipos primitivos são number, boolean e strings.
+  
+  ### Ambiente de Execução
+  
+  Typescript não é executada em nenhum ambiente. O que é executado no final das contas é o Javascript gerado (podemos dizer traduzido), ao compilar.
+  
+  Javascript, por sua vez, pode ser executado em navegadores web e em servidores através de motores como Node.js, cada um com a sua implementação e especificidades, mas todos respeitando os padrões definidos para aquela versão da linguagem.
+  
 ## Capacidades da Linguagem
 
-- Metaprogramação
-- Gerenciamento de Ciclo de Vida
-- Segurança
-- Performance
-- Escalabilidade
-- Confiabilidade
-- Concorrência e Threading
-- Custos
-  _Custos aqui ... _
+### Metaprogramação
+
+É suportado algo similar ao Reflection no Java. No Typescript se chama __Descriptors__ e ainda é algo novo na linguagem.
+
+### Gerenciamento de Ciclo de Vida
+
+Typescript gerencia o ciclo de vida de variáveis de acordo com o escopo e com instrução com a qual elas são declaradas.
+Os ambientes de execução se encarregam de tratar a vinculação e liberação de espaço de acordo com suas próprias definições.
+
+### Segurança
+
+TODO
+
+## Performance
+
+###  Escalabilidade
+
+TODO
+
+### Confiabilidade
+
+### Concorrência e Threading
 
 ## Produtividade do Desenvolvedor
 
@@ -94,3 +126,6 @@ TypeScript 4.0 foi lançado em 20 de agosto de 2020. Embora esta versão não te
 
 1. https://www.gartner.com/en/documents/2071615/programming-languages
    framework for assessing and characterizing programming languages and assessing their applicability to specific projects
+2. https://pt.wikipedia.org/wiki/TypeScript
+3. https://www.typescriptlang.org/docs/handbook
+4. https://medium.com/@danduh/metaprogramming-javascript-typescript-part-1-descriptors-bc443d048fe9
