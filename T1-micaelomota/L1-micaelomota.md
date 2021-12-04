@@ -1,10 +1,5 @@
 # Typescript
 
-Typescript é uma linguagem fortemente tipada que compila sobre Javascript para prover mais escalabilidade.
-
-## Informações Adicionais
-
-Foi desenvolvida e é mantida pela Microsoft.
 
 <!--
 Recomendações:
@@ -26,10 +21,10 @@ Fontes:
 
 # Guia para Caracterização de Linguagens de Programação
 
-- Linguagem de Programação: <nome>
+- Linguagem de Programação: Typescript
 
-  - [Apresentação e histórico](#apresenta--o-e-hist-rico)
-  - [Características da Linguagem](#caracter-sticas-da-linguagem)
+  - [Apresentação e histórico](#apresentação-e-histórico)
+  - [Características da Linguagem](#características-da-linguagem)
   - [Capacidades da Linguagem](#capacidades-da-linguagem)
   - [Produtividade do Desenvolvedor](#produtividade-do-desenvolvedor)
   - [Ecossistema](#ecossistema)
@@ -38,9 +33,20 @@ Fontes:
 
 ## Apresentação e histórico
 
-_Breve texto de apresentação._
-_Comentar sobre perspectivas / papéis._
-_Colocar uma figura / árvore, com pais e filhos_.
+<!-- _Breve texto de apresentação._ -->
+
+TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.
+
+Foi considerada pelo público a 4ª linguagem "mais amada", de acordo com uma pesquisa conduzida pelo site Stack Overflow em 2018, e está entre as 15 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk.
+
+O TypeScript foi divulgado pela primeira vez em outubro de 2012 (na versão 0.8), após dois anos de desenvolvimento interno na Microsoft.
+
+TypeScript 4.0 foi lançado em 20 de agosto de 2020. Embora esta versão não tenha introduzido nenhuma alteração significativa, ele adicionou recursos de linguagem, como Custom JSX Factories e Variadic Tuple Types.
+
+<!-- _Colocar uma figura / árvore, com pais e filhos_. -->
+
+![Typescript](https://user-images.githubusercontent.com/12684971/144700545-3381e03f-77e5-46c7-b78c-ef4a8a1a5aa5.png)
+
 
 ## Características da Linguagem
 
