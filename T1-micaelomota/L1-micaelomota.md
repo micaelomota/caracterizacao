@@ -113,12 +113,28 @@ Typescript opera semelhante ao javascript, ou seja, possui um modelo de concorr�
 
 ## Produtividade do Desenvolvedor
 
-- Frameworks e Contâiners
-- Ferramentas Disponíveis
-- Sintaxe, Semântica e Operações Predefinidas
-  - Legibilidade
-  - Redigibilidade
-- Custos
+### Frameworks e Contâiners
+
+Há uma inifinidade de frameworks, containers e bibliotecas desenvolvidas em typescript ou compatíveis com typescript que foram escritas em javascript.
+Os mais famosos são Node.js, React, Angula e Vue. O primeiro é um motor para execução de javascript no lado do servidor. Os três ultimos são bibliotecas para construção de aplições web.
+
+### Ferramentas Disponíveis
+
+Muitas ferramentas de javascript podem ser utilizadas para desenvolver projetos em typescript, mas a própria linguagem fornece um conjunto de ferramentas para dessenvolvimento que inclue compiladores, ferramentas de autocomplete, linting e syntax highlight.
+
+### Sintaxe, Semântica e Operações Predefinidas
+  #### Legibilidade
+  
+  A linguagem não enforça nenhum padrão específico para garantir a legibilidade do código. Typscript é uma lingugagem free-form programming, como C, isso significa que o desenvedor é livre para indentar e organizar o código conforme queira. No entando, a comunidade utiliza de ferramentas como .eslint para enforçar certos padrões desejados pelo próprio time.
+  
+  Alguns exemplos famosos e muito utilizados são os padrões do google e airbnb.
+  
+  #### Redigibilidade
+  
+  Estima-se que é necessário pelo menos 30% mais código para se escrever typescript do que javascript [8].
+  Mas apesar disso, as ferramentas de desenvolvimento tornam o processo de escrita mais agradável e veloz.
+  
+### Custos
 
 ## Ecossistema
 
@@ -141,3 +157,4 @@ Typescript opera semelhante ao javascript, ou seja, possui um modelo de concorr�
 5. https://github.com/microsoft/TypeScript/wiki/Performance#performance-considerations
 6. https://itnext.io/writing-scalable-typescript-e62e1f24a013
 7. https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop
+8. https://www.securityjourney.com/post/typescript-doesnt-suck-you-just-dont-care-about-security
