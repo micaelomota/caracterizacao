@@ -1,11 +1,5 @@
 # GO
 
-Go é uma linguagem open source que tem como foco principal ser concisa e eficiente em ambos os termos (desenvolvimento e performance). É estaticamente tipada.
-
-## Informações Adicionais
-
-Go é uma linguagem multiparadigma, suportando concorrencia, funcional, estrutural, imperativa e orientação a objetos.
-
 <!--
 Recomendações:
 1. A
@@ -26,7 +20,7 @@ Fontes:
 
 # Guia para Caracterização de Linguagens de Programação
 
-- Linguagem de Programação: <nome>
+- Linguagem de Programação: GO
 
   - [Apresentação e histórico](#apresenta--o-e-hist-rico)
   - [Características da Linguagem](#caracter-sticas-da-linguagem)
@@ -38,27 +32,69 @@ Fontes:
 
 ## Apresentação e histórico
 
-_Breve texto de apresentação._
-_Comentar sobre perspectivas / papéis._
-_Colocar uma figura / árvore, com pais e filhos_.
+<!-- _Breve texto de apresentação._ -->
+
+- Go é uma linguagem open source suportada pelo Google.
+- Fácil de apreder do zero.
+- Tem suporte nativo a concorrência e tem uma biblioteca padrão bem robusta.
+- Há um grande ecosistema de parceiros, comunidades e ferramentas em constante crescimento.
+
+Go é uma linguagem open source que tem como foco principal ser concisa e eficiente em ambos os termos (desenvolvimento e performance). É estaticamente tipada.
+
+<!-- _Comentar sobre perspectivas / papéis._ -->
+
+
+
+<!-- _Colocar uma figura / árvore, com pais e filhos_. -->
+
+![Untitled Diagram](https://user-images.githubusercontent.com/12684971/144718087-d72b15b6-0cd4-41dd-a4b8-4d1f85b3460e.jpg)
+
 
 ## Características da Linguagem
 
-- Paradigma
-- Propósito
-- Sistema de Tipagem
-- Ambiente de Execução
-- Implementação
-- Custos
-  _Custos aqui ... _
+###  Paradigma
+
+Go é uma linguagem multiparadigma, suportando concorrencia, funcional, estrutural, imperativa e orientação a objetos.
+
+### Propósito
+
+Os principais propósitos de go incluem ser concisa, eficiente em ambos os termos (desenvolvimento e performance) e garantir a adaptabilidade de código. 
+
+A ideia é ser flexível suficiente para preservar o design conforme cresce.
+
+### Sistema de Tipagem
+
+Go é estaticamente tipada e compilada. Há vários tipos nativos da linguagem, incluindo tipos númericos (byte, int64, float32, etc.), booleans e strings.
+
+Strings são imutáveis. Usuários podem definir seus tipos usando a palavra chave "struct".
+
+### Ambiente de Execução
+
+Go tem uma biblioteca de execução nativa que implementa garbage collection, concorrência, gerenciamento de pilhas e outras funcionalidades criticas para a linguagem.
+
+
+### Implementação
+
+Go foi inicialmente implementada em C. Mas atualmente o compilador e ambiente de execução é impletado na própria linguagem GO junto com assemble.
 
 ## Capacidades da Linguagem
 
-- Metaprogramação
-- Gerenciamento de Ciclo de Vida
-- Segurança
-- Performance
-- Escalabilidade
+### Metaprogramação
+
+Não suportada.
+
+### Gerenciamento de Ciclo de Vida
+
+
+### Segurança
+
+### Performance
+
+Go foi desenhada e projetada exatamente para garantir alta performance e suportar parelelismo nativamente.
+
+### Escalabilidade
+
+
 - Confiabilidade
 - Concorrência e Threading
 - Custos
@@ -88,3 +124,9 @@ _Colocar uma figura / árvore, com pais e filhos_.
 
 1. https://www.gartner.com/en/documents/2071615/programming-languages
    framework for assessing and characterizing programming languages and assessing their applicability to specific projects
+2. https://go.dev/doc/faq#runtime
+3. https://go.dev/doc/
+4. https://en.wikipedia.org/wiki/Go_(programming_language)
+5. https://www.quora.com/Why-doesnt-Go-have-meta-programming
+6. https://pkg.go.dev/golang.org/x/mobile/event/lifecycle
+7. https://www.opensourceforu.com/2020/01/go-perhaps-the-best-language-for-building-scalable-code/
