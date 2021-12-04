@@ -134,14 +134,22 @@ Muitas ferramentas de javascript podem ser utilizadas para desenvolver projetos 
   Estima-se que é necessário pelo menos 30% mais código para se escrever typescript do que javascript [8].
   Mas apesar disso, as ferramentas de desenvolvimento tornam o processo de escrita mais agradável e veloz.
   
-### Custos
 
 ## Ecossistema
 
-- Maturidade
-- Comunidade
-- Governança
-- Fragmentação
+### Maturidade
+
+Desde 2012 no mercado, e impulsionada pela gigante Microsoft com o apoio da comunidade open-source, typescript pode ser considerada muito madura e é amplamente utilizada. 
+
+### Comunidade
+
+A comunidade de typescript se intercepta com a comunidade javascript, principalmente no que diz respeito as bibliotecas e frameworks que são interoperáveis.
+
+O NPM é o maior site para gerenciamento e distribuição de pacotes, contendo mais de 1.3 milhões de projetos open source distribuídos. 
+
+### Governança
+
+A Microsoft é a empresa responsável pela Governança de Typescript. Ela disponibiliza o projeto open-source e suas releases na plataforma Github.
 
 ---
 
