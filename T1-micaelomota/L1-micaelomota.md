@@ -90,17 +90,26 @@ Os ambientes de execução se encarregam de tratar a vinculação e liberação 
 
 ### Segurança
 
-TODO
+Typescript é uma linguagem tipada estáticamente, e geralmente linguagens estaticamente tipadas são mais seguras porque elas podem encontrar potenciais erros antes de eles serem executados e propagados nas aplicações.
 
-## Performance
+### Performance
+
+No processo de desenvolvimento, o mecanismo de encapsulamento do typescript gera um custo de performance. Por exemplo, se todos os porjetos dependem de um mesmo pacote, algumas partes dos tipos desse parcote será checada várias vezes - uma vez para cada projeto que importa esse pacote. É recomendado dividir projetos em áreas de trabalhos diferentes.
+
+Quanto a performance no tempo de execução, temos os mesmos benefíicios e problemas que javascript tem.
 
 ###  Escalabilidade
 
-TODO
+Typescript foi projetada justamente para resolver os problemas de escalabilidade de projetos javascript, que eram muito sucetíveis a erros devido a alta flexibilidade e fraca tipagem.
 
 ### Confiabilidade
 
+Com o forte sistema de tipagem do typescript, os tipos garatem a previsibilidade do comportamento dos programa, a confiabilidade na linguagem é alta e, justamente por isso, há uma grande comunidade de desenvolvedores evangelizando o uso dela.
+
 ### Concorrência e Threading
+
+Typescript opera semelhante ao javascript, ou seja, possui um modelo de concorrência baseado em um event loop (laço de eventos, em português), responsável pela execução do código, coleta e processamento de eventos e execução de subtarefas enfileiradas. Este modelo é bem diferente de outras linguagens, como C ou Java, por exemplo.
+
 
 ## Produtividade do Desenvolvedor
 
@@ -129,3 +138,6 @@ TODO
 2. https://pt.wikipedia.org/wiki/TypeScript
 3. https://www.typescriptlang.org/docs/handbook
 4. https://medium.com/@danduh/metaprogramming-javascript-typescript-part-1-descriptors-bc443d048fe9
+5. https://github.com/microsoft/TypeScript/wiki/Performance#performance-considerations
+6. https://itnext.io/writing-scalable-typescript-e62e1f24a013
+7. https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/EventLoop
