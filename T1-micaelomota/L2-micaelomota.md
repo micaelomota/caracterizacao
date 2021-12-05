@@ -22,7 +22,7 @@ Fontes:
 
 - Linguagem de Programação: GO
 
-  - [Apresentação e histórico](#apresenta--o-e-hist-rico)
+  - [Apresentação e histórico](#apresentação-e-histórico)
   - [Características da Linguagem](#caracter-sticas-da-linguagem)
   - [Capacidades da Linguagem](#capacidades-da-linguagem)
   - [Produtividade do Desenvolvedor](#produtividade-do-desenvolvedor)
@@ -94,6 +94,9 @@ Go foi desenhada e projetada exatamente para garantir alta performance e suporta
 
 ### Escalabilidade
 
+Go was intended as a language for writing server programs that would be easy to maintain over time. (See this article for more background.) The design concentrated on things like scalability, readability, and concurrency. Polymorphic programming did not seem essential to the language's goals at the time, and so was left out for simplicity.
+
+Go foi planejada para ser uma linguagem para escrita de aplicações do lado do servidor que sejam fáceis de manter ao longo do tempo. O design se concentrou em coisas como escalabilidade, leitura e concurrencia.
 
 - Confiabilidade
 - Concorrência e Threading
